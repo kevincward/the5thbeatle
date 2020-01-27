@@ -48,6 +48,8 @@ const SectionTitle = styled.h3`
     
     @media (max-width: 640px) {
        font-size: 24px; 
+       width: 50px;
+       margin-left: -50px;
     }
 `
 
@@ -117,9 +119,7 @@ const caseStudy = props => {
                 <SectionTitleGroup>
                     <SectionTitle>{props.title}</SectionTitle>
                 </SectionTitleGroup>  
-            </Colorblock>    
-
-            
+            </Colorblock>            
         </SectionGroup>
     )
 }

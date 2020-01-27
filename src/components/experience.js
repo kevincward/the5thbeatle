@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import tcheckImage from '../images/Exp_01.svg'
+import tcheckImage1 from '../images/Exp_01.svg'
+import tcheckImage2 from '../images/Exp_2.svg'
+import tcheckImage3 from '../images/Exp_3.svg'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
 import zipkick from '../images/ic_timeline_zp.svg'
+import Slider from "react-slick";
 
 const Container = styled.div`
     display: flex;
@@ -50,6 +53,11 @@ const Items = styled.div`
 `
 
 const Img = styled.img`
+    width: 100%;
+    height: 100%;
+`
+
+const SliderContainer = styled.div`
     width: 45%;
     height: fit-content;
     @media (max-width: 768px) {
@@ -123,7 +131,27 @@ const Item = ({icon, title, role, description}) => {
     )
 }
 
-const Experience = props => {    
+const Sliders = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+
+    return (
+        <SliderContainer>
+            <Slider {...settings}>
+                <Img src={tcheckImage1} />
+                <Img src={tcheckImage2} />
+                <Img src={tcheckImage3} />
+            </Slider>
+        </SliderContainer>
+    )
+}
+
+const Experience = () => {    
 
     return (
         <Container>
@@ -133,7 +161,9 @@ const Experience = props => {
                 startup products
             </Title>
             <Content>
-                {window.matchMedia('(max-width: 768px)').matches ? <Img src={tcheckImage} /> : null}
+                {window.matchMedia('(max-width: 768px)').matches ? 
+                 <Sliders />
+                 : null}
                 <Items>
                     <Item 
                         icon={tcheck}
@@ -154,7 +184,7 @@ const Experience = props => {
                         description='Designed a personalized hotel recommendation app and website.'
                     /> 
                 </Items>
-                {!window.matchMedia('(max-width: 768px)').matches ? <Img src={tcheckImage} /> : null}
+                {!window.matchMedia('(max-width: 768px)').matches ? <Sliders /> : null}
             </Content>
         </Container>
     )
