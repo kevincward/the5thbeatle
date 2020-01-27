@@ -3,16 +3,14 @@ import styled from 'styled-components'
 import Cell from '../components/cell';
 import staticdata from '../../staticdata.json'
 
-const ProjectContainer = styled.div `
-    padding: 400px 30px 0 0;
+const ProjectContainer = styled.div `    
     background: #FFFFFF;
     background-size: cover;
     grid-template-rows: 500px auto;
     grid-gap: 20px;
 
     @media (max-width: 720px) {
-    flex-direction: column;
-    padding: 400px 30px 0 0;
+    flex-direction: column;    
     margin: 0;
   }
 `

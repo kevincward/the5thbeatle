@@ -2,14 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from '../components/card'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const SectionGroup = styled.div `
-    background: #FFFFFF;
-    height: 350px;
+    background: #FFFFFF;    
     background-size: cover;
-    display: grid;
-    grid-template-rows: 300px auto;
-    grid-gap: 20px;
 
     @media (max-width: 720px) {
     flex-direction: column;
@@ -17,22 +16,20 @@ const SectionGroup = styled.div `
     margin: 0;
   }
 `
+
 const Colorblock = styled.div`
     background: #540D6E;
     height: 200px;
     padding-top: 200px;
     padding: 3.5rem 5rem 3rem;
+    align-items: center;
+    display: flex;
 `
 
 const SectionTitleGroup = styled.div`
-    display: grid;
-    grid-template-columns: 300px auto;
     margin: 0 40px;
-    grid-gap: 20px;
-    grid-template-rows: auto 100%;
 
     @media (max-width: 720px) {
-        grid-template-columns: 1fr;
         margin: 0 10px;
     }
 `
@@ -52,7 +49,6 @@ const SectionTitle = styled.h3`
     @media (max-width: 640px) {
        font-size: 24px; 
     }
-
 `
 
 const CardCarousel = styled.div` 
@@ -63,23 +59,68 @@ const CardCarousel = styled.div`
   border-radius: 8px;
 `
 
-const caseStudy = props => (
-    <SectionGroup>
-        <CardCarousel>
-        <Card
-        title="Designing a mobile giving experience for all"
-        text="PayPal" 
-        link="Learn More" 
-        />
-        </CardCarousel>
-        <Colorblock>
-            <SectionTitleGroup>
-                <SectionTitle>{props.title}</SectionTitle>
-            </SectionTitleGroup>  
-        </Colorblock>    
-            
-        
-    </SectionGroup>
-)
+const ArrowButton = () => {
+    return (
+        <section class="centered-container">
+            <a class="link link--arrowed" href="#">                
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" stroke="#2175FF" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                        <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
+                        </circle>
+                        <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </section>
+    )
+}
 
+const caseStudy = props => {
+
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      };
+
+    return (
+        <SectionGroup>
+            <CardCarousel>                
+                <Slider {...settings}>
+                    <Card
+                        title="Designing a mobile giving experience for all"
+                        text="PayPal" 
+                        link="Learn More" 
+                    />
+                    <Card
+                        title="Designing a mobile giving experience for all"
+                        text="PayPal" 
+                        link="Learn More" 
+                    />
+                    <Card
+                        title="Designing a mobile giving experience for all"
+                        text="PayPal" 
+                        link="Learn More" 
+                    />
+                    <Card
+                        title="Designing a mobile giving experience for all"
+                        text="PayPal" 
+                        link="Learn More" 
+                    />
+                </Slider>
+            </CardCarousel>
+            {/* <ArrowButton /> */}
+            <Colorblock>
+                <SectionTitleGroup>
+                    <SectionTitle>{props.title}</SectionTitle>
+                </SectionTitleGroup>  
+            </Colorblock>    
+
+            
+        </SectionGroup>
+    )
+}
 export default caseStudy

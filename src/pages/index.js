@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Casestudy from '../components/caseStudy'
+import Experience from '../components/experience'
+import Skills from '../components/skills'
 import OtherWork from '../components/otherWork'
 
 import { sizes } from "../layouts/Layout"
@@ -24,6 +26,8 @@ const IndexPage = () => (
       title="Case Studies">
     </Casestudy>  
     
+    <Experience />
+    <Skills />
     <OtherWork />
 
    
