@@ -58,6 +58,13 @@ const CardCarousel = styled.div`
     .slick-slide {
         margin-right: 20px; 
     }
+    .slick-list {
+        overflow: visible;
+    }
+    .slick-track {
+        display: flex;
+    }
+
     position: relative;
     top: 200px;
     margin-left: auto;
