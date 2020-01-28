@@ -8,16 +8,16 @@ import Footer from '../components/footer';
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet
+    {/* <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
      
-    />
+    /> */}
     <Header />
-    {children()}
+    {children}
       <Footer data={data}>
       I don't really think I was the fifth Beatle, I hope this was a nice breath of air for recruiters. 
       <br />

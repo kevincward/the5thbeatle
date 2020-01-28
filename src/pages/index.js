@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Layout from '../layouts'
 import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
 import Skills from '../components/skills'
@@ -9,7 +9,7 @@ import { sizes } from "../layouts/Layout"
 
 
 const IndexPage = () => (
-  
+  <Layout>
   <div>
     <div className="Hero">
       <div className="HeroGroup">
@@ -56,7 +56,7 @@ const IndexPage = () => (
   
 
   </div>
-  
+  </Layout>
 )
 
 export default IndexPage

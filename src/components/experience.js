@@ -7,6 +7,8 @@ import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
 import zipkick from '../images/ic_timeline_zp.svg'
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import 'slick-carousel/slick/slick-theme.css';
 
 const Container = styled.div`
     display: flex;
