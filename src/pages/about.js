@@ -2,15 +2,13 @@ import React from 'react'
 import styled from "styled-components"
 import Header from '../components/header'
 import Me from "../images/me.jpg"
-
+import Layout from '../layouts'
 
 const Container = styled.div`
     display: flex;
     padding: 150px 50px;
-    flex-direction: column;
-    margin: 80px 90px;
-    @media (max-width: 768px) {
-        margin: 60px 24px;
+    flex-direction: column;    
+    @media (max-width: 768px) {        
     }
 `
 
@@ -45,7 +43,8 @@ const Text = styled.div`
 const About = () => {    
 
   
-  return (    
+  return (
+    <Layout>
       <Container>
         <Title>
             I am the fifth Beatle. <br /><br />
@@ -56,6 +55,7 @@ const About = () => {
             While my band is on hiatus, I look for problems and design solutions.
          </Text>
       </Container>
+    </Layout>
   )
 }
 

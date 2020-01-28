@@ -101,22 +101,26 @@ const caseStudy = props => {
                     <Card
                         title="Designing a mobile giving experience for all"
                         text="PayPal" 
-                        link="Learn More" 
+                        link="Learn More"
+                        url="blank"
                     />
                     <Card
                         title="Designing a mobile giving experience for all"
                         text="PayPal" 
                         link="Learn More" 
+                        url="blank"
                     />
                     <Card
                         title="Designing a mobile giving experience for all"
                         text="PayPal" 
                         link="Learn More" 
+                        url="blank"
                     />
                     <Card
                         title="Designing a mobile giving experience for all"
                         text="PayPal" 
                         link="Learn More" 
+                        url="blank"
                     />
                 </Slider>
             </CardCarousel>

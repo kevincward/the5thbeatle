@@ -35,7 +35,7 @@ class Header extends React.Component {
         'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
           <Link to="/"><img src={logo} width="30" /></Link>
-          <Link to="/About">About</Link>
+          <Link to="/about">About</Link>
           <a href="https://drive.google.com/file/d/18i66J7t1LTAruuSBzTdcmrMyLpCbIPSk/view?usp=sharing" target='blank'>Resume</a>
           <a href="mailto:webmaster@example.com"><button>Contact me</button></a>
         </div>  

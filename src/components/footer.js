@@ -6,6 +6,10 @@ import instagram from '../images/instagram.svg';
 import linkedIn from '../images/linkedin.svg';
 import spotify from '../images/spotify.svg';
 
+const Container = styled.div`
+    height: 100%;
+`
+
 const FooterGroup = styled.div`
     background: #3BCEAC;
     padding: 50px 0;
@@ -19,18 +23,18 @@ const FooterGroup = styled.div`
 `
 
 const Title = styled.p`
-  margin: 0;
-  color: #000000;
-  font-family: Inter;
-  -webkit-font-smoothing: antialiased;
-  font-size: 24px;
-  line-height: 1.2;
-  text-align: center;
-  animation: HeroAnimation;
-  animation-duration: 3s;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    margin: 0;
+    color: #000000;
+    font-family: Inter;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    animation: HeroAnimation;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
 const Text = styled.p`
@@ -76,6 +80,7 @@ const SocialImage = styled.img`
 `
 
 const Footer = ({data, children}) => (
+    <Container>
       <FooterGroup>
         <Title>There's nowhere you can be that isn't where you're meant to be...</Title>
         
@@ -119,6 +124,7 @@ const Footer = ({data, children}) => (
 
         <Copyright>{children}</Copyright>
       </FooterGroup>
+    </Container>
 )
 
 export default Footer
