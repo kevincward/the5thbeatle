@@ -3,6 +3,7 @@
     width: 100%;
     padding: 30px 0;
     z-index: 100;
+    font-family: Inter;
     background: #FFFFFF;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
@@ -25,6 +26,7 @@
 
 .Header a {
     color: #000000;
+    font-family: Inter;
     font-weight: 700;
     font-size: 18px;
 }
@@ -35,10 +37,11 @@
 }
 
 .Header button {
+    background: #540D6E;
     padding: 8px 20px;
     font-size: 18px;
-    background: #540D6E;
     border: none;
+    font-family: Inter;
     font-weight: 700;
     color: #FFFFFF;
     border-radius: 30px;

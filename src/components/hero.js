@@ -20,8 +20,9 @@ const HeroGroup = styled.div`
 ` 
 
 const Title = styled.h1`
-    margin: 0;
     color: #000000;
+    margin: 0;
+    font-family: Inter;
     -webkit-font-smoothing: antialiased;
     font-size: 34px;
     line-height: 1.2;
@@ -34,6 +35,7 @@ const Title = styled.h1`
   
 const Text = styled.p`
     color: #000000;
+    font-family: Inter;
     font-size: 18px;
     line-height:1.5;
     animation: HeroAnimation;
@@ -46,6 +48,7 @@ const Text = styled.p`
   
 const Link = styled.a`
     color: #540D6E;
+    font-family: Inter;
     font-size: 21px;
     font-weight: 800;
     line-height:1.5;

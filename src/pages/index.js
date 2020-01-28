@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
 import Skills from '../components/skills'
-import OtherWork from '../components/otherWork'
 
 import { sizes } from "../layouts/Layout"
 
@@ -28,7 +27,6 @@ const IndexPage = () => (
     
     <Experience />
     <Skills />
-    <OtherWork />
 
    
 

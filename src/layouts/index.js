@@ -22,7 +22,7 @@ const Layout = ({ children, data }) => (
       I don't really think I was the fifth Beatle, I hope this was a nice breath of air for recruiters. 
       <br />
       <br />
-      Designed and coded with Philz and React in 2020
+      Assembled with Philz and React in 2020
       </Footer> 
     </div>
 )

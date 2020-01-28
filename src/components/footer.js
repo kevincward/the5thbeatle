@@ -21,6 +21,7 @@ const FooterGroup = styled.div`
 const Title = styled.p`
   margin: 0;
   color: #000000;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   font-size: 24px;
   line-height: 1.2;
@@ -33,8 +34,9 @@ const Title = styled.p`
 `
 
 const Text = styled.p`
+    color: #000000;
+    font-family: Inter;
     font-size: 18px;
-    color: black;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -46,7 +48,8 @@ const Text = styled.p`
 
 
 const Copyright = styled.div`
-    color: black;
+    color: #000000;
+    font-family: Inter;
     font-size: 12px;
     max-width: 540px;
     margin: 0 auto;
@@ -64,11 +67,12 @@ const SocialsContainer = styled.div`
 const SocialImage = styled.img`
 	width: 24px;
     height: 24px;
-
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     &:hover {
-    transform: translateY(-2px);
-    transition: all 400ms 0s ease;
-  }
+        transform: scale(1.3, 1.3);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
 `
 
 const Footer = ({data, children}) => (

@@ -16,19 +16,19 @@ const Container = styled.div`
 
 const Title = styled.div`
     font-family: Inter;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #333333;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;    
     width: 50%;
-    text-align: center;
-    margin-left: 60px;
+    text-align: left;
+    margin-left: 80px;
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -56,18 +56,26 @@ const Items = styled.div`
 `
 
 const ItemContainer = styled.div`
-    width: 184px;
+    width: 250px;
     margin-bottom: 32px;
+    margin-right: 32px;
     @media (max-width: 768px) {
         margin-top: 32px;
         margin-bottom: 0px;
+        margin-right: 0px;
     }
 `
 
 const ImgIcon = styled.img`
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     margin-bottom: 16px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    &:hover {
+        transform: scale(1.3, 1.3);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
 `
 
 const ItemTitle = styled.div`
@@ -76,7 +84,7 @@ const ItemTitle = styled.div`
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: normal;
     color: #333333;
     margin-bottom: 8px;
@@ -84,11 +92,11 @@ const ItemTitle = styled.div`
 
 const ItemDescription = styled.div`
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.33;
+    line-height: 1.5;
     letter-spacing: 0.2px;
     color: rgba(0, 0, 0, 0.7);    
 `
@@ -148,24 +156,24 @@ const Skills = props => {
                         <Item 
                             icon={research}
                             title='UX Research & Strategy'                            
-                            description='Lead the design of tCheck’s flagship product, software experience, and e-commerce platform.'
+                            description='I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.'
                         />
                         <Item 
                             icon={design}
                             title='Design Thinking'                            
-                            description='Lead the design of tCheck’s flagship product, software experience, and e-commerce platform.'
+                            description='I implement an iterative process to uncover new outlooks and redefine problems in an attempt to identify alternative strategies and solutions.'
                         />
                     </Row>
                     <Row>
                         <Item 
                             icon={pm}
                             title='Product Management'                            
-                            description='Lead the design of tCheck’s flagship product, software experience, and e-commerce platform.'
+                            description='Incorporating product thinking and UX workflow with the development process, I see products from problem discovery to launch and onward.'
                         />
                         <Item 
                             icon={biz}
-                            title='ZBusiness Growthipkick'                            
-                            description='Lead the design of tCheck’s flagship product, software experience, and e-commerce platform.'
+                            title='Business Growth'                            
+                            description='I work to build sustainable experiences that net more long-term engaged users rahter than short term metric movers.'
                         />
                     </Row>
                 </Items>

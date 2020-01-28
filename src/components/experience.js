@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import tcheckImage1 from '../images/Exp_01.svg'
+import tcheckImage1 from '../images/Exp_1.png'
 import tcheckImage2 from '../images/Exp_2.svg'
-import tcheckImage3 from '../images/Exp_3.svg'
+import tcheckImage3 from '../images/Exp_1.png'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
 import zipkick from '../images/ic_timeline_zp.svg'
@@ -20,7 +20,7 @@ const Container = styled.div`
 const Title = styled.div`
     width: 565px;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -35,6 +35,7 @@ const Title = styled.div`
 
 const Content = styled.div`
     display: flex;
+    font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
     @media (max-width: 768px) {
@@ -77,6 +78,12 @@ const ImgIcon = styled.img`
     height: 32px;
     margin-top: 12px;
     margin-right: 12px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    &:hover {
+        transform: scale(1.3, 1.3);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
 `
 
 const ItemTitle = styled.div`
@@ -97,18 +104,18 @@ const ItemRole = styled.div`
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: normal;
     color: #000000;
 `
 
 const ItemDescription = styled.div`
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.33;
+    line-height: 1.5;
     letter-spacing: 0.2px;
     color: rgba(0, 0, 0, 0.7);
 `
@@ -137,7 +144,7 @@ const Sliders = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       };
 
     return (

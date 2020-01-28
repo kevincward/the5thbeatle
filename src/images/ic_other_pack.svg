@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="43px" viewBox="0 0 44 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ic_other_pack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 34 0 34 13.94 0 13.94"></polygon>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OtherWork" transform="translate(-801.000000, -606.000000)">
+            <g id="Group-8">
+                <g id="Raised-Card-Copy" transform="translate(649.000000, 588.000000)">
+                    <g id="Group-9">
+                        <g id="ic_other_pack" transform="translate(150.000000, 16.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="48" height="48"></rect>
+                            <path d="M12.948,4 C12.647,4 12.365,4.13 12.173,4.37 L4.226,14.08 C4.08,14.26 4,14.48 4,14.71 L4,42 C4,42.55 4.449,43 5,43 L43,43 C43.551,43 44,42.55 44,42 L44,14.71 C44,14.48 43.92,14.26 43.774,14.08 L35.826,4.37 C35.635,4.13 35.353,4 35.052,4 L12.948,4 Z M43,45 L5,45 C3.346,45 2,43.65 2,42 L2,14.71 C2,14.02 2.241,13.35 2.678,12.81 L10.626,3.1 C11.199,2.4 12.045,2 12.948,2 L35.052,2 C35.955,2 36.801,2.4 37.374,3.1 L45.322,12.81 C45.759,13.35 46,14.02 46,14.71 L46,42 C46,43.65 44.654,45 43,45 L43,45 Z" id="Fill-123" fill="#540D6E"></path>
+                            <path d="M45,16 L3,16 C2.448,16 2,15.55 2,15 C2,14.45 2.448,14 3,14 L45,14 C45.552,14 46,14.45 46,15 C46,15.55 45.552,16 45,16" id="Fill-124" fill="#540D6E"></path>
+                            <path d="M24,15 C23.448,15 23,14.55 23,14 L23,3 C23,2.45 23.448,2 24,2 C24.552,2 25,2.45 25,3 L25,14 C25,14.55 24.552,15 24,15" id="Fill-125" fill="#540D6E"></path>
+                            <g id="Group-130" transform="translate(7.000000, 32.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-127"></g>
+                                <path d="M16,6 L32,6 L32,2 L16,2 L16,6 Z M14,8 L34,8 L34,0 L14,0 L14,8 Z" id="Fill-126" fill="#540D6E" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
