@@ -8,14 +8,6 @@ import Footer from '../components/footer';
 
 const Layout = ({ children, data }) => (
   <div>
-    {/* <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: data.site.siteMetadata.description },
-        { name: 'keywords', content: data.site.siteMetadata.keywords },
-      ]}
-     
-    /> */}
     <Header />
     {children}
       <Footer data={data}>
@@ -24,7 +16,7 @@ const Layout = ({ children, data }) => (
       <br />
       Assembled with Philz and React in 2020
       </Footer> 
-    </div>
+  </div>
 )
 
 Layout.propTypes = {

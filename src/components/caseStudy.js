@@ -55,11 +55,14 @@ const SectionTitle = styled.h3`
 `
 
 const CardCarousel = styled.div` 
-  position: relative;
-  top: 200px;
-  margin-left: auto;
-  width: 62%;
-  border-radius: 8px;
+    .slick-slide {
+        margin-right: 20px; 
+    }
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    width: 62%;
+    border-radius: 8px;
 `
 
 const ArrowButton = () => {
@@ -86,7 +89,9 @@ const caseStudy = props => {
         infinite: false,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        className: "slider variable-width",
+        variableWidth: true
       };
 
     return (

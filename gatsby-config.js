@@ -7,6 +7,13 @@ module.exports = {
   plugins: ['gatsby-plugin-react-helmet',
   `gatsby-plugin-sass`,
   'gatsby-plugin-scss-typescript',
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `pages`,
+      path: `${__dirname}/src/pages`
+    }
+  },
     {
       resolve: 'gatsby-source-contentful',
       options: {
