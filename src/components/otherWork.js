@@ -6,12 +6,14 @@ import emojis from '../images/ic_other_emoj.svg'
 import icons from '../images/ic_other_icons.svg'
 import illustrations from '../images/ic_other_illus.svg'
 import pack from '../images/ic_other_pack.svg'
+import arrow from '../images/ic_arrow.svg'
 import { sizes } from "../layouts/Layout"
 import { Link } from 'gatsby'
 
 const Container = styled.div`
-  margin: 44px 0px;
+  margin: 44px 44px;
   padding: 44px 0px;
+  border-radius: 20px;
   background-color: #f8f8f8;
   @media (max-width: ${sizes.mobileL}) and (min-width: ${sizes.mobileS}) {    
     padding: 32px 1rem 0;
@@ -47,16 +49,6 @@ const Content = styled.div`
     }
 `
 
-const Items = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: relative;
-    @media (max-width: 768px) {
-        width: 100%;
-        margin: 0px;
-    }
-`
 
 const ItemContainer = styled.div`
     width: 349px;    
@@ -68,7 +60,13 @@ const ItemContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;        
+    flex-direction: column;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    &:hover {
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 5px 10px rgba(0,0,0, 0.25);
+    } 
+           
     @media (max-width: 768px) {
         margin: 0px;
         width: 100%;        
@@ -76,27 +74,21 @@ const ItemContainer = styled.div`
 `
 
 const ImgIcon = styled.img`
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     margin-bottom: 16px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
 `
 
 const ItemTitle = styled.div`
     object-fit: contain;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.6;
     letter-spacing: normal;
-    color: #333333;
+    color: #000000;
     margin-bottom: 16px;
 `
 
@@ -108,13 +100,16 @@ const ItemView = styled.div`
     font-style: normal;
     line-height: 1.54;
     letter-spacing: -0.1px;
-    color: #1a1a1a;
+    color: #000000;
     margin-top: 16px;
 `
-
-const ItemContent = styled.div`
-    
+const ItemArrow = styled.img`
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
 `
+
 
 const HorizontalLine = styled.div`
     width: 80px;
@@ -146,7 +141,7 @@ const Item = ({icon, title, url}) => {
                 <ImgIcon src={icon} />
                 <ItemTitle>{title}</ItemTitle>
                 <HorizontalLine />
-                <ItemView>View ➡️</ItemView>
+                <ItemView>View <ItemArrow src={arrow} /></ItemView>
             </ItemContainer>
         </LinkContainer>
     )

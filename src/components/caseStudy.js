@@ -112,8 +112,8 @@ const caseStudy = props => {
                         url="blank"
                     />
                     <Card
-                        title="Designing a mobile giving experience for all"
-                        text="PayPal" 
+                        title="Measurement tools built for all skill levels"
+                        text="tCheck" 
                         link="Learn More" 
                         url="blank"
                     />

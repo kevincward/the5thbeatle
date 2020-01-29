@@ -13,7 +13,7 @@
 }
 
 .Card:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.01, 1.01);
     box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
 }
 
