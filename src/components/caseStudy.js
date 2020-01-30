@@ -109,7 +109,7 @@ const caseStudy = props => {
                         title="Designing a mobile giving experience for all"
                         text="PayPal" 
                         link="Learn More"
-                        url="blank"
+                        url="project1"
                     />
                     <Card
                         title="Measurement tools built for all skill levels"

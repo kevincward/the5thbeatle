@@ -28,8 +28,7 @@ const IndexPage = () => (
       
       <Experience />
       <Skills />
-      <OtherWork />
-    
+      <OtherWork />      
 
       
 
