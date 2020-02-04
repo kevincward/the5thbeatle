@@ -1,30 +1,40 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H15C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30H0V0Z" fill="url(#paint0_linear)"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H15C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30H0V0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0C8.28427 0 15 6.71573 15 15C15 23.2843 8.28427 30 0 30V0Z" transform="translate(15.1499)" fill="white"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15L15 0C18.7603 0 22.1974 1.38364 24.83 3.66956C24.8294 3.675 13.5 15 13.5 15C13.5 15 24.83 26.325 24.8294 26.3309C22.1969 28.6165 18.76 30 15 30L0 15Z" fill="url(#paint1_linear)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3303 0C14.4974 2.7502 16.5 6.80631 16.5 11.3302C16.5 15.8543 14.4971 19.9106 11.3297 22.6608C11.3303 22.6552 0 11.3302 0 11.3302L11.3303 0Z" transform="translate(13.5 3.66983)" fill="url(#paint2_linear)"/>
-<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="13" y="3" width="17" height="24">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3303 0C14.4974 2.7502 16.5 6.80631 16.5 11.3302C16.5 15.8543 14.4971 19.9106 11.3297 22.6608C11.3303 22.6552 0 11.3302 0 11.3302L11.3303 0Z" transform="translate(13.5 3.66983)" fill="white"/>
-</mask>
-<g mask="url(#mask1)">
-</g>
-<defs>
-<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(43.0633) rotate(44.7178)">
-<stop stop-color="#5334F5"/>
-<stop offset="1" stop-color="#7B42F6"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 15) scale(30.0674 36.3279)">
-<stop stop-color="#4899F7"/>
-<stop offset="1" stop-color="#2457F5"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(21.6163 29.6874) rotate(35.5674)">
-<stop stop-color="#9DE1E5"/>
-<stop offset="1" stop-color="#B8DFB2"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="278px" viewBox="0 0 278 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="278" height="278" rx="35"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle" fill="#3BCEAC" xlink:href="#path-1"></use>
+        <rect id="Rectangle" fill="#FFD23E" mask="url(#mask-2)" x="0" y="-10" width="139" height="298"></rect>
+        <g id="Group-4" mask="url(#mask-2)">
+            <g transform="translate(74.000000, 22.000000)">
+                <g id="Group-2-Copy" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(22.000000, 144.377846)">
+                    <path d="M3.17525773,37.185567 L42.185567,54.8762887 C43.395189,59.4123711 44,69.8453608 44,86.1752577 C30.0893471,81.9415808 21.1683849,78.9175258 17.2371134,77.1030928 C13.3058419,75.2886598 8.6185567,72.1134021 3.17525773,67.5773196 L3.17525773,37.185567 Z" id="Path-2" fill="#EF4266"></path>
+                    <path d="M39.4639175,84.814433 C31.3247263,83.5956895 20.5806169,79.3612846 4.74846588,69.6280949 C3.54020484,68.8852902 2.80406253,67.5686014 2.80406253,66.1502737 C2.80406253,56.8619854 2.80406253,49.1525098 2.80406253,43.021847" id="Path" stroke="#0FAD69" stroke-width="5.89690722" transform="translate(21.133990, 63.918140) rotate(-180.000000) translate(-21.133990, -63.918140) "></path>
+                    <path d="M46.7216495,37.185567 L85.7319588,54.8762887 C86.9415808,59.4123711 87.5463918,69.8453608 87.5463918,86.1752577 C73.6357388,81.9415808 64.7147766,78.9175258 60.7835052,77.1030928 C56.8522337,75.2886598 52.1649485,72.1134021 46.7216495,67.5773196 L46.7216495,37.185567 Z" id="Path-2" fill="#EF4266" transform="translate(67.134021, 61.680412) scale(-1, 1) translate(-67.134021, -61.680412) "></path>
+                    <path d="M85.2783505,84.814433 C77.1391593,83.5956895 66.3950499,79.3612846 50.5628989,69.6280949 C49.3546378,68.8852902 48.6184955,67.5686014 48.6184955,66.1502737 C48.6184955,56.8619854 48.6184955,49.1525098 48.6184955,43.021847" id="Path" stroke="#0FAD69" stroke-width="5.89690722" transform="translate(66.948423, 63.918140) scale(-1, 1) rotate(-180.000000) translate(-66.948423, -63.918140) "></path>
+                    <g id="Group" stroke="#000000" stroke-width="7">
+                        <path d="M88,0 C88,15.0159392 88,37.539848 88,67.5717264 C88,68.9900528 87.2638567,70.3067404 86.0555978,71.0495461 C66.701743,82.9477869 52.6832104,88.8969072 44,88.8969072 C35.3167881,88.8969072 21.298252,82.9477848 1.94439191,71.0495398 C0.736140215,70.3067276 0,68.9900425 0,67.5717188 L0,3.16494845" id="Path"></path>
+                        <path d="M44,86.0987313 C35.3167898,86.0987313 21.2982576,80.1496112 1.94440335,68.251371 C0.736142313,67.5085663 0,66.1918775 0,64.7735498 C0,52.5122241 0,43.3162299 0,37.185567" id="Path" transform="translate(22.000000, 61.642149) rotate(-180.000000) translate(-22.000000, -61.642149) "></path>
+                        <path d="M88,86.0987313 C79.3167898,86.0987313 65.2982576,80.1496112 45.9444033,68.251371 C44.7361423,67.5085663 44,66.1918775 44,64.7735498 C44,52.5122241 44,43.3162299 44,37.185567" id="Path" transform="translate(66.000000, 61.642149) scale(-1, 1) rotate(-180.000000) translate(-66.000000, -61.642149) "></path>
+                    </g>
+                </g>
+                <path d="M123,81.377846 C143,18.377846 113,21.377846 111,18.377846 C109.666667,16.377846 108.333333,14.7111793 107,13.377846 C69,-17.622154 13,15.377846 19,12.377846 C23,10.377846 25.6666667,10.7111793 27,13.377846 C3.66666667,26.7111793 -3,49.377846 7,81.377846 C2.33333333,79.377846 -1.56319402e-13,84.377846 -1.56319402e-13,96.377846 C-1.56319402e-13,108.377846 5,116.044513 15,119.377846 L15,131.587558 C14.9999967,133.493652 15.4191516,135.376428 16.2277672,137.102503 C24.8759702,155.563005 37.4667144,167.654786 54,173.377846 L67,173.377846" id="Path-6" stroke="#000000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M70,81.8044302 C65.3333333,79.8137038 63,84.7905198 63,96.7348784 C63,108.679237 68,116.310355 78,119.628232 L78,131.755712 C78.0000007,133.670836 78.4231352,135.562305 79.2391501,137.294881 C87.8870168,155.656166 100.473967,167.683821 117,173.377846 L130,173.377846" id="Path-6" stroke="#000000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" transform="translate(96.500000, 127.377846) scale(-1, 1) translate(-96.500000, -127.377846) "></path>
+                <g id="Group-3" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(22.000000, 73.000000)">
+                    <circle id="Oval-Copy" stroke="#000000" stroke-width="7" cx="68" cy="20" r="16.5"></circle>
+                    <path d="M51.5714984,14.4828962 C49.2360612,13.5269578 46.6795694,13 44,13 C41.450333,13 39.0120994,13.4771036 36.7697067,14.3469036" id="Path" stroke="#000000" stroke-width="7"></path>
+                    <circle id="Oval-Copy" stroke="#000000" stroke-width="7" cx="20" cy="20" r="16.5"></circle>
+                </g>
+                <path d="M7,81 C11.6666667,56.3333333 24.6666667,41.6666667 46,37 C78,30 89,58 110,20" id="Path-9" stroke="#000000" stroke-width="7"></path>
+                <path d="M96,38 C94.6666667,46 98,52.3333333 106,57 C114,61.6666667 119.666667,69.6666667 123,81" id="Path-10" stroke="#000000" stroke-width="7"></path>
+            </g>
+        </g>
+    </g>
 </svg>

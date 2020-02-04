@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { animateScroll as scroll } from "react-scroll"
 import './Card.css'
+import arrow from '../images/ic_arrow_b.svg'
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 60px auto 120px;
+    padding: 32px;
     @media (max-width: 768px) {
         margin: 60px auto 0px;
     }
@@ -15,8 +17,9 @@ const Container = styled.div`
 const Content = styled.div`
     height: 474px;
     width: auto;
+    border-radius: 10px;
     background-color: #f8f8f8;
-    padding: 32px;
+    padding: 64px ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +53,7 @@ const OverViewContent = styled.div`
 
 const Title = styled.div`
     font-family: Inter;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -66,12 +69,12 @@ const Title = styled.div`
 const Description = styled.div`
     font-family: Inter;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    color: #595959;    
+    color: rgba(0,0,0,0.7);   
 ` 
 
 const RoleContainer = styled.div`
@@ -100,6 +103,12 @@ const RoleTitle = styled.div`
     letter-spacing: -0.5px;
     color: #000000;
 ` 
+const ItemArrow = styled.img`
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+`
 
 const HorizontalBar = styled.div`
     width: 80px;    
@@ -164,16 +173,16 @@ const ExpTitle = styled.div`
 const ExpDescription = styled.div`
     font-family: Inter;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    color: #595959;
+    color: rgba(0, 0, 0, 0.7);
 `
 const SkipLink = styled.a`
     font-family: Inter;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -245,10 +254,10 @@ const OverView = props => (
                 </ExpDescription>
                 <SkipLink onClick={() => {
                     scroll.scrollTo(
-                        document.getElementById("quotes").offsetTop - 100
+                        document.getElementById("Solution").offsetTop - 100
                       )
                 }}>
-                    Skip process and see where we landed
+                    Skip process and see where we landed <ItemArrow src={arrow} />
                 </SkipLink>
             </Experience>
         </Content>

@@ -13,12 +13,19 @@ module.exports = {
       path: `${__dirname}/src/pages`
     }
   },
-    {
-      resolve: 'gatsby-source-contentful',
+  {
+    resolve: `gatsby-plugin-manifest`,
       options: {
-        spaceId: '9r5wb4ks9ke1',
-        accessToken: 'NeW57uYN2_pIpcXFiafS38TQNWVDRa0odpHGFHGyJDM'
-      } 
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/logo.svg`,
     }
+  },
+    
+ 
   ],
 }

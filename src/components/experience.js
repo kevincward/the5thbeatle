@@ -79,7 +79,7 @@ const ImgIcon = styled.img`
     width: 32px;
     height: 32px;
     margin-top: 12px;
-    margin-right: 12px;
+    margin-right: 18px;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     &:hover {
         transform: scale(1.3, 1.3);

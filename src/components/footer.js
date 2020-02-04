@@ -11,10 +11,11 @@ const Container = styled.div`
 `
 
 const FooterGroup = styled.div`
-    background: #3BCEAC;
+    background: #540D6E;
     padding: 50px 0;
     display: grid;
     grid-gap: 20px;
+    justify-items: center;
     animation: HeroAnimation;
     animation-duration: 3s;
     animation-delay: 0.1s;
@@ -23,24 +24,34 @@ const FooterGroup = styled.div`
 `
 
 const Title = styled.p`
-    margin: 0;
-    color: #000000;
     font-family: Inter;
-    -webkit-font-smoothing: antialiased;
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #FFFFFF;
     text-align: center;
     animation: HeroAnimation;
     animation-duration: 3s;
     animation-delay: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    @media (max-width: 500px) {
+        max-width: 350px;
+    };
 `
 
 const Text = styled.p`
-    color: #000000;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -52,13 +63,22 @@ const Text = styled.p`
 
 
 const Copyright = styled.div`
-    color: #000000;
+    color: #FFFFFF;
     font-family: Inter;
     font-size: 12px;
     max-width: 540px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
+
+`
+
+const Link = styled.a`
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 800;
+    line-height:1.5;
 `
 const SocialsContainer = styled.div`
 	display: flex;
@@ -88,7 +108,7 @@ const Footer = ({data, children}) => (
         Thanks for scrolling all the way to the bottom. Want to work together or to say hello, hello?
         <br />
         <br />
-        <a href="mailto:webmaster@example.com">Email address</a>
+        <Link href="mailto:webmaster@example.com">Email address</Link>
         </Text>
         
         <SocialsContainer>

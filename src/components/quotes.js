@@ -4,10 +4,10 @@ import shape from '../images/shape.png'
 
 const Container = styled.div`
     display: flex;
+    margin: 80px 90px;
     flex-direction: column;
-    margin: 60px 32px;
     @media (max-width: 768px) {
-        margin: 32px 16px;
+        margin: 60px 24px;
     }
 `
 
@@ -32,15 +32,15 @@ const Title = styled.div`
 `
 
 const Img = styled.img`
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     margin-right: 11px;
 `
 
 const Description = styled.div`
     font-family: Inter;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
@@ -82,12 +82,11 @@ const CommentContent = styled.div`
 
 const CommentName = styled.div`
     font-family: Inter;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 14px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.38;
-    letter-spacing: -0.11px;
+    line-height: 1.5;
     color: rgba(0, 0, 0, 0.7); 
 `
 
@@ -114,13 +113,13 @@ const Quotes = props => (
         </Description>
         <Comments>
             <Comment 
-                text="I really don’t have to donate, so why do they make the donation [process] so hard?"
-                name="Michelle"
+                text="''I really don’t have to donate, so why do they make the donation [process] so hard?''"
+                name="Michelle S."
                 role="Participant"
             />
             <Comment 
-                text="I keep asking myself is this a real charity and what will they do with the money? My donate app would tell you right away."
-                name="George"
+                text="''I keep asking myself is this a real charity and what will they do with the money? My donate app would tell you right away.''"
+                name="George P."
                 role="Participant"
             />
         </Comments>

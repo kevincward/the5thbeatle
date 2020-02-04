@@ -13,14 +13,14 @@ body {
 
 a {
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .Hero {
   background: #ffffff;
-  height: 520px;
-  background: url('../images/hero_backgd.svg');
+  height: 680px;
+  background: url('../images/newtestbk.svg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -64,8 +64,8 @@ a {
 .Hero a {
   color: #540D6E;
   font-family: Inter;
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   line-height:1.5;
   animation: HeroAnimation;
   animation-duration: 3s;
@@ -80,6 +80,10 @@ a {
 }
 
 @media (max-width: 640px) {
+  .Hero {
+    background: white;
+  }
+  
   .HeroGroup {
     padding: 100px 20px;
   }

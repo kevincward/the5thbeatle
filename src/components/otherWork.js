@@ -7,15 +7,15 @@ import icons from '../images/ic_other_icons.svg'
 import illustrations from '../images/ic_other_illus.svg'
 import pack from '../images/ic_other_pack.svg'
 import arrow from '../images/ic_arrow.svg'
-import { sizes } from "../layouts/Layout"
 import { Link } from 'gatsby'
 
 const Container = styled.div`
   margin: 44px 44px;
   padding: 44px 0px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #f8f8f8;
-  @media (max-width: ${sizes.mobileL}) and (min-width: ${sizes.mobileS}) {    
+  @media (max-width: 768px) {    
+    margin: 40px 20px;
     padding: 32px 1rem 0;
   }
 `
@@ -169,19 +169,19 @@ const otherWork = props => {
                     <Item 
                         icon={icons}
                         title="Icons"
-                        url="blank"
+                        url="/project_icons"
                     />
                     <Item 
                         icon={illustrations}
                         title="Illustrations"
-                        url="blank"
+                        url="/project_illustrations"
                     />
                 </Row>
                 <Row>
                     <Item 
                         icon={emojis}
-                        title="Emojis"
-                        url="blank"
+                        title="Emoji"
+                        url="/project_emoji"
                     />
                     <Item 
                         icon={pack}

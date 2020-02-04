@@ -9,7 +9,6 @@ import Slider from "react-slick";
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
-
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
@@ -19,7 +18,7 @@ const SectionGroup = styled.div `
 
 const Colorblock = styled.div`
     background: #540D6E;
-    height: 200px;
+    height: 150px;
     padding-top: 200px;
     padding: 3.5rem 5rem 3rem;
     align-items: center;
@@ -28,7 +27,6 @@ const Colorblock = styled.div`
 
 const SectionTitleGroup = styled.div`
     margin: 0 40px;
-
     @media (max-width: 720px) {
         margin: 0 10px;
     }
@@ -64,7 +62,6 @@ const CardCarousel = styled.div`
     .slick-track {
         display: flex;
     }
-
     position: relative;
     top: 200px;
     margin-left: auto;
