@@ -7,7 +7,8 @@ import './Card.css'
 const Container = styled.div`
     display: flex;
     align-items: center;
-    background-image: url(${background});
+    background: url(${background}) no-repeat;
+    background-position-x: 70px;
     padding-left: 20%;
 ` 
 
