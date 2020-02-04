@@ -20,14 +20,13 @@ const Container = styled.div`
 ` 
 
 const Content = styled.div`
-    height: 440px;    
+    height: 440px;
     display: flex;
     justify-content: center;
-    flex-direction: column;        
-    @media (max-width: 768px) {        
+    flex-direction: column;
+    @media (max-width: 768px) {
         justify-content: left;
-    }
-    
+    }    
 ` 
 
 const Img = styled.img`

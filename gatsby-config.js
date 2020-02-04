@@ -12,20 +12,6 @@ module.exports = {
       name: `pages`,
       path: `${__dirname}/src/pages`
     }
-  },
-  {
-    resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/images/logo.svg`,
-    }
-  },
-    
- 
+  }    
   ],
 }
