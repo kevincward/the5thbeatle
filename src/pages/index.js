@@ -6,8 +6,6 @@ import Experience from '../components/experience'
 import Skills from '../components/skills'
 import OtherWork from '../components/otherWork'
 
-import { sizes } from "../layouts/Layout"
-
 
 const IndexPage = () => (
   <Layout>
@@ -29,29 +27,6 @@ const IndexPage = () => (
       <Experience />
       <Skills />
       <OtherWork />      
-
-      
-
-      
-
-    
-      
-    {/*
-      <div className='Cards'>
-        <h2>Case Studies</h2>
-        <div className="CardGroup">
-          <Card
-          title="React for Designers"
-          text="12 sections"  />
-          <Card
-          title="React for Designers"
-          text="12 sections"  />
-          <Card
-          title="React for Designers"
-          text="12 sections"  />
-        </div>  
-      </div>
-      */}
 
     
 

@@ -29,6 +29,7 @@ const Title = styled.div`
     width: 50%;
     text-align: left;
     margin-left: 80px;
+    width: 450px;
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -146,7 +147,7 @@ const Skills = props => {
             <Content>                
                 {window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
-                        My experiences have made me good at
+                        My experiences have made me {"\n"} good at
                         these
                     </Title>
                 : null}
@@ -179,8 +180,7 @@ const Skills = props => {
                 </Items>
                 {!window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
-                        My experiences have made me good at
-                        these
+                        My experiences have made me good at these
                     </Title>
                 : null}
             </Content>

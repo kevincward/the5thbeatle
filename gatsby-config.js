@@ -12,13 +12,6 @@ module.exports = {
       name: `pages`,
       path: `${__dirname}/src/pages`
     }
-  },
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: '9r5wb4ks9ke1',
-        accessToken: 'NeW57uYN2_pIpcXFiafS38TQNWVDRa0odpHGFHGyJDM'
-      } 
-    }
+  }    
   ],
 }

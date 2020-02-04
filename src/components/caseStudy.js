@@ -5,11 +5,11 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import "./arrowBtn.scss"
 
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
-
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
@@ -19,7 +19,7 @@ const SectionGroup = styled.div `
 
 const Colorblock = styled.div`
     background: #540D6E;
-    height: 200px;
+    height: 150px;
     padding-top: 200px;
     padding: 3.5rem 5rem 3rem;
     align-items: center;
@@ -28,7 +28,6 @@ const Colorblock = styled.div`
 
 const SectionTitleGroup = styled.div`
     margin: 0 40px;
-
     @media (max-width: 720px) {
         margin: 0 10px;
     }
@@ -58,13 +57,16 @@ const CardCarousel = styled.div`
     .slick-slide {
         margin-right: 20px; 
     }
-    .slick-list {
-        overflow: visible;
-    }
     .slick-track {
         display: flex;
     }
-
+    .slick-list {
+        overflow: hidden !important;
+      }
+      
+    .slick-prev {
+        display: none !important;
+    }
     position: relative;
     top: 200px;
     margin-left: auto;
@@ -72,25 +74,52 @@ const CardCarousel = styled.div`
     border-radius: 8px;
 `
 
-const ArrowButton = () => {
+const ArrowButton = ({next}) => {
     return (
-        <section class="centered-container">
-            <a class="link link--arrowed" href="#">                
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <g fill="none" stroke="#2175FF" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                        <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12">
-                        </circle>
-                        <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
-                        </path>
-                    </g>
-                </svg>
-            </a>
-        </section>
+        <button class="learn-more" onClick={() => next()}>
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Next</span>
+        </button>
     )
 }
+var slider;
 
-const caseStudy = props => {
+const next = () => {    
+    slider.slickNext();
+}
+const previous = () => {
+    slider.slickPrev();
+}
 
+const cards = [
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "project1"
+    },
+    {
+        title: "Measurement tools built for all skill levels",
+        text: "tCheck",
+        link: "Learn More",
+        url: "blank"
+    },
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "blank"
+    },
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "blank"
+    }
+]
+const caseStudy = props => {    
     const settings = {
         dots: false,
         infinite: false,
@@ -104,34 +133,24 @@ const caseStudy = props => {
     return (
         <SectionGroup>
             <CardCarousel>                
-                <Slider {...settings}>
-                    <Card
-                        title="Designing a mobile giving experience for all"
-                        text="PayPal" 
-                        link="Learn More"
-                        url="project1"
-                    />
-                    <Card
-                        title="Measurement tools built for all skill levels"
-                        text="tCheck" 
-                        link="Learn More" 
-                        url="blank"
-                    />
-                    <Card
-                        title="Designing a mobile giving experience for all"
-                        text="PayPal" 
-                        link="Learn More" 
-                        url="blank"
-                    />
-                    <Card
-                        title="Designing a mobile giving experience for all"
-                        text="PayPal" 
-                        link="Learn More" 
-                        url="blank"
-                    />
+                <Slider 
+                    {...settings} 
+                    ref={c => (slider = c)}
+                >
+                    {cards.map((card) => 
+                        <Card
+                            title={card.title}
+                            text={card.text}
+                            link={card.link}
+                            url={card.url}
+                        />
+                    )}
                 </Slider>
             </CardCarousel>
-            {/* <ArrowButton /> */}
+            <ArrowButton 
+
+                next={() => next()}
+            />
             <Colorblock>
                 <SectionTitleGroup>
                     <SectionTitle>{props.title}</SectionTitle>

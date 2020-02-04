@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import './header.css'
 import logo from '../images/logo.svg'
 
-import { maxWidth, sizes } from "../layouts/Layout"
-
 
 class Header extends React.Component {
   constructor(props) {
@@ -34,7 +32,7 @@ class Header extends React.Component {
       <div className={this.state.hasScrolled ?
         'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <Link to="/"><img src={logo} width="30" /></Link>
+          <Link to="/"><img src={logo} width="40" /></Link>
           <Link to="/about">About</Link>
           <a href="https://drive.google.com/file/d/18i66J7t1LTAruuSBzTdcmrMyLpCbIPSk/view?usp=sharing" target='blank'>Resume</a>
           <a href="mailto:webmaster@example.com"><button>Contact me</button></a>
