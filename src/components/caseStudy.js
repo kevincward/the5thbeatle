@@ -74,7 +74,7 @@ const CardCarousel = styled.div`
     border-radius: 8px;
 `
 
-const ArrowButton = ({next}) => {
+const NextArrowButton = ({next}) => {
     return (
         <button class="learn-more" onClick={() => next()}>
             <span class="circle" aria-hidden="true">
@@ -89,11 +89,32 @@ var slider;
 const next = () => {    
     slider.slickNext();
 }
-const previous = () => {
-    slider.slickPrev();
-}
 
 const cards = [
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "project1"
+    },
+    {
+        title: "Measurement tools built for all skill levels",
+        text: "tCheck",
+        link: "Learn More",
+        url: "blank"
+    },
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "blank"
+    },
+    {
+        title: "Designing a mobile giving experience for all",
+        text: "PayPal",
+        link: "Learn More",
+        url: "blank"
+    },
     {
         title: "Designing a mobile giving experience for all",
         text: "PayPal",
@@ -122,7 +143,7 @@ const cards = [
 const caseStudy = props => {    
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -147,8 +168,7 @@ const caseStudy = props => {
                     )}
                 </Slider>
             </CardCarousel>
-            <ArrowButton 
-
+            <NextArrowButton 
                 next={() => next()}
             />
             <Colorblock>

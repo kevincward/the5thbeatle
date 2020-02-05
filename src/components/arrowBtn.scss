@@ -77,6 +77,9 @@ $black: #282936;
       text-transform: uppercase;
     }
   }
+  .button-text {
+    opacity: 0;
+  }
   &:hover {
     .circle {
       width: 100%;
@@ -88,6 +91,7 @@ $black: #282936;
       }
     }
     .button-text {
+        opacity: 1;
       color: $white;
     }
   }
