@@ -9,6 +9,7 @@
     grid-template-rows: 1fr 1fr;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     background: #ffffff;
+    
     margin: 0 auto;
 }
 

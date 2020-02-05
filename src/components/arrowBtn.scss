@@ -2,7 +2,7 @@
 
 $bg: #f3f8fa;
 $white: #fff;
-$black: #282936;
+$black: #FFD23E;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -23,7 +23,7 @@ $black: #282936;
   font-size: inherit;
   font-family: inherit;
   &.learn-more {
-    width: 12rem;
+    width: 10rem;
     height: auto;
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
@@ -68,13 +68,14 @@ $black: #282936;
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 0.75rem 0;
-      margin: 0 0 0 1.85rem;
+      padding: 0.6rem 0;
+      margin: 0 0 0 1rem;
       color: $black;
+      font-family: Inter;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
-      text-transform: uppercase;
+      vertical-align: middle;
     }
   }
   .button-text {

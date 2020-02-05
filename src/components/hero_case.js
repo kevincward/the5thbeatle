@@ -4,23 +4,21 @@ import './Card.css'
 
 const Background = styled.div`
     background: url(${({ heroImgURL }) => heroImgURL});
-    height: 28rem;
+    height: 29rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    @media (max-width: 768px) {        
-        height: 24rem;
-    }
+    background-position: center;
+    position: relative;
 `
 
 const Container = styled.div`
     display: flex;
     align-items: center;
-    padding-left: 20%;
+    padding-left: 20%; 
 ` 
 
 const Content = styled.div`
-    height: 440px;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;

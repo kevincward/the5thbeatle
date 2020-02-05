@@ -7,10 +7,10 @@ import arrow from '../images/ic_arrow_b.svg'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 60px auto 120px;
+    margin: 5px auto 120px;
     padding: 32px;
     @media (max-width: 768px) {
-        margin: 60px auto 0px;
+        margin: 5px auto 0px;
     }
 ` 
 

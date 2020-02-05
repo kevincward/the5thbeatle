@@ -95,39 +95,21 @@ const cards = [
         title: "Designing a mobile giving experience for all",
         text: "PayPal",
         link: "Learn More",
-        url: "project1"
+        url: "/project1"
     },
     {
         title: "Measurement tools built for all skill levels",
         text: "tCheck",
         link: "Learn More",
-        url: "blank"
+        url: "/project2"
     },
     {
-        title: "Designing a mobile giving experience for all",
+        title: "Designing a mobilCare giving experience for all",
         text: "PayPal",
         link: "Learn More",
-        url: "blank"
+        url: "/project3"
     },
-    {
-        title: "Designing a mobile giving experience for all",
-        text: "PayPal",
-        link: "Learn More",
-        url: "project1"
-    },
-    {
-        title: "Measurement tools built for all skill levels",
-        text: "tCheck",
-        link: "Learn More",
-        url: "blank"
-    },
-    {
-        title: "Designing a mobile giving experience for all",
-        text: "PayPal",
-        link: "Learn More",
-        url: "blank"
-    },
-    
+  
 ]
 const caseStudy = props => {    
     const settings = {

@@ -1,0 +1,268 @@
+import React from 'react'
+import styled from 'styled-components'
+import { animateScroll as scroll } from "react-scroll"
+import './Card.css'
+import arrow from '../images/ic_arrow_b.svg'
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto 120px;
+    padding: 32px;
+    @media (max-width: 768px) {
+        margin: 60px auto 0px;
+    }
+` 
+
+const Content = styled.div`
+    height: 474px;
+    width: auto;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    padding: 64px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 768px) {
+        padding: 32px 23px;
+        width: auto;
+        margin-bottom: 300px;
+    }
+` 
+
+const OverViewContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;        
+    }
+` 
+
+const OverViewContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 60px;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+` 
+
+const Title = styled.div`
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -0.47px;
+    color: #000000;
+    margin-bottom: 12px;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+` 
+
+const Description = styled.div`
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    color: rgba(0,0,0,0.7);   
+` 
+
+const RoleContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    @media (max-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+` 
+
+const RoleContent = styled.div`
+    display: flex;
+    flex-direction: column;    
+` 
+
+const RoleTitle = styled.div`
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    color: #000000;
+` 
+const ItemArrow = styled.img`
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+`
+
+const HorizontalBar = styled.div`
+    width: 80px;    
+    border: solid 1px #f7991e;
+    margin: 10px 0px;
+` 
+
+const Br = styled.div`
+    width: 100%;
+    height: 20px;
+` 
+
+
+const RoleDescription = styled.div`
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: -0.09px;
+    color: rgba(0, 0, 0, 0.7);
+` 
+
+const Experience = styled.div`
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-top: 60px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+        margin-top: 0px;
+        padding: 24px 16px;
+    }
+` 
+
+
+const ExpTitle = styled.div`
+    width: 800px;
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 32px;
+    @media (max-width: 768px) {
+        width: auto;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+` 
+
+const ExpDescription = styled.div`
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    color: rgba(0, 0, 0, 0.7);
+`
+const SkipLink = styled.a`
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #3bceac;
+    cursor: pointer;
+    margin-top: 24px;
+    @media (max-width: 768px) {
+        margin-top: 16px;
+    }
+`
+
+const Role = ({title, description}) => {
+    return (
+        <RoleContent>
+            <RoleTitle>{title}</RoleTitle>
+            <HorizontalBar />
+            <RoleDescription>{description}</RoleDescription>
+        </RoleContent>
+    )
+}
+
+const OverView = props => (
+    <Container>
+        <Content>
+            <OverViewContainer>
+                <OverViewContent>
+                    <Title>Overview</Title>
+                    <Description>
+                    With the PayPal donate feature live, the native donate team (a product manager, two developers, 
+                    and myself) looked to improve on the experience. We wanted more users to discover the ability 
+                    to donate with PayPal in the app, and encourage PayPal users to donate more often.
+                    <p>
+                    I designed the product enhancements after conducting research with my PM and working with our 
+                    native developers on technical limitations. My designs followed the patterns created by PayPal’s 
+                    app team.</p>  
+                    </Description>
+                </OverViewContent>
+                <RoleContainer>
+                    <Role 
+                        title="Role"
+                        description={
+                            <div>
+                                UX research
+                                <Br /> 
+                                UX/UI design
+                                <Br /> 
+                                Interactive prototyping
+                                <Br /> 
+                            </div>}
+                    />
+                    <Role 
+                        title="Timeline"
+                        description={
+                            <div>
+                                8 months
+                            </div>}
+                    />
+                </RoleContainer>
+            </OverViewContainer>
+            <Experience>
+                <ExpTitle>
+                    How to promote feature discovery and design triggers to increase the number of donations?
+                </ExpTitle>
+                <ExpDescription>
+                    How do we help new users discover the PayPal app donate feature? How do we remind current 
+                    donors using PayPal to donate? How do we encourage donating without being annoying?
+                </ExpDescription>
+                <SkipLink onClick={() => {
+                    scroll.scrollTo(
+                        document.getElementById("Solution").offsetTop - 100
+                      )
+                }}>
+                    Skip process and see where we landed <ItemArrow src={arrow} />
+                </SkipLink>
+            </Experience>
+        </Content>
+    </Container>
+)
+
+export default OverView

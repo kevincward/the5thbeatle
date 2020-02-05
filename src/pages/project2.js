@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Hero from '../components/hero_case'
 import SolutionBkgd from '../images/solution_donate.jpg'
-import OverView from '../components/overView1'
+import OverView from '../components/overView2'
 import Quotes from '../components/quotes'
 import Layout from '../layouts'
 import ResearchPlan from '../components/researchplan'
@@ -17,8 +17,8 @@ import NextSteps from '../components/nextsteps'
 import ProjectLearnings from '../components/projectlearnings'
 import Solutions from '../components/solution';
 import Features from '../components/features_donate'
-import DonateBkgd from '../images/hero_backgd_cs1.svg'
-import HeroIcon from '../images/ic_timeline_pp.svg'
+import DonateBkgd from '../images/hero_backgd_cs2.svg'
+import HeroIcon from '../images/ic_timeline_tch.svg'
 
 const Container = styled.div`
     display: flex;
@@ -80,7 +80,8 @@ const Project1 = () => {
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
         : null} */}
-        <Content>  
+        <Content>
+          
           <OverView />
           <ResearchPlan />
           <Quotes />
