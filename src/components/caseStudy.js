@@ -63,10 +63,17 @@ const CardCarousel = styled.div`
     .slick-track {
         display: flex;
     }
+    
     .slick-list {
-        overflow: hidden !important;
-      }
-      
+        overflow: hidden;
+    }
+    
+    @media (max-width: 640px) {
+        .slick-list {
+            overflow: visible;
+        }
+    }
+
     .slick-prev {
         display: none !important;
     }

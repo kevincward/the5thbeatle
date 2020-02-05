@@ -25,8 +25,7 @@ $black: #FFD23E;
   &.learn-more {
     width: 10rem;
     height: auto;
-    .circle {
-      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+    .circle {      
       position: relative;
       display: block;
       margin: 0;
@@ -34,8 +33,7 @@ $black: #FFD23E;
       height: 3rem;
       background: $black;
       border-radius: 1.625rem;
-      .icon {
-        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      .icon {         
         position: absolute;
         top: 0;
         bottom: 0;
@@ -81,19 +79,22 @@ $black: #FFD23E;
   .button-text {
     opacity: 0;
   }
-  &:hover {
-    .circle {
-      width: 100%;
-      .icon {
-        &.arrow {
-        background: $white;
-        transform: translate(1rem, 0);
+
+  @media (min-width: 640px) {
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon {
+          &.arrow {
+          background: $white;
+          transform: translate(1rem, 0);
+          }
         }
       }
-    }
-    .button-text {
-        opacity: 1;
-      color: $white;
+      .button-text {
+          opacity: 1;
+        color: $white;
+      }
     }
   }
 }
