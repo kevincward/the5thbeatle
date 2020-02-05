@@ -14,11 +14,11 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    typeof window !== 'undefined'? window.addEventListener('scroll', this.handleScroll):null;
   }
 
   handleScroll = (event) => {
-    const scrollTop = window.pageYOffset
+    const scrollTop = typeof window !== 'undefined'?window.pageYOffset:0;
 
     if (scrollTop > 50) {
       this.setState({ hasScrolled: true })

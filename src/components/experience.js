@@ -170,9 +170,9 @@ const Experience = () => {
                 startup products
             </Title>
             <Content>
-                {window.matchMedia('(max-width: 768px)').matches ? 
+                {typeof window !== 'undefined'? (window.matchMedia('(max-width: 768px)').matches ? 
                  <Sliders />
-                 : null}
+                 : null):null}
                 <Items>
                     <Item 
                         icon={tcheck}
@@ -193,7 +193,7 @@ const Experience = () => {
                         description='Designed a personalized hotel recommendation app and website.'
                     /> 
                 </Items>
-                {!window.matchMedia('(max-width: 768px)').matches ? <Sliders /> : null}
+                {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? <Sliders /> : null):null}
             </Content>
         </Container>
     )

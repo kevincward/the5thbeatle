@@ -75,14 +75,14 @@ const About = () => {
   return (
     <Layout>
       <Container>
-        {window.matchMedia('(max-width: 768px)').matches ? 
+        {typeof window !== 'undefined'? (window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Hello, I'm Kevin Ward</HeadLine>
-        : null}
+        : null): null}
         <Img src={Me} />
         <Content>
-          {!window.matchMedia('(max-width: 768px)').matches ? 
+          {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
             <HeadLine>Hello, I'm Kevin Ward</HeadLine>
-          : null}
+          : null):null}
           <Text>
             <br />
             I’m a self taught designer that strives to leave a positive impact on people through the products I work on. I live in Sacramento, 

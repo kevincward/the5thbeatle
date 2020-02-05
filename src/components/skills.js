@@ -145,12 +145,12 @@ const Skills = props => {
     return (
         <Container>            
             <Content>                
-                {window.matchMedia('(max-width: 768px)').matches ?
+                {typeof window !== 'undefined'?(window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
                         My experiences have made me {"\n"} good at
                         these
                     </Title>
-                : null}
+                : null):null}
                 <Items>
                     <VerticalBar />
                     <Row>
@@ -178,11 +178,11 @@ const Skills = props => {
                         />
                     </Row>
                 </Items>
-                {!window.matchMedia('(max-width: 768px)').matches ?
+                {typeof window !== 'undefined'?!(window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
                         My experiences have made me good at these
                     </Title>
-                : null}
+                : null):null}
             </Content>
         </Container>
     )

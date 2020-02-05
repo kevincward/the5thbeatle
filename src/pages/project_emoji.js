@@ -112,13 +112,13 @@ const ProjectEmoji = () => {
           img={HeroIcon}
           />
       <Container>
-        {window.matchMedia('(max-width: 768px)').matches ? 
+        {typeof window !== 'undefined'?(window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Drone Emoji Proposal</HeadLine>
-        : null}
+        : null):null}
         <Content>
-          {!window.matchMedia('(max-width: 768px)').matches ? 
+          {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
             <HeadLine>Drone Emoji Proposal</HeadLine>
-          : null}
+          : null):null}
           <Text>
             PayPal held an emoji hackathon for participants to present a new idea for an emoji to an actual 
             member of Unicode and prepare their emoji proposal. I proposed the addition of a drone emoji.

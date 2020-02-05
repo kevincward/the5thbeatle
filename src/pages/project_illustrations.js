@@ -113,13 +113,13 @@ const ProjectIllustrate = () => {
           img={HeroIcon}
           />
       <Container>
-        {window.matchMedia('(max-width: 768px)').matches ? 
+        {typeof window !== 'undefined'?(window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Various Illustration Work</HeadLine>
-        : null}
+        : null):null}
         <Content>
-          {!window.matchMedia('(max-width: 768px)').matches ? 
+          {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
             <HeadLine>Various Illustration Work</HeadLine>
-          : null}
+          : null):null}
           <Text>
             I've created illustrations for several parts of the products I've worked on when it helps 
             <br />
