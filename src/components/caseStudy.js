@@ -10,6 +10,9 @@ import "./arrowBtn.scss"
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
+    top: -100px;
+    position: relative;
+    z-index: 0;
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;

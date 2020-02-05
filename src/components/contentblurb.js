@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import ModalImage from "react-modal-image";
 
 
 const Container = styled.div`
@@ -54,7 +54,7 @@ const MoreDescription = styled.div`
 `
 
 
-const Image = styled.img`
+const Image = styled.div`
   display: block;
   width: 100%;
   height: auto;
@@ -62,6 +62,9 @@ const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   
+  .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `
 
 const ContentBlurb = React.memo(({ title, description, moredescription, image}) => {
@@ -76,7 +79,14 @@ const ContentBlurb = React.memo(({ title, description, moredescription, image}) 
         <MoreDescription>
             {moredescription}
         </MoreDescription>
-        <Image src={image} />   
+        {/* <Image src={image} />    */}
+        <Image>
+            <ModalImage
+                small={image}
+                medium={image}
+                imageBackgroundColor="#ffff"
+            />
+        </Image>
       </Container>
     )
   })

@@ -22,7 +22,7 @@ import HeroIcon from '../images/ic_timeline_pp.svg'
 
 const Container = styled.div`
     display: flex;
-    padding: 160px 30px 80px;
+    padding: 80px 30px;
     flex-direction: column;
     @media (max-width: 768px) {
       flex-direction: column;
@@ -85,17 +85,17 @@ const Project1 = () => {
           <ResearchPlan />
           <Quotes />
           <ContentBlurb
-          title={
-            "What’s out there"
-          }
-          image={Compete}
-        />
-        <ContentBlurb
-          description={
-            "Next, I used all of the qualitative data I gathered during the interviews to create two user personas."
-          }
-          image={Personas}
-        />
+            title={
+              "What’s out there"
+            }
+            image={Compete}
+          />
+          <ContentBlurb
+            description={
+              "Next, I used all of the qualitative data I gathered during the interviews to create two user personas."
+            }
+            image={Personas}
+          />
       </Content>
       </Container>
       <ContainerGray>
