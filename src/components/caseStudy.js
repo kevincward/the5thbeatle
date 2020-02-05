@@ -113,12 +113,6 @@ const cards = [
         title: "Designing a mobile giving experience for all",
         text: "PayPal",
         link: "Learn More",
-        url: "blank"
-    },
-    {
-        title: "Designing a mobile giving experience for all",
-        text: "PayPal",
-        link: "Learn More",
         url: "project1"
     },
     {
@@ -133,12 +127,7 @@ const cards = [
         link: "Learn More",
         url: "blank"
     },
-    {
-        title: "Designing a mobile giving experience for all",
-        text: "PayPal",
-        link: "Learn More",
-        url: "blank"
-    }
+    
 ]
 const caseStudy = props => {    
     const settings = {
