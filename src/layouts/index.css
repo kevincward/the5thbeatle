@@ -80,7 +80,7 @@ a {
   transform: translateY(-3px);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .Hero {
     background: white;
   }

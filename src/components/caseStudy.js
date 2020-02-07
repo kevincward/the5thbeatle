@@ -13,6 +13,7 @@ const SectionGroup = styled.div `
     top: -100px;
     position: relative;
     z-index: 0;
+    margin-top: -150px;
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
@@ -49,7 +50,7 @@ const SectionTitle = styled.h3`
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
     
-    @media (max-width: 640px) {
+    @media (max-width: 720px) {
        font-size: 24px; 
        width: 50px;
        margin-left: -50px;
@@ -68,7 +69,7 @@ const CardCarousel = styled.div`
         overflow: hidden;
     }
     
-    @media (max-width: 640px) {
+    @media (max-width: 720px) {
         .slick-list {
             overflow: visible;
         }
@@ -129,7 +130,14 @@ const caseStudy = props => {
         slidesToShow: 2,
         slidesToScroll: 1,
         className: "slider variable-width",
-        variableWidth: true
+        variableWidth: true,
+
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+              initialSlide: -3
+            }
+          }]
       };
 
     return (

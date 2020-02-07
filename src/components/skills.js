@@ -178,11 +178,11 @@ const Skills = props => {
                         />
                     </Row>
                 </Items>
-                {typeof window !== 'undefined'?!(window.matchMedia('(max-width: 768px)').matches ?
+                {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
                         My experiences have made me good at these
                     </Title>
-                : null):null}
+                : null): null}
             </Content>
         </Container>
     )

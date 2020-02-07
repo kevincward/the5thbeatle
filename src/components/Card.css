@@ -13,6 +13,20 @@
     margin: 0 auto;
 }
 
+@media (max-width: 720px) {
+    .Card {
+        width: 180px;
+        height: 250px;
+    }
+    .Card h3 {
+        width: auto !important;
+        font-size: 22px !important;
+        margin: 20px !important;
+    }
+    .Card p {
+        padding-top: 0px !important;
+    }
+}
 .Card:hover {
     transform: scale(1.01, 1.01);
     box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
