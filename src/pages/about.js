@@ -33,7 +33,7 @@ const Text = styled.div`
 
 const Img = styled.img`
   width: 35%;
-  height: auto;
+  
   @media (max-width: 768px) {
     width: 100%;
     margin: 32px 0;
@@ -81,7 +81,7 @@ const About = () => {
         <Img src={Me} />
         <Content>
           {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
-            <HeadLine>Hello, I'm Kevin Ward</HeadLine>
+            <HeadLine>Hello, I'm Kevin Ward 👋</HeadLine>
           : null):null}
           <Text>
             <br />
