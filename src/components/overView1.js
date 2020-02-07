@@ -8,23 +8,23 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 5px auto 120px;
-    padding: 32px;
+    padding: 10px;
     @media (max-width: 768px) {
-        margin: 5px auto 0px;
+        margin: 2px auto 0px;
     }
 ` 
 
 const Content = styled.div`
     height: 474px;
     width: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #f8f8f8;
     padding: 64px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media (max-width: 768px) {
-        padding: 32px 23px;
+        padding: 10px 10px;
         width: auto;
         margin-bottom: 300px;
     }

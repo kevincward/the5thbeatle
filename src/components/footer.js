@@ -108,7 +108,7 @@ const Footer = ({data, children}) => (
         Thanks for scrolling all the way to the bottom. Want to work together or to say hello, hello?
         <br />
         <br />
-        <Link href="mailto:webmaster@example.com">Email address</Link>
+        <Link href="mailto:kevinis@the5thbeatle.com">kevinis@the5thbeatle.com</Link>
         </Text>
         
         <SocialsContainer>

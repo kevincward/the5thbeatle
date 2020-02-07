@@ -35,7 +35,7 @@ class Header extends React.Component {
         <div className="HeaderGroup">
           <Link to="/"><img src={logo} width="40" /></Link>
           <Link to="/about">About</Link>
-          <a href="https://drive.google.com/file/d/18i66J7t1LTAruuSBzTdcmrMyLpCbIPSk/view?usp=sharing" target='blank'>Resume</a>
+          <a href="https://drive.google.com/file/d/1N1IttPv_fevsnSUZ5rXSlU0xVCEWgntp/view?usp=sharing" target='blank'>Resume</a>
           <a href="mailto:webmaster@example.com"><button>Contact me</button></a>
         </div>  
       </div>
