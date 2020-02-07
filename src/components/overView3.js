@@ -52,7 +52,7 @@ const OverViewContent = styled.div`
 ` 
 
 const Title = styled.div`
-    font-family: Inter;
+
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -67,7 +67,7 @@ const Title = styled.div`
 ` 
 
 const Description = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -94,7 +94,7 @@ const RoleContent = styled.div`
 ` 
 
 const RoleTitle = styled.div`
-    font-family: Inter;
+
     font-size: 17px;
     font-weight: bold;
     font-stretch: normal;
@@ -123,7 +123,7 @@ const Br = styled.div`
 
 
 const RoleDescription = styled.div`
-    font-family: Inter;
+
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -153,7 +153,7 @@ const Experience = styled.div`
 
 const ExpTitle = styled.div`
     width: 800px;
-    font-family: Inter;
+
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
@@ -171,7 +171,7 @@ const ExpTitle = styled.div`
 ` 
 
 const ExpDescription = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -181,7 +181,7 @@ const ExpDescription = styled.div`
     color: rgba(0, 0, 0, 0.7);
 `
 const SkipLink = styled.a`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 600;
     font-stretch: normal;

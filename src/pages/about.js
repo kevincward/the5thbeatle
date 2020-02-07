@@ -15,7 +15,7 @@ const Container = styled.div`
 `
 
 const Text = styled.div`
-  font-family: Inter;
+ 
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -52,7 +52,7 @@ const Content = styled.div`
 
 const HeadLine = styled.div`
   color: #000000;
-  font-family: Inter;
+ 
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   font-size: 34px;

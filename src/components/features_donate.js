@@ -49,8 +49,7 @@ const OverViewContent = styled.div`
     }
 ` 
 
-const Title = styled.div`
-    font-family: Inter;
+const Title = styled.div`    
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
@@ -64,8 +63,7 @@ const Title = styled.div`
     }
 ` 
 
-const Description = styled.div`
-    font-family: Inter;
+const Description = styled.div`    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -91,8 +89,7 @@ const RoleContent = styled.div`
     flex-direction: column;    
 ` 
 
-const RoleTitle = styled.div`
-    font-family: Inter;
+const RoleTitle = styled.div`    
     font-size: 17px;
     font-weight: bold;
     font-stretch: normal;
@@ -114,8 +111,7 @@ const Br = styled.div`
 ` 
 
 
-const RoleDescription = styled.div`
-    font-family: Inter;
+const RoleDescription = styled.div`    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -142,8 +138,7 @@ const Experience = styled.div`
     }
 ` 
 
-const ExpTitle = styled.div`
-    font-family: Inter;
+const ExpTitle = styled.div`    
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -160,8 +155,7 @@ const ExpTitle = styled.div`
     }
 ` 
 
-const ExpDescription = styled.div`
-    font-family: Inter;
+const ExpDescription = styled.div`    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;

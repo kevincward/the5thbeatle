@@ -23,8 +23,7 @@ const FooterGroup = styled.div`
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
-const Title = styled.p`
-    font-family: Inter;
+const Title = styled.p`    
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -43,8 +42,7 @@ const Title = styled.p`
     };
 `
 
-const Text = styled.p`
-    font-family: Inter;
+const Text = styled.p`    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -63,8 +61,7 @@ const Text = styled.p`
 
 
 const Copyright = styled.div`
-    color: #FFFFFF;
-    font-family: Inter;
+    color: #FFFFFF;    
     font-size: 12px;
     max-width: 540px;
     margin: 0 auto;
@@ -74,8 +71,7 @@ const Copyright = styled.div`
 `
 
 const Link = styled.a`
-    color: #FFFFFF;
-    font-family: Inter;
+    color: #FFFFFF;    
     font-size: 21px;
     font-weight: 800;
     line-height:1.5;

@@ -25,8 +25,7 @@ const ValuePropsContainer = styled.section`
 `
 
 const Title = styled.div`
-    width: 565px;
-    font-family: Inter;
+    width: 565px;    
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -41,8 +40,7 @@ const Title = styled.div`
     }
 `
 
-const Description = styled.div`
-    font-family: Inter;
+const Description = styled.div`    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;

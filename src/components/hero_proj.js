@@ -44,8 +44,7 @@ const Img = styled.img`
 ` 
 
 const Title = styled.div`
-    width: 364px;
-    font-family: Inter;
+    width: 364px;    
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;

@@ -39,8 +39,7 @@ const SectionTitleGroup = styled.div`
 
 const SectionTitle = styled.h3`
     margin: 0;
-    color: #FFFFFF;
-    font-family: Inter;
+    color: #FFFFFF;    
     -webkit-font-smoothing: antialiased;
     font-size: 34px;
     line-height: 1.2;

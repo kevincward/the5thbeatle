@@ -38,7 +38,7 @@ a {
 .Hero h1 {
   margin: 0;
   color: #000000;
-  font-family: Inter;
+ 
   -webkit-font-smoothing: antialiased;
   font-size: 34px;
   line-height: 1.2;
@@ -51,7 +51,7 @@ a {
 
 .Hero p{
   color: #000000;
-  font-family: Inter;
+ 
   font-size: 18px;
   line-height:1.5;
   animation: HeroAnimation;
@@ -64,7 +64,7 @@ a {
 
 .Hero a {
   color: #540D6E;
-  font-family: Inter;
+ 
   font-size: 18px;
   font-weight: 500;
   line-height:1.5;

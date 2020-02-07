@@ -21,7 +21,7 @@ const TitleContainer = styled.div`
 `
 
 const Title = styled.div`
-    font-family: Inter;
+
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -38,7 +38,7 @@ const Img = styled.img`
 `
 
 const Description = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -65,7 +65,7 @@ const CommentContainer = styled.div`
 `
 
 const CommentContent = styled.div`
-    font-family: Inter;
+
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -81,7 +81,7 @@ const CommentContent = styled.div`
 `
 
 const CommentName = styled.div`
-    font-family: Inter;
+
     font-size: 14px;
     font-weight: 400;
     font-stretch: normal;

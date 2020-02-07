@@ -20,8 +20,7 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-    width: 565px;
-    font-family: Inter;
+    width: 565px;    
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -89,8 +88,7 @@ const ImgIcon = styled.img`
 `
 
 const ItemTitle = styled.div`
-    object-fit: contain;
-    font-family: Inter;
+    object-fit: contain;    
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -100,8 +98,7 @@ const ItemTitle = styled.div`
     color: #000000;
 `
 
-const ItemRole = styled.div`
-    font-family: Inter;
+const ItemRole = styled.div`    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -111,8 +108,7 @@ const ItemRole = styled.div`
     color: #000000;
 `
 
-const ItemDescription = styled.div`
-    font-family: Inter;
+const ItemDescription = styled.div`    
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;

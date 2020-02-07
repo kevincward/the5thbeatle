@@ -45,7 +45,7 @@ const ContainerGray = styled.div`
 const Content = styled.div`
 `
 const Title = styled.div`
-    font-family: Inter;
+
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;

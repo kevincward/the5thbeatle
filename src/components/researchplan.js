@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-    font-family: Inter;
+
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -32,7 +32,7 @@ const Title = styled.div`
 `
 
 const Description = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -83,7 +83,7 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-    font-family: Inter;
+
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -94,7 +94,7 @@ const ItemTitle = styled.div`
 `
 
 const ItemDescription = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;

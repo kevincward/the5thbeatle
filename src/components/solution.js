@@ -44,7 +44,7 @@ const Experience = styled.div`
 ` 
 
 const Title = styled.div`
-    font-family: Inter;
+
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -60,7 +60,7 @@ const Title = styled.div`
 `
 
 const Description = styled.div`
-    font-family: Inter;
+
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
