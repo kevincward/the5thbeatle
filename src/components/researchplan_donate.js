@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import compet from '../images/ic_donate_compet.svg'
-import diff from '../images/ic_learndonate_diff.svg'
-import native from '../images/ic_learndonate_native.svg'
+import inter from '../images/ic_donate_inter.svg'
+import indus from '../images/ic_donate_indus.svg'
 
 
 const Container = styled.div`
@@ -31,6 +31,17 @@ const Title = styled.div`
     }
 `
 
+const Description = styled.div`
+
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 8px;
+`
 
 const Content = styled.div`
     display: flex;
@@ -108,31 +119,40 @@ const Item = ({icon, title, description}) => {
     )
 }
 
-const ProjectLearnings = () => {    
+const ResearchPlan = () => {    
 
     return (
         <Container>
             <Title>
-            Project learnings
+            Research
             </Title>
-            
+            <Description>
+                I needed to uncover the needs and pain points of mobile donors so that I could identify opportunities for the 
+                native donate feature. I started out by reviewing competitors’ mobile donation tools to better understand how 
+                to appeal to donors. I also sought to understand the trends that set the standard in the non-profit sector.  
+            </Description>
             <Content>
                 <Items>
                     <Item 
-                        icon={diff}
-                        title='Differences between donating and paying'
+                        icon={inter}
+                        title='In-Depth Interviews'
                         description='Interviewed 16 donors about previous donation experiences.'
                     />
                     <br />
                     <Item 
-                        icon={native}
-                        title='Evaluating the value of a native experience'
+                        icon={compet}
+                        title='Competitive Analysis'
                         description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
                     /> 
-                    
+                    <br />
+                    <Item 
+                        icon={indus}
+                        title='Industry Standards'
+                        description='Evaluated latest donor behavior reports from GuideStar, Charity Navigator, etc.'
+                    /> 
                 </Items>
             </Content>
         </Container>
     )
 }
-export default ProjectLearnings
+export default ResearchPlan

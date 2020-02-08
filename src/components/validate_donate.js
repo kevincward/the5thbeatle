@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import compet from '../images/ic_donate_compet.svg'
-import inter from '../images/ic_donate_inter.svg'
-import indus from '../images/ic_donate_indus.svg'
+import check from '../images/ic_learningcheck.svg'
+import x from '../images/ic_learningx.svg'
 
 
 const Container = styled.div`
@@ -16,8 +15,7 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -33,7 +31,7 @@ const Title = styled.div`
 
 const Description = styled.div`
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -70,15 +68,9 @@ const ItemContainer = styled.div`
 `
 
 const ImgIcon = styled.img`
-    width: 48px;
-    height: 48px;
+    
     margin-right: 18px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
+   
 `
 
 const ItemTitle = styled.div`
@@ -95,7 +87,7 @@ const ItemTitle = styled.div`
 
 const ItemDescription = styled.div`
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -124,31 +116,31 @@ const ResearchPlan = () => {
     return (
         <Container>
             <Title>
-            Research
+            Validation & Iteration
             </Title>
             <Description>
-                I needed to uncover the needs and pain points of mobile donors so that I could idenify opportunities for the 
-                native donate feature. I started out by reviewing competitors’ mobile donation tools to better understand how 
-                to appeal to donors. I also sought to understand the trends that set the standard in the non-profit sector. 
+            I turned the low-fi flow into an Invision prototype and tested it with 5 participants who had previous experience with the PayPal app. 
+            I looked for usability issues and comprehension of the feature. I wanted to see if they could select a charity, find more information about 
+            the charity, and follow the donation flow to completion. I was also interested in their impressions of the overall donation experience.  
             </Description>
             <Content>
                 <Items>
                     <Item 
-                        icon={inter}
-                        title='In-Depth Interviews'
-                        description='Interviewed 16 donors about previous donation experiences.'
+                        icon={check}
+                        title='Donors willing to share location to see nearby charities'
+                        description='3 of the participants had no problems with sharing their location (to see nearby charities) when using the app, but didn’t want to have location services on all of the time because it drained their phone battery. 1 participant was willing to share their location all the time. 1 participant never wanted to share their location.'
                     />
                     <br />
                     <Item 
-                        icon={compet}
-                        title='Competitive Analysis'
-                        description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
+                        icon={x}
+                        title='Image carousel not working'
+                        description='Image carousel on charity profile screen was not discoverable or expected. Merchant profiles only show a logo in this section.'
                     /> 
                     <br />
                     <Item 
-                        icon={indus}
-                        title='Industry Standards'
-                        description='Evaluated latest donor behavior reports from GuideStar, Charity Navigator, etc.'
+                        icon={check}
+                        title='Opt in to share personal info at the end of the flow'
+                        description='3 of the participants expected to find the personal information share opt in on the donation amount screen, the flow up until this point didnt feel like apart of the transaction.'
                     /> 
                 </Items>
             </Content>

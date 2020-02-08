@@ -66,7 +66,7 @@ const Title = styled.div`
 ` 
 
 const Description = styled.div`
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -105,6 +105,7 @@ const ItemArrow = styled.img`
     height: 16px;
     position: relative;
     top: 2px;
+
 `
 
 const HorizontalBar = styled.div`
@@ -120,11 +121,11 @@ const Br = styled.div`
 
 
 const RoleDescription = styled.div`    
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.57;
+    line-height: 1.5;
     letter-spacing: -0.09px;
     color: rgba(0, 0, 0, 0.7);
 ` 
@@ -166,7 +167,7 @@ const ExpTitle = styled.div`
 ` 
 
 const ExpDescription = styled.div`    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -185,8 +186,17 @@ const SkipLink = styled.a`
     color: #3bceac;
     cursor: pointer;
     margin-top: 24px;
+    &:hover {
+    transform: translateY(3px);
+    transition-timing-function: ease-in;
+        transition: .5s;
+    
+  }
+
     @media (max-width: 768px) {
         margin-top: 16px;
+
+    
     }
 `
 

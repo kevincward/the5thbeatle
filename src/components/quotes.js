@@ -39,7 +39,7 @@ const Img = styled.img`
 
 const Description = styled.div`
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -118,7 +118,7 @@ const Quotes = props => (
                 role="Participant"
             />
             <Comment 
-                text="''I keep asking myself is this a real charity and what will they do with the money? My donate app would tell you right away.''"
+                text="''I keep asking myself- is this a real charity and what will they do with the money? My donate app would tell you right away.''"
                 name="George P."
                 role="Participant"
             />

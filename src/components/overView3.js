@@ -7,24 +7,24 @@ import arrow from '../images/ic_arrow_b.svg'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 60px auto 120px;
-    padding: 32px;
+    margin: 5px auto 120px;
+    padding: 10px;
     @media (max-width: 768px) {
-        margin: 60px auto 0px;
+        margin: 2px auto 0px;
     }
 ` 
 
 const Content = styled.div`
     height: 474px;
     width: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #f8f8f8;
     padding: 64px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media (max-width: 768px) {
-        padding: 32px 23px;
+        padding: 10px 10px;
         width: auto;
         margin-bottom: 300px;
     }
@@ -51,8 +51,7 @@ const OverViewContent = styled.div`
     }
 ` 
 
-const Title = styled.div`
-
+const Title = styled.div`    
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -67,8 +66,7 @@ const Title = styled.div`
 ` 
 
 const Description = styled.div`
-
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -93,8 +91,7 @@ const RoleContent = styled.div`
     flex-direction: column;    
 ` 
 
-const RoleTitle = styled.div`
-
+const RoleTitle = styled.div`    
     font-size: 17px;
     font-weight: bold;
     font-stretch: normal;
@@ -108,6 +105,7 @@ const ItemArrow = styled.img`
     height: 16px;
     position: relative;
     top: 2px;
+
 `
 
 const HorizontalBar = styled.div`
@@ -122,13 +120,12 @@ const Br = styled.div`
 ` 
 
 
-const RoleDescription = styled.div`
-
-    font-size: 14px;
-    font-weight: normal;
+const RoleDescription = styled.div`    
+    font-size: 18px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.57;
+    line-height: 1.5;
     letter-spacing: -0.09px;
     color: rgba(0, 0, 0, 0.7);
 ` 
@@ -152,8 +149,7 @@ const Experience = styled.div`
 
 
 const ExpTitle = styled.div`
-    width: 800px;
-
+    width: 600px;    
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
@@ -170,9 +166,8 @@ const ExpTitle = styled.div`
     }
 ` 
 
-const ExpDescription = styled.div`
-
-    font-size: 16px;
+const ExpDescription = styled.div`    
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -180,8 +175,7 @@ const ExpDescription = styled.div`
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
 `
-const SkipLink = styled.a`
-
+const SkipLink = styled.a`    
     font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
@@ -192,8 +186,17 @@ const SkipLink = styled.a`
     color: #3bceac;
     cursor: pointer;
     margin-top: 24px;
+    &:hover {
+    transform: translateY(3px);
+    transition-timing-function: ease-in;
+        transition: .5s;
+    
+  }
+
     @media (max-width: 768px) {
         margin-top: 16px;
+
+    
     }
 `
 
@@ -214,13 +217,11 @@ const OverView = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                    With the PayPal donate feature live, the native donate team (a product manager, two developers, 
-                    and myself) looked to improve on the experience. We wanted more users to discover the ability 
-                    to donate with PayPal in the app, and encourage PayPal users to donate more often.
-                    <p>
-                    I designed the product enhancements after conducting research with my PM and working with our 
-                    native developers on technical limitations. My designs followed the patterns created by PayPal’s 
-                    app team.</p>  
+                        An overhaul of the PayPal native app created an opportunity for a native 
+                        donate experience for the first time. 
+                        I designed the donation experience and worked with the social impact product 
+                        and engineering teams to define business goals and technical limitations. I collaborated with 
+                        the app team to ensure my designs were consistent with the rest of the app.
                     </Description>
                 </OverViewContent>
                 <RoleContainer>
@@ -240,18 +241,19 @@ const OverView = props => (
                         title="Timeline"
                         description={
                             <div>
-                                8 months
+                                6 months
                             </div>}
                     />
                 </RoleContainer>
             </OverViewContainer>
             <Experience>
                 <ExpTitle>
-                    How to promote feature discovery and design triggers to increase the number of donations?
+                    What should a donation experience in a financial app look like?
                 </ExpTitle>
                 <ExpDescription>
-                    How do we help new users discover the PayPal app donate feature? How do we remind current 
-                    donors using PayPal to donate? How do we encourage donating without being annoying?
+                    The primary app tasks include checking your balance and account activity, 
+                    sending money, and paying off a credit bill. How might a donate feature fit 
+                    in with these tasks? Why would someone use an app to donate instead of a charity’s website?
                 </ExpDescription>
                 <SkipLink onClick={() => {
                     scroll.scrollTo(

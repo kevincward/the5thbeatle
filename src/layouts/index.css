@@ -81,9 +81,7 @@ a {
 }
 
 @media (max-width: 720px) {
-  .Hero {
-    background: white;
-  }
+  
   
   .HeroGroup {
     padding: 100px 20px;

@@ -5,20 +5,22 @@ import SolutionBkgd from '../images/solution_donate.jpg'
 import OverView from '../components/overView1'
 import Quotes from '../components/quotes'
 import Layout from '../layouts'
-import ResearchPlan from '../components/researchplan'
+import ResearchPlan from '../components/researchplan_donate'
 import ContentBlurb from '../components/contentblurb'
 import Compete from '../images/compete_donate.png'
 import Personas from '../images/personas_donate.png'
 import Insights from '../images/insights_donate.svg'
-import HowMightWe from '../images/howmightwe_donate.svg'
-import FeatPrior from '../images/featurepri_donate.svg'
-import Concept from '../images/concept_donate.svg'
+import HowMightWe from '../images/howmightwe_donate.png'
+import FeatPrior from '../images/featurepri_donate.png'
+import Concept from '../images/concept_donate.png'
+import Validate from '../components/validate_donate'
 import NextSteps from '../components/nextsteps'
 import ProjectLearnings from '../components/projectlearnings'
 import Solutions from '../components/solution';
 import Features from '../components/features_donate'
 import DonateBkgd from '../images/hero_backgd_cs1.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
+
 
 const Container = styled.div`
     display: flex;
@@ -60,6 +62,7 @@ const Title = styled.div`
         font-size: 28px;
     }
 `
+
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
   margin: 80px 90px;
@@ -84,12 +87,14 @@ const Project1 = () => {
           <OverView />
           <ResearchPlan />
           <Quotes />
+          
           <ContentBlurb
             title={
               "What’s out there"
             }
             image={Compete}
           />
+          <Divider />
           <ContentBlurb
             description={
               "Next, I used all of the qualitative data I gathered during the interviews to create two user personas."
@@ -120,6 +125,7 @@ const Project1 = () => {
           }
           image={HowMightWe}
         />
+       
         <ContentBlurb
           title={
             "What features shall we prioritize?"
@@ -129,28 +135,23 @@ const Project1 = () => {
           }
           image={FeatPrior}
         />
+        <Divider />
+        
         <ContentBlurb
           title={
             "Conceptualization"
           }
           description={
-            "I took these features and created an information architecture and low-fi concepts, leveraging components from the current app design for consitency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups."
+            "I took these features and created an information architecture and low-fi concepts, leveraging components from the current app design for consistency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups."
           }
           image={Concept}
         />
+        
         <Divider />
-        <ContentBlurb
-          title={
-            "Validation & Iteration"
-          }
-          description={
-            "I turned the low-fi flow into an Invision prototype and tested it with 5 participants who had previous experience with the PayPal app. I looked for usability issues and comprehension of the feature. I wanted to see if they could select a charity, find more information about the charity, and follow the donation flow to completion. I was also interested in their impressions of the overall donation experience."
-          }
-          moredescription={
-            "Top Learnings"
-          }
+        <Validate />
           
-        />
+          
+       
         <Solutions
           heroImgURL={SolutionBkgd}
           title={"The Solution"}
