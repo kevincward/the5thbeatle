@@ -16,7 +16,9 @@ import IA from '../images/paypal_ia_remind.png'
 import IA2 from '../images/paypal_ia2_remind.png'
 import TriggerImp from '../images/trigger_imp_remind.png'
 import TriggerImp2 from '../images/trigger_imp2_remind.png'
-
+import TriggerHab3 from '../images/trigger_hab3_remind.png'
+import TriggerHab1 from '../images/trigger_hab_remind.png'
+import TriggerHab2 from '../images/trigger_hab2_remind.png'
 
 const Container = styled.div`
     display: flex;
@@ -72,6 +74,18 @@ const TitleGray = styled.div`
         width: 100%;
         font-size: 28px;
     }
+`
+const Image = styled.div`
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `
 
 const Divider = styled.div`
@@ -163,12 +177,13 @@ const Project3 = () => {
               "Suggested task tiles- consistent placement for habitual donors"
             }
             description={
-              "PayPal’s new information architecture prioritizes notifications at the top of the dashboard to alert users of account activity (e.g. you received money), impending bills, and announcements. The card framework could be easily leveraged to draw awareness and provide the opportunity to drive users to disaster response fundraisering pages on PayPal."
+              "Moving away from the one-dashboard-fits-all model, PayPal’s new logged in experience surfaces actions and suggested action tiles based on the user’s behavior and segmentation. For users that have donated with PayPal, they are grouped into the “donor intent” segment and a donate tile would show up on their dashboard. For users that seem like they might donate with PayPal (based on their web history, etc), they are added into the “potential donor” segment. I created multiple design concepts for both groups to put in front of users."
             }
-            image={TriggerImp}
-            image2={TriggerImp2}
+            image={TriggerHab3}
+            image2={TriggerHab1}
           />
-          
+          <Image src={TriggerHab2} />
+  
         
         </Content>        
       </Container>

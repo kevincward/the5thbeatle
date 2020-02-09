@@ -97,11 +97,11 @@ const ProjectLearnings = () => {
                     <Item 
                         description='1. Who exactly should see these notifications?'
                     />
-                    <br />
+                    
                     <Item 
                         description='2. How often should a user see the notification?'
                     /> 
-                    <br />
+                    
                     <Item 
                         description='3. How often should a user see the notification?'
                     /> 

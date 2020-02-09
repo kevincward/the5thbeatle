@@ -5,7 +5,7 @@ import ModalImage from "react-modal-image";
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 80px 90px 0px;
     flex-direction: column;
     @media (max-width: 768px) {
         margin: 60px 24px;
@@ -77,7 +77,7 @@ const Image2 = styled.div`
   }
 `
 
-const ContentBlurb = React.memo(({ title, description, moredescription, image, image2}) => {
+const ContentBlurb = React.memo(({ title, description, moredescription, image, image2 }) => {
     return (
       <Container>
         <Title>
@@ -104,6 +104,7 @@ const ContentBlurb = React.memo(({ title, description, moredescription, image, i
                 imageBackgroundColor="#ffff"
             />
         </Image2>
+       
       </Container>
     )
   })
