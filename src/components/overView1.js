@@ -26,6 +26,7 @@ const Content = styled.div`
     @media (max-width: 768px) {
         padding: 10px 10px;
         width: auto;
+        height: 600px;
         margin-bottom: 300px;
     }
 ` 
@@ -195,8 +196,6 @@ const SkipLink = styled.a`
 
     @media (max-width: 768px) {
         margin-top: 16px;
-
-    
     }
 `
 
