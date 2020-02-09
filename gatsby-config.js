@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Kevin Ward - Product Designer',
     description: 'Product Designer in Sacramento, CA',
-    keywords: 'product designer, ux director, ux designer, ui designer, Kevin Ward, design thinking, ux portfolio, ux case study, user research, user design, business designer, the Beatles, the fifth beatle, the 5th beatle'
+    keywords: 'product designer, ux director, ux designer, ui designer, Kevin Ward, design thinking, ux portfolio, ux case study, user research, user design, business designer, the Beatles, the fifth beatle, the 5th beatle',
+    siteUrl: 'http://www.the5thbeatle.com/'
   },
   plugins: [
   `gatsby-plugin-sass`,
