@@ -150,13 +150,13 @@ const Project1 = () => {
         <Divider />
         <Validate />
           
-          
-       
         <Solutions
           heroImgURL={SolutionBkgd}
           title={"The Solution"}
           description={"We released the MVP of the native Donate feature three months after the launch of the PayPal app redesign. The focus of the MVP experience was discovery of charities and the ability to donate quickly."}
-        />
+        />  
+       
+        
         <Features />
         <ProjectLearnings />
         <Divider />

@@ -58,35 +58,17 @@ const Title = styled.div`
         font-size: 28px;
     }
 `
-
-const TitleGray = styled.div`
-    font-size: 28px;
-    font-weight: bold;
+const Description = styled.div`    
+    font-size: 18px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: #000000;
-    background-color: #f8f8f8;
-    margin: 80px 90px -68px;
-    @media (max-width: 768px) {
-        margin: 40px 25px -68px;
-        width: 100%;
-        font-size: 28px;
-    }
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 80px 90px;
 `
-const Image = styled.div`
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  .__react_modal_image__modal_container {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-`
+
 
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
@@ -154,9 +136,6 @@ const Project3 = () => {
             image={IA}
             image2={IA2}
           />
-          <Title>
-            An impulsive donation trigger
-          </Title>
           <ContentBlurb
             title={
               "Notifications- an opportunity to make a quick impact"
@@ -168,11 +147,11 @@ const Project3 = () => {
             image2={TriggerImp2}
           />
           <Qs4Users1 />
-          <Divider />
-          <Title>
-            A deliberate donation trigger
-          </Title>
-          <ContentBlurb
+        </Content>
+      </Container>
+      <ContainerGray>
+        <Content>
+        <ContentBlurb
             title={
               "Suggested task tiles- consistent placement for habitual donors"
             }
@@ -180,9 +159,34 @@ const Project3 = () => {
               "Moving away from the one-dashboard-fits-all model, PayPal’s new logged in experience surfaces actions and suggested action tiles based on the user’s behavior and segmentation. For users that have donated with PayPal, they are grouped into the “donor intent” segment and a donate tile would show up on their dashboard. For users that seem like they might donate with PayPal (based on their web history, etc), they are added into the “potential donor” segment. I created multiple design concepts for both groups to put in front of users."
             }
             image={TriggerHab3}
-            image2={TriggerHab1}
+           
           />
-          <Image src={TriggerHab2} />
+          <TwoColumnBlurb
+            title={
+              "Donor intent tile concepts"
+            }
+            description={
+              "For the MVP version of “donor intent” tile, the call to action would be to support the charity the user had most frequently supported. I came up with different tile layouts and messaging for testing."
+            }
+            image={TriggerHab1}
+          />
+          <TwoColumnBlurb
+            title={
+              "Potential Donor tile concepts"
+            }
+            description={
+              "For the “potential donor” tile, the PayPal data science model was used to make smart recommendations based on the user’s browsing history, location, and charities supported by their contacts."
+            }
+            image={TriggerHab2}
+          />
+        </Content>
+      </ContainerGray>
+      <Container>
+        <Content>
+          
+          
+  
+
   
         
         </Content>        

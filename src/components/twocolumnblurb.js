@@ -52,9 +52,8 @@ const Content = styled.div`
 
 const Image = styled.div`
   display: block;
-  width: 100%;
   height: auto;
-  max-width: 400px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   
