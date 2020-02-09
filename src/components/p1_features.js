@@ -175,7 +175,7 @@ const Role = ({title, description}) => {
     )
 }
 
-const OverView = props => (
+const P1Features = props => (
     <Container>
         <Content>
             <OverViewContainer>
@@ -242,4 +242,4 @@ const OverView = props => (
     </Container>
 )
 
-export default OverView
+export default P1Features

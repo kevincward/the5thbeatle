@@ -102,7 +102,7 @@ const next = () => {
 
 const cards = [
     {
-        title: "Designing a mobile giving experience for all",
+        title: "Improving the mobile donation experience",
         text: "PayPal",
         link: "Learn More",
         url: "/project1"
@@ -114,7 +114,7 @@ const cards = [
         url: "/project2"
     },
     {
-        title: "Designing a mobilCare giving experience for all",
+        title: "How to remind (not nag) people to donate",
         text: "PayPal",
         link: "Learn More",
         url: "/project3"

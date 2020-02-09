@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import compet from '../images/ic_donate_compet.svg'
 import diff from '../images/ic_learndonate_diff.svg'
 import native from '../images/ic_learndonate_native.svg'
 
@@ -17,7 +16,7 @@ const Container = styled.div`
 const Title = styled.div`
     width: 565px;
 
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -55,32 +54,9 @@ const Items = styled.div`
 const ItemContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 `
 
-const ImgIcon = styled.img`
-    width: 48px;
-    height: 48px;
-    margin-right: 18px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
-`
-
-const ItemTitle = styled.div`
-    object-fit: contain;
-
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: normal;
-    color: #000000;
-`
 
 const ItemDescription = styled.div`
 
@@ -96,12 +72,12 @@ const ItemDescription = styled.div`
 const ItemContent = styled.div`
     
 `
-const Item = ({icon, title, description}) => {
+const Item = ({ description}) => {
     return (
         <ItemContainer>
-            <ImgIcon src={icon} />
+            
             <ItemContent>
-                <ItemTitle>{title}</ItemTitle>
+                
                 <ItemDescription>{description}</ItemDescription>
             </ItemContent>
         </ItemContainer>
@@ -113,23 +89,22 @@ const ProjectLearnings = () => {
     return (
         <Container>
             <Title>
-            Project learnings
+            Open questions for this feature
             </Title>
             
             <Content>
                 <Items>
                     <Item 
-                        icon={diff}
-                        title='Differences between donating and paying'
-                        description='Interviewed 16 donors about previous donation experiences.'
+                        description='1. Who exactly should see these notifications?'
                     />
                     <br />
                     <Item 
-                        icon={native}
-                        title='Evaluating the value of a native experience'
-                        description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
+                        description='2. How often should a user see the notification?'
                     /> 
-                    
+                    <br />
+                    <Item 
+                        description='3. How often should a user see the notification?'
+                    /> 
                 </Items>
             </Content>
         </Container>
