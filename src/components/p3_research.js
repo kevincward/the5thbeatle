@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import check from '../images/ic_learningcheck.svg'
+import x from '../images/ic_learningx.svg'
 
 
 const Container = styled.div`
@@ -13,8 +15,7 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -27,7 +28,9 @@ const Title = styled.div`
         font-size: 32px;
     }
 `
-const Description = styled.div`    
+
+const Description = styled.div`
+
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -35,21 +38,21 @@ const Description = styled.div`
     line-height: 1.5;
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 `
 
 const Content = styled.div`
     display: flex;
     font-size: 32px;
     flex-direction: row;
-    padding: 20px 0px;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
 `
 
 const Items = styled.div`
-    margin: 22px 0px;
+    
     width: 75%;
     margin-right: 10%;
     @media (max-width: 768px) {
@@ -61,9 +64,21 @@ const Items = styled.div`
 const ItemContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
 `
 
+
+const ItemTitle = styled.div`
+    object-fit: contain;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #000000;
+`
 
 const ItemDescription = styled.div`
 
@@ -79,42 +94,33 @@ const ItemDescription = styled.div`
 const ItemContent = styled.div`
     
 `
-const Item = ({ description}) => {
+const Item = ({title, description}) => {
     return (
         <ItemContainer>
             <ItemContent>
+                <ItemTitle>{title}</ItemTitle>
                 <ItemDescription>{description}</ItemDescription>
             </ItemContent>
         </ItemContainer>
     )
 }
 
-const ProjectLearnings = () => {    
+const Research = () => {    
 
     return (
         <Container>
             <Title>
-            Evaluation
+            Research
             </Title>
-            <Description>
-                This is the description
-            </Description>
             <Content>
                 <Items>
                     <Item 
-                        description='1. Who exactly should see these notifications?'
+                        title='What motivates people to donate?'
+                        description='As a way to keep in touch with users of our product, I ran monthly research sessions to identify opportunities to enhance the donate feature and learn about donor behavior. Over the course of several sessions, I began to better understand behavior around donation triggers.'
                     />
-                    
-                    <Item 
-                        description='2. How often should a user see the notification?'
-                    /> 
-                    
-                    <Item 
-                        description='3. How often should a user see the notification?'
-                    /> 
                 </Items>
             </Content>
         </Container>
     )
 }
-export default ProjectLearnings
+export default Research

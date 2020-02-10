@@ -99,7 +99,7 @@ const ItemTitle = styled.div`
 `
 
 const ItemRole = styled.div`    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;

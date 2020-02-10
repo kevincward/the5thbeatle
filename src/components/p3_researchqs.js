@@ -15,25 +15,18 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-
-    font-size: 28px;
+    width: 565px;    
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
     color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 50%;
-    text-align: left;
-    margin-left: 80px;
-    width: 450px;
+    margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
-        margin: 0px;
-        font-size: 32px;
+        font-size: 24px;
     }
 `
 
@@ -44,6 +37,7 @@ const Content = styled.div`
         flex-direction: column;
     }
 `
+
 
 const Items = styled.div`
     display: flex;
@@ -67,18 +61,6 @@ const ItemContainer = styled.div`
     }
 `
 
-const ImgIcon = styled.img`
-    width: 48px;
-    height: 48px;
-    margin-bottom: 16px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
-`
-
 const ItemTitle = styled.div`
 
     font-size: 18px;
@@ -93,7 +75,7 @@ const ItemTitle = styled.div`
 
 const ItemDescription = styled.div`
 
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -128,10 +110,9 @@ const VerticalBar = styled.div`
     }
 `
 
-const Item = ({icon, title, description}) => {
+const Item = ({title, description}) => {
     return (
         <ItemContainer>
-            <ImgIcon src={icon} />
             <ItemContent>
                 <ItemTitle>{title}</ItemTitle>                
                 <ItemDescription>{description}</ItemDescription>
@@ -140,17 +121,52 @@ const Item = ({icon, title, description}) => {
     )
 }
 
-const Skills = props => {
+const ResearchQs = props => {
 
     return (
-        <Container>            
+        <Container>  
+            <Title>
+                Questions for user testing
+                </Title>          
             <Content>                
-                {typeof window !== 'undefined'?(window.matchMedia('(max-width: 768px)').matches ?
-                    <Title>
-                        My experiences have made me {"\n"} good at
-                        these
-                    </Title>
-                : null):null}
+                <Items>
+                    <VerticalBar />
+                    <Row>
+                        <Item 
+                            title='UX Research & Strategy'                            
+                            description='I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.'
+                        />
+                        <Item 
+                            icon={design}
+                            title='Design Thinking'                            
+                            description='I implement an iterative process to uncover new outlooks and redefine problems in an attempt to identify alternative strategies and solutions.'
+                        />
+                    </Row>
+                    <Row>
+                        <Item 
+                            icon={pm}
+                            title='Product Management'                            
+                            description='Incorporating product thinking and UX workflow with the development process, I see products from problem discovery to launch and onward.'
+                        />
+                        <Item 
+                            icon={biz}
+                            title='Business Growth'                            
+                            description='I work to build sustainable experiences that net more long-term engaged users rahter than short term metric movers.'
+                        />
+                    </Row>
+                    <Row>
+                        <Item 
+                            icon={research}
+                            title='UX Research & Strategy'                            
+                            description='I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.'
+                        />
+                        <Item 
+                            icon={design}
+                            title='Design Thinking'                            
+                            description='I implement an iterative process to uncover new outlooks and redefine problems in an attempt to identify alternative strategies and solutions.'
+                        />
+                    </Row>
+                </Items>
                 <Items>
                     <VerticalBar />
                     <Row>
@@ -177,15 +193,22 @@ const Skills = props => {
                             description='I work to build sustainable experiences that net more long-term engaged users rahter than short term metric movers.'
                         />
                     </Row>
+                    <Row>
+                        <Item 
+                            icon={research}
+                            title='UX Research & Strategy'                            
+                            description='I work closely with users to understand their needs, pain points, and wants in order to generate usable products that solve real problems.'
+                        />
+                        <Item 
+                            icon={design}
+                            title='Design Thinking'                            
+                            description='I implement an iterative process to uncover new outlooks and redefine problems in an attempt to identify alternative strategies and solutions.'
+                        />
+                    </Row>
                 </Items>
-                {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ?
-                    <Title>
-                        My experiences have made me good at these
-                    </Title>
-                : null): null}
             </Content>
         </Container>
     )
 }
 
-export default Skills
+export default ResearchQs

@@ -6,7 +6,11 @@ import ContentBlurb from '../components/contentblurb'
 import DonateBkgd from '../images/hero_backgd_cs3.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
 import TwoColumnBlurb from '../components/twocolumnblurb'
-import Qs4Users1 from '../components/p3_qsfortesting1'
+import OverView from '../components/overView3'
+import Research from '../components/p3_research'
+import Quotes from '../components/p3_quotes'
+import Validate from '../components/p3_validate'
+import Solutions from '../components/solution';
 
 import AfinMap from '../images/affinitymap_remind.png'
 import AfinMap2 from '../images/affinitymap_remind2.png'
@@ -19,6 +23,11 @@ import TriggerImp2 from '../images/trigger_imp2_remind.png'
 import TriggerHab3 from '../images/trigger_hab3_remind.png'
 import TriggerHab1 from '../images/trigger_hab_remind.png'
 import TriggerHab2 from '../images/trigger_hab2_remind.png'
+import Researcher from '../images/p3_researcher.jpg'
+import TileTest1 from '../images/p3_tiletest1.jpg'
+import TileTest2 from '../images/p3_tiletest2.jpg'
+
+
 
 const Container = styled.div`
     display: flex;
@@ -83,7 +92,7 @@ const Project3 = () => {
     <Layout>
       <Hero 
           heroImgURL={DonateBkgd}
-          title={"PayPal Native Donation Experience"}
+          title={"PayPal Donor Triggers"}
           img={HeroIcon}
           />
       <Container>
@@ -91,7 +100,17 @@ const Project3 = () => {
          <HeadLine>Headline</HeadLine>
         : null} */}
         <Content>  
-        
+          <OverView />
+          <Title>Research</Title>
+          <TwoColumnBlurb
+            title={
+              "What motivates people to donate?"
+            }
+            description={
+              "As a way to keep in touch with users of our product, I ran monthly research sessions to identify opportunities to enhance the donate feature and learn about donor behavior. Over the course of several sessions, I began to better understand behavior around donation triggers."
+            }
+            image={Researcher}
+          />
           <ContentBlurb
             title={
               "Findings"
@@ -143,15 +162,14 @@ const Project3 = () => {
             description={
               "PayPal’s new information architecture prioritizes notifications at the top of the dashboard to alert users of account activity (e.g. you received money), impending bills, and announcements. The card framework could be easily leveraged to draw awareness and provide the opportunity to drive users to disaster response fundraisering pages on PayPal."
             }
-            image={TriggerImp}
-            image2={TriggerImp2}
+            image={TriggerImp2}
+            image2={TriggerImp}
           />
-          <Qs4Users1 />
         </Content>
       </Container>
       <ContainerGray>
         <Content>
-        <ContentBlurb
+          <ContentBlurb
             title={
               "Suggested task tiles- consistent placement for habitual donors"
             }
@@ -159,7 +177,6 @@ const Project3 = () => {
               "Moving away from the one-dashboard-fits-all model, PayPal’s new logged in experience surfaces actions and suggested action tiles based on the user’s behavior and segmentation. For users that have donated with PayPal, they are grouped into the “donor intent” segment and a donate tile would show up on their dashboard. For users that seem like they might donate with PayPal (based on their web history, etc), they are added into the “potential donor” segment. I created multiple design concepts for both groups to put in front of users."
             }
             image={TriggerHab3}
-           
           />
           <TwoColumnBlurb
             title={
@@ -183,10 +200,21 @@ const Project3 = () => {
       </ContainerGray>
       <Container>
         <Content>
-          
-          
-  
-
+          <Title>Evaluating Concepts</Title>
+          <br />
+          <Quotes />
+          <ContentBlurb
+            title={
+              "Build your own PayPal dashboard"
+            }
+            description={
+              "Gathering feedback on the action tiles would be a little bit harder. I chose to do an exercise where I would ask participants to build their ideal PayPal dashboard with a number of paper components to choose from (including my iterations of the donor tile) Here is some of the dashboards created:"
+            }
+            image={TileTest1}
+            image2={TileTest2}
+          />
+          <Validate />
+          <Solutions />
   
         
         </Content>        
