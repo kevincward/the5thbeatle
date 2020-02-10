@@ -76,7 +76,7 @@ const Solution = React.memo(
   ({ heroImgURL, title, description }) => {
     return (
       <HeroBackground heroImgURL={heroImgURL}>
-        <ContentContainer id="Solution">>
+        <ContentContainer id="Solution">
             <Experience>
                 <Title>{title}</Title>
                 <Description>{description}</Description>
