@@ -19,8 +19,9 @@ const Title = styled.div`
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    width: 40%;
+    width: 80%;
     color: #000000;
+    margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
         font-size: 24px;
@@ -33,7 +34,7 @@ const Description = styled.div`
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    width: 40%;
+    width: 80%;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
 `
@@ -62,13 +63,15 @@ const Image = styled.div`
   }
 `
 
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
 
 const TwoColumnBlurb = React.memo(({ title, description, image}) => {
     return (
-        <Container>
-            <Title>
-                {title}
-            </Title>
+        <Container>            
             <Content>
                 {typeof window !== 'undefined'? (window.matchMedia('(max-width: 768px)').matches ? 
                  
@@ -80,10 +83,14 @@ const TwoColumnBlurb = React.memo(({ title, description, image}) => {
                  />
                  </Image>
                  : null):null}
-                
-                <Description>
-                    {description}
-                </Description>
+                <TextContainer>
+                    <Title>
+                        {title}
+                    </Title>
+                    <Description>
+                        {description}
+                    </Description>
+                </TextContainer>
                 {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
                 <Image>
                     <ModalImage
