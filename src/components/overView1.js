@@ -27,8 +27,7 @@ const Content = styled.div`
     @media (max-width: 768px) {
         padding: 10px 20px;
         width: auto;
-        height: 600px;
-        margin-bottom: 300px;
+        height: 600px;        
     }
 ` 
 
@@ -37,7 +36,7 @@ const OverViewContainer = styled.div`
     display: flex;
     flex-direction: row;
     @media (max-width: 768px) {
-        flex-direction: column;        
+        flex-direction: column;
     }
 ` 
 
@@ -137,14 +136,15 @@ const Experience = styled.div`
     border-radius: 8px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    margin-top: 60px;
+    margin: -200px auto 0;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media (max-width: 768px) {
-        margin-top: 0px;
+        width: 80%;
+        margin: -30px auto 0;
         padding: 24px 16px;
     }
 ` 
@@ -245,25 +245,25 @@ const OverView = props => (
                             </div>}
                     />
                 </RoleContainer>
-            </OverViewContainer>
-            <Experience>
-                <ExpTitle>
-                    What should a donation experience in a financial app look like?
-                </ExpTitle>
-                <ExpDescription>
-                    The primary app tasks include checking your balance and account activity, 
-                    sending money, and paying off a credit bill. How might a donate feature fit 
-                    in with these tasks? Why would someone use an app to donate instead of a charity’s website?
-                </ExpDescription>
-                <SkipLink onClick={() => {
-                    scroll.scrollTo(
-                        document.getElementById("Solution").offsetTop - 100
-                      )
-                }}>
-                    Skip process and see where we landed <ItemArrow src={arrow} />
-                </SkipLink>
-            </Experience>
+            </OverViewContainer>            
         </Content>
+        <Experience>
+            <ExpTitle>
+                What should a donation experience in a financial app look like?
+            </ExpTitle>
+            <ExpDescription>
+                The primary app tasks include checking your balance and account activity, 
+                sending money, and paying off a credit bill. How might a donate feature fit 
+                in with these tasks? Why would someone use an app to donate instead of a charity’s website?
+            </ExpDescription>
+            <SkipLink onClick={() => {
+                scroll.scrollTo(
+                    document.getElementById("Solution").offsetTop - 100
+                    )
+            }}>
+                Skip process and see where we landed <ItemArrow src={arrow} />
+            </SkipLink>
+        </Experience>
     </Container>
 )
 

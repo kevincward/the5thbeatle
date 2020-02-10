@@ -9,7 +9,7 @@ import './Card.css'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 60px auto 120px;
+    margin: 60px auto 350px;
     padding: 32px;
     @media (max-width: 768px) {
         margin: 60px auto 0px;
@@ -29,8 +29,7 @@ const Content = styled.div`
     margin-bottom: 100px;
     @media (max-width: 768px) {
         padding: 32px 23px;
-        width: auto;
-        margin-bottom: 300px;
+        width: auto;        
     }
 ` 
 
@@ -111,7 +110,7 @@ const ImgContainer = styled.div`
 `
 
 const Experience = styled.div`
-    width: 90%;
+    width: 80%;
     border-radius: 8px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;    
@@ -120,8 +119,9 @@ const Experience = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: -300px auto;
     @media (max-width: 768px) {
-        margin-top: 0px;
+        margin-top: -350px;
         padding: 24px 16px;
     }
 ` 
@@ -218,28 +218,28 @@ const P1Features = props => (
                         )
                     })
                 }
-            </OverViewContainer>
-            <Experience>
-                <ExpTitle>
-                    The Results
-                </ExpTitle>
-                <ExpDescription>
-                    We launched the feature and saw slow adoption. We reviewed the analytics on weekly basis to monitor for where 
-                    dropoff occurred and began speculating how to make improvements. As Giving Tuesday drew near, we partnered with
-                    the marketing team to bring awareness to donating with the PayPal app. The marketing effort brought 
-                </ExpDescription>
-                <br />
-                <br />
-                <ExpTitle>
-                    $1.5 million TPV
-                </ExpTitle>
-                <ExpDescription>
-                It may have taken a couple of months for the Donate feature to take off but when it did, we started to see strong numbers 
-                on a monthly basis. By June 2017 (one year after launch), PayPal saw 1.5 million in total payment volume through the app 
-                donate feature.
-                </ExpDescription>
-            </Experience>
+            </OverViewContainer>            
         </Content>
+        <Experience>
+            <ExpTitle>
+                The Results
+            </ExpTitle>
+            <ExpDescription>
+                We launched the feature and saw slow adoption. We reviewed the analytics on weekly basis to monitor for where 
+                dropoff occurred and began speculating how to make improvements. As Giving Tuesday drew near, we partnered with
+                the marketing team to bring awareness to donating with the PayPal app. The marketing effort brought 
+            </ExpDescription>
+            <br />
+            <br />
+            <ExpTitle>
+                $1.5 million TPV
+            </ExpTitle>
+            <ExpDescription>
+            It may have taken a couple of months for the Donate feature to take off but when it did, we started to see strong numbers 
+            on a monthly basis. By June 2017 (one year after launch), PayPal saw 1.5 million in total payment volume through the app 
+            donate feature.
+            </ExpDescription>
+        </Experience>
     </Container>
 )
 

@@ -9,7 +9,7 @@ const Container = styled.div`
     margin: 80px 90px;
     flex-direction: column;
     @media (max-width: 768px) {
-        margin: 120px 24px 60px;
+        margin: 300px 24px 60px;
     }
 `
 
