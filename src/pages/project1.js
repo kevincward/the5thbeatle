@@ -16,7 +16,7 @@ import Concept from '../images/concept_donate.png'
 import Validate from '../components/p1_validate'
 import NextSteps from '../components/nextsteps'
 import ProjectLearnings from '../components/p1_projectlearnings'
-import Solutions from '../components/solution';
+import Solution from '../components/solution';
 import Features from '../components/p1_features'
 import DonateBkgd from '../images/hero_backgd_cs1.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
@@ -149,13 +149,16 @@ const Project1 = () => {
         
         <Divider />
         <Validate />
-          
-        <Solutions
-          heroImgURL={SolutionBkgd}
+        </Content>        
+      </Container> 
+        <Solution
+          heroImgURL={DonateBkgd}
           title={"The Solution"}
           description={"We released the MVP of the native Donate feature three months after the launch of the PayPal app redesign. The focus of the MVP experience was discovery of charities and the ability to donate quickly."}
         />  
        
+      <Container>
+        <Content>
         
         <Features />
         <ProjectLearnings />

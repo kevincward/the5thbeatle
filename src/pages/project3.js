@@ -10,7 +10,9 @@ import OverView from '../components/overView3'
 import Research from '../components/p3_research'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
-import Solutions from '../components/solution';
+import Solution from '../components/solution';
+import Features from '../components/p3_features';
+import ProjectLearnings from '../components/p3_projectlearnings'
 
 import AfinMap from '../images/affinitymap_remind.png'
 import AfinMap2 from '../images/affinitymap_remind2.png'
@@ -132,6 +134,12 @@ const Project3 = () => {
           image={AfinMap2}
           image2={Pattern}
         />
+        <Title>Reframing the challenge with insights</Title>
+          <Description>
+            My PM and I chose to focus on designing a trigger for each of these two donor behaviors. I framed the questions:
+            <p>1. How might we design a donation trigger for a user who donates impulsively?</p>
+            <p>2. How might we design a donation trigger for a user who makes consistent, deliberate donations?</p>
+          </Description>
         </Content>
       </ContainerGray>
       <Container>
@@ -196,6 +204,7 @@ const Project3 = () => {
             }
             image={TriggerHab2}
           />
+          
         </Content>
       </ContainerGray>
       <Container>
@@ -214,11 +223,22 @@ const Project3 = () => {
             image2={TileTest2}
           />
           <Validate />
-          <Solutions />
+          </Content>        
+      </Container>
+      <Solution
+          heroImgURL={DonateBkgd}
+          title={"The Solution"}
+          description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previous supported' tile."}
+          />
+      <Container>
+        <Content>
+            <Features />
+            <ProjectLearnings />
+        </Content>
+      </Container>
   
         
-        </Content>        
-      </Container>
+        
     </Layout>
   )
 }

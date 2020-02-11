@@ -185,7 +185,7 @@ const SkipLink = styled.a`
     line-height: 1.54;
     letter-spacing: -0.1px;
     text-align: center;
-    color: #3bceac;
+    color: #540D6E;
     cursor: pointer;
     margin-top: 24px;
     &:hover {

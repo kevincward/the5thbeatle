@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import p1_img1 from '../images/p1_feature1.png';
-import p1_img2 from '../images/p1_feature2.png';
-import p1_img3 from '../images/p1_feature3.png';
-import p1_img4 from '../images/p1_feature4.png';
 import './Card.css'
+
+import p3_img1 from '../images/p3_feature1.png';
+import p1_img2 from '../images/p1_feature2.png';
 
 const Container = styled.div`
     display: flex;
@@ -18,7 +17,7 @@ const Container = styled.div`
 ` 
 
 const Content = styled.div`
-    height: 2200px;
+    height: 1100px;
     width: auto;
     border-radius: 10px;
     background-color: #f8f8f8;
@@ -93,15 +92,15 @@ const FeatureContent = styled.div`
 ` 
 
 const Img = styled.img`
-    width: auto;
-    height: 433px;
+    width: 600px;
+    height: 100%;
     @media (max-width: 768px) {
         height: 260px;
     }
 `
 
 const ImgContainer = styled.div`
-    width: 45%;
+    width: 55%;
     display: flex;
     justify-content: center;
     @media (max-width: 768px) {
@@ -119,7 +118,7 @@ const Experience = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: -300px auto;
+    margin: -200px auto;
     @media (max-width: 768px) {
         margin-top: -350px;
         padding: 24px 16px;
@@ -173,7 +172,7 @@ const features = [
         description: "A sticky search bar at the top for users who know what they are looking for \
             Nearby charities list for new donors looking for local giving options \n \
             Dynamic featured list for donors looking for a familiar charity",
-        img: p1_img1
+        img: p3_img1
     },
     {
         title: "Individual charity pages",
@@ -181,23 +180,7 @@ const features = [
             for easy recognition, impact  statement to drive \
             emotional appeal, and EIN number to prove the \
             charity’s legitimacy.",
-        img: p1_img2
-    },
-    {
-        title: "Adjustable anonymity",
-        description: "Leveraging the existing amount selection app pattern, I \
-            added a share personal information opt-out, giving the \
-            user more control of their privacy.",
-        img: p1_img3
-    },
-    {
-        title: "Sharing the charity you support",
-        description: "Building on the confirmation screen app pattern, I added \
-            a native share option so the user could share their cause \
-            to the platform of their choice. The share message \
-            autopopulates with the charity’s name and a link to their \
-            charity profile.  ",
-        img: p1_img4
+        img: p3_img1
     },
     
 ]
@@ -228,16 +211,6 @@ const P1Features = props => (
                 We launched the feature and saw slow adoption. We reviewed the analytics on weekly basis to monitor for where 
                 dropoff occurred and began speculating how to make improvements. As Giving Tuesday drew near, we partnered with
                 the marketing team to bring awareness to donating with the PayPal app. The marketing effort brought 
-            </ExpDescription>
-            <br />
-            <br />
-            <ExpTitle>
-                $1.5 million TPV
-            </ExpTitle>
-            <ExpDescription>
-            It may have taken a couple of months for the Donate feature to take off but when it did, we started to see strong numbers 
-            on a monthly basis. By June 2017 (one year after launch), PayPal saw 1.5 million in total payment volume through the app 
-            donate feature.
             </ExpDescription>
         </Experience>
     </Container>

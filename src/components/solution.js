@@ -1,56 +1,34 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 
-const HeroBackground = styled.div`
-  background: url(${({ heroImgURL }) => heroImgURL});
-  height: 28rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-color: white;
-  padding-top: 4.5rem;
-
-  @media (max-width: 768px) {
-    height: 24rem;
-  }
+const Background = styled.div`
+    background: url(${({ heroImgURL }) => heroImgURL});
+    height: 29rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 `
 
-const ContentContainer = styled.div`
-  margin: 0 0 0 6.5rem;
-  
-
-  @media (max-width: 768 px) {
-    margin: 0 0 0 2rem;
-  }
-
-`
-
-const Experience = styled.div`
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    margin-top: 60px;
-    padding: 32px;
+const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 80px 90px;
     @media (max-width: 768px) {
-        margin-top: 0px;
-        padding: 24px 16px;
+        margin: 60px 24px;
     }
-` 
+`
 
 const Title = styled.div`
-
-    font-size: 24px;
+    width: 565px;    
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
+    width: 80%;
     color: #000000;
     margin-bottom: 32px;
     @media (max-width: 768px) {
@@ -58,33 +36,52 @@ const Title = styled.div`
         font-size: 24px;
     }
 `
-
-const Description = styled.div`
-
-    font-size: 16px;
+const Description = styled.div`    
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
+    width: 80%;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
-    width: 300px;
 `
 
-const Solution = React.memo(
-  ({ heroImgURL, title, description }) => {
-    return (
-      <HeroBackground heroImgURL={heroImgURL}>
-        <ContentContainer id="Solution">
-            <Experience>
-                <Title>{title}</Title>
-                <Description>{description}</Description>
-            </Experience>
-        </ContentContainer>
-      </HeroBackground>
-    )
-  }
-)
+const Content = styled.div`
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        justify-content: left;
+    }    
+` 
 
-export default Solution
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+const solution = React.memo(({ title, description, heroImgURL}) => {
+    return (
+        <Background heroImgURL={heroImgURL}>
+            <Container>            
+                <Content>
+                    <TextContainer>
+                        <Title>
+                            {title}
+                        </Title>
+                        <Description>
+                            {description}
+                        </Description>
+                    </TextContainer>
+                </Content>
+            </Container>
+        </Background>
+    )
+})
+
+export default solution
