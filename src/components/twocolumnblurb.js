@@ -38,6 +38,17 @@ const Description = styled.div`
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
 `
+const Description2 = styled.div`    
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+`
 
 const Content = styled.div`
     display: flex;
@@ -53,7 +64,7 @@ const Content = styled.div`
 
 const Image = styled.div`
   display: block;
-  height: auto;
+  height: 100%;
   max-width: 500px;
   min-width: 400px;
   margin-left: auto;
@@ -70,7 +81,7 @@ const TextContainer = styled.div`
   justify-content: center;
 `
 
-const TwoColumnBlurb = React.memo(({ title, description, image}) => {
+const TwoColumnBlurb = React.memo(({ title, description, description2, image}) => {
     return (
         <Container>            
             <Content>
@@ -91,6 +102,9 @@ const TwoColumnBlurb = React.memo(({ title, description, image}) => {
                     <Description>
                         {description}
                     </Description>
+                    <Description2>
+                        {description2}
+                    </Description2>
                 </TextContainer>
                 {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
                 <Image>

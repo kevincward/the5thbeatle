@@ -28,7 +28,7 @@ const Title = styled.div`
     font-style: normal;
     line-height: 1.08;
     letter-spacing: -0.55px;
-    color: #1a1a1a;
+    color: #000000;
 `
 
 const Img = styled.img`

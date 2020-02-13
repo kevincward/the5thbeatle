@@ -73,7 +73,7 @@ const CommentContent = styled.div`
     line-height: 1.6;
     letter-spacing: -0.09px;
     color: #000000;
-    width: 435px;
+    width: 750px;
     margin-bottom: 16px;
     @media (max-width: 768px) {
         width: 100%;
@@ -104,25 +104,21 @@ const Quotes = props => (
     <Container id="quotes">
         <TitleContainer>
             <Img src={shape}/>
-            <Title>Participant comments</Title>
+            <Title>Unexpected feedback</Title>
         </TitleContainer>
-        <Description>
-            Individuals who had made a digital donation in the last six months were recruited for in-depth interviews. 
-            In each session, I asked the participant to walk me through their last donation experience and tell me about what 
-            their ideal donation app could do. 
-        </Description>
         <Comments>
             <Comment 
-                text="''I really don’t have to donate, so why do they make the donation [process] so hard?''"
-                name="Michelle S."
-                role="Participant"
-            />
-            <Comment 
-                text="''I keep asking myself- is this a real charity and what will they do with the money? My donate app would tell you right away.''"
-                name="George P."
+                text="''It’s [the flow] great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to relatively confident it’ll pass.''"
+                name="Anonymous CannaChef"
                 role="Participant"
             />
         </Comments>
+        <br />
+        <Description>
+        Two other participants at the show shared this perspective. This feedback pointed out a very interesting piece we 
+        had not previously considered- some users will want an idea of potency rather than an exact number because they 
+        either won’t have time or desire to go through the whole process.
+        </Description>
     </Container>
 )
 

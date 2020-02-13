@@ -55,6 +55,10 @@ const SectionTitle = styled.h3`
        margin-left: -50px;
     }
 `
+const HorizontalLine = styled.div`
+    width: 80px;
+    border: solid 1px #f7991e;
+`
 
 const CardCarousel = styled.div` 
     .slick-slide {
@@ -109,7 +113,7 @@ const cards = [
     },
     {
         title: "Measurement tools built for all skill levels",
-        text: "tCheck",
+        text: "Engineered Medical Technologies",
         link: "Learn More",
         url: "/project2"
     },

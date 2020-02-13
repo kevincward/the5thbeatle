@@ -16,7 +16,7 @@ import ProjectLearnings from '../components/p3_projectlearnings'
 
 import AfinMap from '../images/affinitymap_remind.png'
 import AfinMap2 from '../images/affinitymap_remind2.png'
-import Pattern from '../images/pattern_remind.png'
+import Pattern from '../images/p3_pattern_remind.png'
 import Fogg from '../images/foggmodel_remind.png'
 import IA from '../images/paypal_ia_remind.png'
 import IA2 from '../images/paypal_ia2_remind.png'
