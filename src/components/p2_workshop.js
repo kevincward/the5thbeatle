@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import ModalImage from "react-modal-image";
 
 import Personas from '../images/p2_personas.png';
-
+import hardhat from '../images/ic_hardhat.svg';
+import Group from '../images/p2_workshop_group.png';
+import NotWorking from '../images/p2_workshop4.jpg';
 
 
 const Container = styled.div`
@@ -54,6 +56,48 @@ const Image = styled.div`
   }
 `
 
+const TitleContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+`
+
+const Icon = styled.img`
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+`
+
+const Title2 = styled.div`
+
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: -0.55px;
+    color: #000000;
+`
+const TopContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
+const TextContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    padding-right: 100px;
+    @media (max-width: 768px) {
+        width: 100%;        
+    }
+`
 
 
 const Workshop = React.memo(({image,}) => {  
@@ -78,13 +122,66 @@ const Workshop = React.memo(({image,}) => {
             </Description>
             <br />
             <Image>
-            <ModalImage
-                small={Personas}
-                medium={Personas}
-                imageBackgroundColor="#ffff"
-            />
-        </Image>
+                <ModalImage
+                    small={Personas}
+                    medium={Personas}
+                    imageBackgroundColor="#ffff"
+                />
+            </Image>
+            <br />
+            <br />
+            <TitleContainer>
+            <Icon src={hardhat}/>
+            <Title2>Workshop day</Title2>
+            </TitleContainer>
+            <Description>
+                <p>
+                Prior to the meeting, all stakeholders were provided:
+                </p>
+                <p>
+                  1. Problem statement: As an ediblemaker, I want to test the potency of my cannabis plant infused oils so I know how it will impact my recipe    
+                </p>  
+                <p>
+                  2. Personas   
+                </p>  
+                <p>
+                  3. Brief synoposis of how feature would work from a technical standpoint   
+                </p>
+                <p>
+                I hung the inital flow on the wall,  handed out post-it note pads, and gave stakeholders 15 mins to look over the flow and provide notes via post it notes on the flow.   
+                </p>    
+            </Description> 
+            <br />
+            <Image>
+                <ModalImage
+                    small={Group}
+                    medium={Group}
+                />
+            </Image> 
+            <br />
+            <br />
+            <br />
+            <br />
+            <TopContainer>
+                <TextContent>
+                    <Title>
+                        This isn’t working…
+                    </Title>
+                    <Description>
+                        Since every strain of cannabis is a little different, users would need to create a unique profile (also called a strain map) for the plant they are using. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
+                    </Description>
+                    <br />
+                </TextContent>
                 
+                <Image>
+                <ModalImage
+                    small={NotWorking}
+                    medium={NotWorking}
+                    imageBackgroundColor="#ffff"
+                />
+                </Image>
+            </TopContainer>            
+            
             
         </Container>
     )
