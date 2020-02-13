@@ -30,16 +30,17 @@ $black: #FFD23E;
       position: relative;
       display: block;
       margin: 0;
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
       width: 3rem;
       height: 3rem;
-      background: $black;
+      border: 1px $black solid;
       border-radius: 1.625rem;
       .icon {         
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
-        background: $white;
+        background: $black;
         &.arrow {
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
           left: 0.625rem;
@@ -53,8 +54,8 @@ $black: #FFD23E;
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid #fff;
-            border-right: 0.125rem solid #fff;
+            border-top: 0.125rem solid $black;
+            border-right: 0.125rem solid $black;
             transform: rotate(45deg);
           }
         }
@@ -86,14 +87,14 @@ $black: #FFD23E;
         width: 100%;
         .icon {
           &.arrow {
-          background: $white;
+          background: $black;
           transform: translate(1rem, 0);
           }
         }
       }
       .button-text {
           opacity: 1;
-        color: $white;
+          color: $black;
       }
     }    
       margin-right: 0px;    
