@@ -11,11 +11,10 @@ import TwoColumnBlurb from '../components/twocolumnblurb'
 import Unexpected from '../components/p2_unexpected'
 import UserWants from '../components/p2_userwants'
 import FirstPass from '../components/p2_firstpass'
-import TestSuccess from '../components/p2_testsuccess'
 import ProtoType from '../components/p2_prototype'
 import TestingSuccess from '../components/p2_testingsuccess'
+import Workshop1 from '../components/p2_workshop'
 
-import Personas from '../images/personas_donate.png'
 import Insights from '../images/insights_donate.svg'
 import Bkgd from '../images/hero_backgd_cs2.svg'
 import HeroIcon from '../images/ic_timeline_tch.svg'
@@ -79,8 +78,6 @@ const Project2 = () => {
           title={"Testing cannabis infusions with tCheck"}
           img={HeroIcon}
           />
-      <ProtoType />
-      <TestingSuccess />
       <Container>
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
@@ -88,47 +85,41 @@ const Project2 = () => {
         <Content>          
           <OverView />
           <UserWants />
-          <FirstPass />
           <Divider />
-          <ContentBlurb
-            description={
-              "Next, I used all of the qualitative data I gathered during the interviews to create two user personas."
-            }
-            image={Personas}
-          />
-      </Content>
+          <FirstPass />
+        </Content>
       </Container>
       <ContainerGray>
         <Content>
-        <Title>Insights</Title>
-        <ContentBlurb
-          description={
-            "After conducting the interviews, comparing competitive products, and reviewing industry insights, I compiled the findings into three groups:"
-          }
-          image={Insights}
-        />
+          <Title>Fleshing out the stakeholder requirements</Title>
+          <ContentBlurb
+            description={
+              "Having met with the engineering team to discuss the technical workflow and contstraints, I then sat with leadership to discuss the business goals and user needs for this feature."
+            }
+            image={Insights}
+          />
         </Content>
       </ContainerGray>
       <Container>
-        <Content>  
-        
-        <Divider />
-        <TestSuccess />
-        <Unexpected />
-        <Divider />
-          <TwoColumnBlurb
-              title={
-                "Ok, let’s offer a default option"
-              }
-              description={
-                "After the conference, I met with leadership and our engineer lead to debrief on all the feedback. We agreed that we needed to account for users who wanted to run a flower based infusion potency test without mapping their flower strain."
-              }
-              description2={
-                "Having ran countless tests on several strain varieties we were confident that we could offer a default strain setting for users that would use the average of 12 different cannabis strains."
-              }
+        <Content>
+          <Workshop1 /> 
+          <TestingSuccess />
+          <ProtoType />
+          <Unexpected />
+          <Divider />
+            <TwoColumnBlurb
+                title={
+                  "Ok, let’s offer a default option"
+                }
+                description={
+                  "After the conference, I met with leadership and our engineer lead to debrief on all the feedback. We agreed that we needed to account for users who wanted to run a flower based infusion potency test without mapping their flower strain."
+                }
+                description2={
+                  "Having ran countless tests on several strain varieties we were confident that we could offer a default strain setting for users that would use the average of 12 different cannabis strains."
+                }
 
-              image={DefaultOption}
-            />
+                image={DefaultOption}
+              />
         </Content>        
       </Container> 
         <Solution

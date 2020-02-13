@@ -108,7 +108,7 @@ const Quotes = props => (
         </TitleContainer>
         <Comments>
             <Comment 
-                text="''It’s [the flow] great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to relatively confident it’ll pass.''"
+                text="''It’s [the flow] great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to be relatively confident it’ll pass.''"
                 name="Anonymous CannaChef"
                 role="Participant"
             />

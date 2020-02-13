@@ -50,13 +50,14 @@ const Header = styled.div`
 
 const Text = styled.div`
     width: 447px;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.47;
-    letter-spacing: -0.1px;
-    color: #595959;
+    line-height: 1.5;
+    letter-spacing: -0.11px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 8px;
     @media (max-width: 720px) {
         width: 100%;
     }
@@ -69,10 +70,18 @@ const P2_prototype = () => (
                 Let’s get it in front of users
             </Header>
             <Text>
-                I created an invision protoype for two testing opportunites: 
-                1. Testing in office: 5 home ediblemakers (tCheck users) who would use the prototype flow and walk through the plant based infusion potency testing process with all the supplies they would need to run a test (tCheck, testing accessories, app)
-                From this testing, I was able to document steps that created the most friction for evaluation and content suggests that would improve flow comprehension.
-                2. Testing at LA cannabis conference:  4 professional ediblemakers (tCheck users) who would walk through the prototype without all the testing supplies.
+                I created a Marvel protoype for two testing opportunites: 
+                <p>
+                1. Testing in office: 5 home ediblemakers (tCheck users) who would use the prototype flow and walk through the plant based infusion potency testing process 
+                with all the supplies they would need to run a test (tCheck, testing accessories, app) 
+                </p>
+                <p>
+                From this testing, I was able to document steps that created the most 
+                friction for evaluation and content suggests that would improve flow comprehension.
+                </p>
+                <p>
+                2. Testing at the LA cannabis conference:  4 professional ediblemakers (tCheck users) who would walk through the prototype without all the testing supplies.
+                </p>
             </Text>
         </TextContent>
         <Frame 
