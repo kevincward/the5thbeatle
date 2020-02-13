@@ -9,6 +9,9 @@ const Background = styled.div`
     background-size: cover;
     background-position: center;
     position: relative;
+    @media (max-width: 768px) {
+        height: 20rem;
+    }   
 `
 
 const Container = styled.div`
@@ -24,6 +27,7 @@ const Content = styled.div`
     flex-direction: column;
     @media (max-width: 768px) {
         justify-content: left;
+        padding-top: 100px;
     }    
 ` 
 

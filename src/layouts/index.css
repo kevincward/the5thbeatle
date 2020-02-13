@@ -55,7 +55,7 @@ a {
   color: #000000;
  
   font-size: 21px;
-  line-height: 2;
+  line-height: 1.5;
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.2s;
@@ -68,7 +68,7 @@ a {
   color: #540D6E;
   font-size: 21px;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.5;
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.2s;
@@ -83,18 +83,15 @@ a {
 
 @media (max-width: 720px) {
   
-  
+  .Hero {
+    height: 480px;
+  }
+
   .HeroGroup {
     padding: 100px 20px;
   }
 
-  .Hero h1 {
-    font-size: 40px;
-  }
 
-  .Hero p {
-    font-size: 24px;
-  }
 }
 
 .Cards h2 {
