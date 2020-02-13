@@ -7,7 +7,6 @@ import DonateBkgd from '../images/hero_backgd_cs3.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
 import TwoColumnBlurb from '../components/twocolumnblurb'
 import OverView from '../components/overView3'
-import Research from '../components/p3_research'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
 import Solution from '../components/solution';
