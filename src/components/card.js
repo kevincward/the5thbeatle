@@ -10,7 +10,7 @@ const ArrowIcon = styled(FontAwesomeIcon)`
   position: relative;
   top: 1px;
   margin-left: 2px;
-  color: #ffd23e;
+  color: #F7991E;
 
   .card-link:hover & {
     transform: translateX(4px);

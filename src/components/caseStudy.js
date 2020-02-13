@@ -9,7 +9,7 @@ import "./arrowBtn.scss"
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
-    top: -100px;
+    top: -100px; 
     position: relative;
     z-index: 0;
     margin-top: -250px;

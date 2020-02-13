@@ -41,8 +41,8 @@
 .Card p {
     color: rgba(0, 0, 0, 0.7);
     font-weight: 500;
-    font-size: 16px;
-    padding-top: 15px;
+    font-size: 18px;
+    padding-top: 30px;
     margin: 0 0 20px 20px;
 }
 
@@ -56,6 +56,6 @@
 
 .horizontal-line {
     width: 80px;
-    border: solid 1px #f7991e;
+    border: solid 1px #F7991E;
     margin-left: 20px;
 }

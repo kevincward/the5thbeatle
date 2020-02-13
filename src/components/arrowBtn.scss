@@ -2,7 +2,7 @@
 
 $bg: #f3f8fa;
 $white: #fff;
-$black: #FFD23E;
+$yellow: #FFD23E;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -33,14 +33,14 @@ $black: #FFD23E;
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
       width: 3rem;
       height: 3rem;
-      border: 1px $black solid;
       border-radius: 1.625rem;
+      background: $yellow;
       .icon {         
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
-        background: $black;
+        background: $white;
         &.arrow {
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
           left: 0.625rem;
@@ -54,8 +54,8 @@ $black: #FFD23E;
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid $black;
-            border-right: 0.125rem solid $black;
+            border-top: 0.125rem solid $white;
+            border-right: 0.125rem solid $white;
             transform: rotate(45deg);
           }
         }
@@ -70,7 +70,7 @@ $black: #FFD23E;
       bottom: 0;
       padding: 0.6rem 0;
       margin: 0 0 0 1rem;
-      color: $black;      
+      color: $white;      
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -87,14 +87,14 @@ $black: #FFD23E;
         width: 100%;
         .icon {
           &.arrow {
-          background: $black;
+          background: $white;
           transform: translate(1rem, 0);
           }
         }
       }
       .button-text {
           opacity: 1;
-          color: $black;
+          color: $white;
       }
     }    
       margin-right: 0px;    

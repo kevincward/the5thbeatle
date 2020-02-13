@@ -15,10 +15,11 @@ import ProtoType from '../components/p2_prototype'
 import TestingSuccess from '../components/p2_testingsuccess'
 import Workshop1 from '../components/p2_workshop'
 
-import Insights from '../images/insights_donate.svg'
+import tCheck from '../images/p2_tCheck.jpg'
 import Bkgd from '../images/hero_backgd_cs2.svg'
 import HeroIcon from '../images/ic_timeline_tch.svg'
 import DefaultOption from '../images/p2_adddefault.png'
+import Reqs from '../images/p2_reqs.png'
 
 
 const Container = styled.div`
@@ -84,6 +85,15 @@ const Project2 = () => {
         : null} */}        
         <Content>          
           <OverView />
+          <ContentBlurb
+            title={
+              "A bit about tCheck"
+            }
+            description={
+              "Engineered Medical Technologies (EMT) created the tCheck device, the first handheld cannabis potency tester which can collect live readings to address a major pain point for cannabis users: not knowing the potency of their cannabis infusions. Edibles are often used by cannabis users due to their convenience, discretion, and long-lasting effects. However, when it comes to creating edibles, proper dosing is critical to achieving the desired effect (too little there is no effect, too much and the user can become drowsy)."
+            }
+            image={tCheck}
+          />
           <UserWants />
           <Divider />
           <FirstPass />
@@ -96,7 +106,7 @@ const Project2 = () => {
             description={
               "Having met with the engineering team to discuss the technical workflow and contstraints, I then sat with leadership to discuss the business goals and user needs for this feature."
             }
-            image={Insights}
+            image={Reqs}
           />
         </Content>
       </ContainerGray>
