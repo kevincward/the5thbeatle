@@ -108,7 +108,7 @@ const cards = [
         url: "/project1"
     },
     {
-        title: "Measurement tools built for all skill levels",
+        title: "Complex measuring made easy",
         text: "Engineered Medical Technologies",
         link: "View Project",
         url: "/project2"

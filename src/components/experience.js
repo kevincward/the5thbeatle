@@ -89,11 +89,11 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;    
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 2;
     letter-spacing: normal;
     color: #000000;
 `
@@ -109,7 +109,7 @@ const ItemRole = styled.div`
 `
 
 const ItemDescription = styled.div`    
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;

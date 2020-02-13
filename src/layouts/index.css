@@ -66,10 +66,9 @@ a {
 
 .Hero a {
   color: #540D6E;
- 
   font-size: 21px;
   font-weight: 700;
-  line-height:1.5;
+  line-height: 2;
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.2s;

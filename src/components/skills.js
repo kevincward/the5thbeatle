@@ -81,13 +81,13 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
 
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 21px;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
     letter-spacing: normal;
-    color: #333333;
+    color: #000000;
     margin-bottom: 8px;
 `
 
