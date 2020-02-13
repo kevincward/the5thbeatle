@@ -9,7 +9,7 @@ import TwoColumnBlurb from '../components/twocolumnblurb'
 import OverView from '../components/overView3'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
-import Solution from '../components/solution';
+import Solution from '../components/solution'
 import Features from '../components/p3_features';
 import ProjectLearnings from '../components/p3_projectlearnings'
 
@@ -225,6 +225,7 @@ const Project3 = () => {
           </Content>        
       </Container>
       <Solution
+          id="Solution3"
           heroImgURL={DonateBkgd}
           title={"The Solution"}
           description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previous supported' tile."}

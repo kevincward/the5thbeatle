@@ -5,7 +5,7 @@ import time from '../images/ic_canna_time.svg'
 import acc from '../images/ic_canna_acc.svg'
 import twopart from '../images/ic_canna_twopart.svg'
 import wall from '../images/ic_wall.svg'
-
+import topImg from '../images/compete_donate.png'
 
 const Container = styled.div`
     display: flex;
@@ -16,8 +16,7 @@ const Container = styled.div`
     }
 `
 
-const Title = styled.div`
-    width: 565px;
+const Title = styled.div`    
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -28,7 +27,8 @@ const Title = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
+        font-size: 24px;
+        margin-bottom: 16px;
     }
 `
 
@@ -40,8 +40,9 @@ const Description = styled.div`
     line-height: 1.5;
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
-    margin-top: 12px;
+    @media (max-width: 768px) {
+        margin-bottom: 32px;
+    }    
 `
 
 const TitleContainer = styled.div`
@@ -137,6 +138,34 @@ const ItemDescription = styled.div`
 const ItemContent = styled.div`
     
 `
+
+const TopContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
+const TextContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    @media (max-width: 768px) {
+        width: 100%;        
+    }
+`
+
+const TopImg = styled.img`
+    width: 50%;
+    height: auto;
+    margin-left: 90px;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-left: 0px;
+    }
+`
+
 const Item = ({icon, title, description}) => {
     return (
         <ItemContainer>
@@ -153,12 +182,17 @@ const Firstpass = () => {
 
     return (
         <Container>
-            <Title>
-                First pass at the flow with engineering team
-            </Title>
-            <Description>
-            Since every strain of cannabis is a little different, users would need to create a unique profile (also called a strain map) for the plant they are using. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
-            </Description>
+            <TopContainer>
+                <TextContent>
+                    <Title>
+                        First pass at the flow with engineering team
+                    </Title>
+                    <Description>
+                        Since every strain of cannabis is a little different, users would need to create a unique profile (also called a strain map) for the plant they are using. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
+                    </Description>
+                </TextContent>
+                <TopImg src={topImg}/>
+            </TopContainer>            
             <br />
             <br />
             <TitleContainer>

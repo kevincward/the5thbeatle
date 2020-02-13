@@ -258,7 +258,7 @@ const OverView = props => (
             </ExpDescription>
             <SkipLink onClick={() => {
                 scroll.scrollTo(
-                    document.getElementById("Solution").offsetTop - 100
+                    document.getElementById("Solution2").offsetTop - 100
                     )
             }}>
                 Skip process and see where we landed <ItemArrow src={arrow} />

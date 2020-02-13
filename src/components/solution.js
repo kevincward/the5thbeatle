@@ -65,10 +65,10 @@ const TextContainer = styled.div`
   justify-content: center;
 `
 
-const solution = React.memo(({ title, description, heroImgURL}) => {
+const solution = React.memo(({ title, description, heroImgURL, id}) => {
     return (
-        <Background heroImgURL={heroImgURL}>
-            <Container>            
+        <Background heroImgURL={heroImgURL} id={id}>
+            <Container>
                 <Content>
                     <TextContainer>
                         <Title>

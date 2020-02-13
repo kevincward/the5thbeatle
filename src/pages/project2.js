@@ -5,14 +5,15 @@ import OverView from '../components/overView2'
 import Layout from '../layouts'
 import ContentBlurb from '../components/contentblurb'
 import ProjectLearnings from '../components/p2_projectlearnings'
-import Solution from '../components/solution';
+import Solution from '../components/solution'
 import Features from '../components/p2_features'
 import TwoColumnBlurb from '../components/twocolumnblurb'
 import Unexpected from '../components/p2_unexpected'
 import UserWants from '../components/p2_userwants'
 import FirstPass from '../components/p2_firstpass'
 import TestSuccess from '../components/p2_testsuccess'
-
+import ProtoType from '../components/p2_prototype'
+import TestingSuccess from '../components/p2_testingsuccess'
 
 import Personas from '../images/personas_donate.png'
 import Insights from '../images/insights_donate.svg'
@@ -78,11 +79,13 @@ const Project2 = () => {
           title={"Testing cannabis infusions with tCheck"}
           img={HeroIcon}
           />
+      <ProtoType />
+      <TestingSuccess />
       <Container>
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
-        : null} */}
-        <Content>  
+        : null} */}        
+        <Content>          
           <OverView />
           <UserWants />
           <FirstPass />
@@ -129,6 +132,7 @@ const Project2 = () => {
         </Content>        
       </Container> 
         <Solution
+          id="Solution2"
           heroImgURL={Bkgd}
           title={"The Solution"}
           description={"For MVP, we decided to only release the default setting for cannbis plant infusion potenct testing. This would allow us to introduce users to the feature slowly for increased adoption and do more user testing on the strain mapping flow. The roadmap plans for the strain map flow to be avaialble this spring."}
