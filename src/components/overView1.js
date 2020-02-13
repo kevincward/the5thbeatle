@@ -188,12 +188,10 @@ const SkipLink = styled.a`
     color: #540D6E;
     cursor: pointer;
     margin-top: 24px;
+    transition: all 300ms ease 0s;    
     &:hover {
-    transform: translateY(3px);
-    transition-timing-function: ease-in;
-        transition: .5s;
-    
-  }
+        transform: translateY(3px);        
+    }
 
     @media (max-width: 768px) {
         margin-top: 16px;

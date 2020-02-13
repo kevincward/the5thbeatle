@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from '../components/card'
-import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -10,7 +9,7 @@ import "./arrowBtn.scss"
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
-    top: -100px;
+    top: -200px;
     position: relative;
     z-index: 0;
     margin-top: -150px;
@@ -55,10 +54,6 @@ const SectionTitle = styled.h3`
        margin-left: -50px;
     }
 `
-const HorizontalLine = styled.div`
-    width: 80px;
-    border: solid 1px #f7991e;
-`
 
 const CardCarousel = styled.div` 
     .slick-slide {
@@ -70,6 +65,7 @@ const CardCarousel = styled.div`
     
     .slick-list {
         overflow: hidden;
+        padding: 50px 10px;
     }
     
     @media (max-width: 720px) {
