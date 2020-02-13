@@ -2,11 +2,12 @@ import React from 'react'
 import styled from "styled-components"
 import Hero from '../components/hero_proj'
 import Layout from '../layouts'
+import ModalImage from "react-modal-image";
 
 
-import DonateBkgd from '../images/hero_test.png'
+import Bkgd from '../images/hero_backgd_p2.svg'
 import HeroIcon from '../images/ic_other_emoj.svg'
-import Image from '../images/prjt_emoji1.png'
+import Emoji from '../images/prjt_emoji1.png'
 
 
 const Container = styled.div`
@@ -20,8 +21,7 @@ const Container = styled.div`
 `
 
 const Text = styled.div`
- 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -42,12 +42,16 @@ const Text = styled.div`
   }
 `
 
-const Img = styled.img`
-  width: 50%;
-  height: auto;
-  @media (max-width: 768px) {
-    width: 100%;
-    margin: 32px 0;
+const Image = styled.div`
+  display: block;
+  height: 100%;
+  max-width: 800px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
   }
 `
 
@@ -63,8 +67,7 @@ const Content = styled.div`
 
 const HeadLine = styled.div`
     width: 565px;
-
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -85,10 +88,9 @@ const HeadLine = styled.div`
 `
 
 const Link =styled.a`
-color: #540D6E;
- 
+  color: #540D6E;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height:1.5;
   animation: HeroAnimation;
   animation-duration: 3s;
@@ -101,13 +103,13 @@ color: #540D6E;
     }
   `
 
-const ProjectEmoji = () => {    
+const ProjectEmoji = React.memo(({image}) => { 
 
   
   return (
     <Layout>
       <Hero 
-          heroImgURL={DonateBkgd}
+          heroImgURL={Bkgd}
           title={"Emoji"}
           img={HeroIcon}
           />
@@ -128,12 +130,18 @@ const ProjectEmoji = () => {
             <Link href="https://drive.google.com/file/d/1lslLloDSprBxSri8EcQKd8Kk9vc6eOLY/view?usp=sharing" target='blank'>See Presentation</Link>
           </Text>
           </Content>  
-          <Img src={Image} />     
+          <Image>
+                 <ModalImage
+                    small={Emoji}
+                    medium={Emoji}
+                    imageBackgroundColor="#ffff"
+                 />
+                 </Image>    
         
       </Container>
     </Layout>
   
   )
-}
+})
 
 export default ProjectEmoji

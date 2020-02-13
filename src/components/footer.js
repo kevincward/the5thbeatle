@@ -24,7 +24,7 @@ const FooterGroup = styled.div`
 `
 
 const Title = styled.p`    
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -43,7 +43,7 @@ const Title = styled.p`
 `
 
 const Text = styled.p`    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -62,7 +62,7 @@ const Text = styled.p`
 
 const Copyright = styled.div`
     color: #FFFFFF;    
-    font-size: 12px;
+    font-size: 13px;
     max-width: 540px;
     margin: 0 auto;
     padding: 0 20px;
@@ -73,7 +73,7 @@ const Copyright = styled.div`
 const Link = styled.a`
     color: #FFFFFF;    
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 700;
     line-height:1.5;
 `
 const SocialsContainer = styled.div`

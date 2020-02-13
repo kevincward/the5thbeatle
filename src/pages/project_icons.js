@@ -4,7 +4,7 @@ import Hero from '../components/hero_proj'
 import Layout from '../layouts'
 import ContentBlurb from '../components/contentblurb'
 
-import DonateBkgd from '../images/hero_projectdonate.png'
+import Bkgd from '../images/hero_backgd_p1.svg'
 import HeroIcon from '../images/ic_other_icons.svg'
 import CauseIcons from '../images/project_icons_cause.svg'
 import tCheckIcons from '../images/project_icons_tcheck.svg'
@@ -13,7 +13,7 @@ import OtherIcons from '../images/project_icons_other.svg'
 
 const Container = styled.div`
     display: flex;
-    padding: 160px 30px 80px;
+    padding: 10px 30px 80px;
     flex-direction: column;
     @media (max-width: 768px) {
       flex-direction: column;
@@ -28,6 +28,10 @@ const Content = styled.div`
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
   margin: 80px 90px;
+  @media (max-width: 768px) {
+    margin: 40px 10px;
+}
+
 
 `
 
@@ -36,17 +40,16 @@ const ProjectIcons = () => {
   
   return (
     <Layout>
+      <Hero 
+          heroImgURL={Bkgd}
+          title={"Icons"}
+          img={HeroIcon}
+          />
       <Container>
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
         : null} */}
         <Content>
-          <Hero 
-          heroImgURL={DonateBkgd}
-          title={"Icons"}
-          img={HeroIcon}
-          />
-          
           <ContentBlurb
             title={
               "New Charity Categories"

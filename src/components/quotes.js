@@ -22,7 +22,7 @@ const TitleContainer = styled.div`
 
 const Title = styled.div`
 
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -35,6 +35,10 @@ const Img = styled.img`
     width: 30px;
     height: 30px;
     margin-right: 11px;
+
+    @media (max-width: 768px) {
+    
+    }
 `
 
 const Description = styled.div`
@@ -66,7 +70,7 @@ const CommentContainer = styled.div`
 
 const CommentContent = styled.div`
 
-    font-size: 20px;
+    font-size: 21px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -104,7 +108,7 @@ const Quotes = props => (
     <Container id="quotes">
         <TitleContainer>
             <Img src={shape}/>
-            <Title>Participant comments</Title>
+            <Title>What participants said</Title>
         </TitleContainer>
         <Description>
             Individuals who had made a digital donation in the last six months were recruited for in-depth interviews. 

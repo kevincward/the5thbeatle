@@ -66,7 +66,7 @@ const CommentContainer = styled.div`
 
 const CommentContent = styled.div`
 
-    font-size: 20px;
+    font-size: 21px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

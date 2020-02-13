@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from "styled-components"
 import Hero from '../components/hero_case'
-import SolutionBkgd from '../images/solution_donate.jpg'
 import OverView from '../components/overView1'
 import Quotes from '../components/quotes'
 import Layout from '../layouts'
 import ResearchPlan from '../components/p1_researchplan'
 import ContentBlurb from '../components/contentblurb'
+import Validate from '../components/p1_validate'
+import NextSteps from '../components/nextsteps'
+import ProjectLearnings from '../components/p1_projectlearnings'
+import Solution from '../components/solution'
+import Features from '../components/p1_features'
+
 import Compete from '../images/compete_donate.png'
 import Personas from '../images/personas_donate.png'
 import Insights from '../images/insights_donate.svg'
 import HowMightWe from '../images/howmightwe_donate.png'
 import FeatPrior from '../images/featurepri_donate.png'
 import Concept from '../images/concept_donate.png'
-import Validate from '../components/p1_validate'
-import NextSteps from '../components/nextsteps'
-import ProjectLearnings from '../components/p1_projectlearnings'
-import Solution from '../components/solution'
-import Features from '../components/p1_features'
 import DonateBkgd from '../images/hero_backgd_cs1.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
 
@@ -40,12 +40,10 @@ const ContainerGray = styled.div`
     @media (max-width: 768px) {
           padding: 32px 23px;
           width: auto;
-          margin-bottom: 300px;
+          margin-bottom: 10px;
       }
 ` 
 
-const Content = styled.div`
-`
 const Title = styled.div`
 
     font-size: 28px;
@@ -57,15 +55,16 @@ const Title = styled.div`
     color: #000000;
     margin: 80px 90px -68px;
     @media (max-width: 768px) {
-        margin: 40px 25px -68px;
-        width: 100%;
-        font-size: 28px;
+        margin: 30px 24px -20px;
     }
 `
 
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
   margin: 80px 90px;
+  @media (max-width: 768px) {
+        margin: 40px 10px;
+    }
 
 `
 
@@ -83,7 +82,7 @@ const Project1 = () => {
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
         : null} */}
-        <Content>  
+        
           <OverView />
           <ResearchPlan />
           <Quotes />
@@ -101,24 +100,23 @@ const Project1 = () => {
             }
             image={Personas}
           />
-      </Content>
+      
       </Container>
       <ContainerGray>
-        <Content>
-        <Title>Insights</Title>
+        
+        <Title>Organizing the insights</Title>
         <ContentBlurb
           description={
             "After conducting the interviews, comparing competitive products, and reviewing industry insights, I compiled the findings into three groups:"
           }
           image={Insights}
         />
-        </Content>
+        
       </ContainerGray>
-      <Container>
-        <Content>  
+      <Container>  
         <ContentBlurb
           title={
-            "How Might We…"
+            "How might we…"
           }
           description={
             "With research finished, we needed to identify and prioritize what features would make it into the MVP of native PayPal Donate. My product manager and I took a deeper dive into the insights derived from the research."
@@ -139,7 +137,7 @@ const Project1 = () => {
         
         <ContentBlurb
           title={
-            "Conceptualization"
+            "Building wireframes"
           }
           description={
             "I took these features and created an information architecture and low-fi concepts, leveraging components from the current app design for consistency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups."
@@ -149,7 +147,7 @@ const Project1 = () => {
         
         <Divider />
         <Validate />
-        </Content>        
+              
       </Container> 
         <Solution
           id="Solution1"
@@ -159,13 +157,13 @@ const Project1 = () => {
         />  
        
       <Container>
-        <Content>
+        
         
         <Features />
         <ProjectLearnings />
         <Divider />
         <NextSteps />
-        </Content>        
+               
       </Container>
     </Layout>
   )

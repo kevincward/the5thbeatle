@@ -16,7 +16,6 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -83,8 +82,7 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -124,7 +122,7 @@ const ResearchPlan = () => {
     return (
         <Container>
             <Title>
-            Research
+            Getting into research
             </Title>
             <Description>
                 I needed to uncover the needs and pain points of mobile donors so that I could identify opportunities for the 

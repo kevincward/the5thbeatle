@@ -4,31 +4,31 @@ import './Card.css'
 
 const Background = styled.div`
     background: url(${({ heroImgURL }) => heroImgURL});
-    height: 300px;
+    height: 29rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    @media (max-width: 768px) {        
-        height: 200px;
-    }
+    background-position: center;
+    position: relative;
+    @media (max-width: 768px) {
+        height: 20rem;
+    }   
 `
 
 const Container = styled.div`
     display: flex;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 20%; 
 ` 
 
 const Content = styled.div`
-    height: 400px;    
+    height: 500px;
     display: flex;
     justify-content: center;
-    flex-direction: column;        
-    @media (max-width: 768px) {        
-        padding-top: 50px;
-        height: 100px;
-    }
-    
+    flex-direction: column;
+    @media (max-width: 768px) {
+        justify-content: left;
+        padding-top: 100px;
+    }    
 ` 
 
 const Img = styled.img`
@@ -58,7 +58,6 @@ const Title = styled.div`
     }
 
 ` 
-
 const HeroProj = React.memo(({ title, heroImgURL, img}) => {
     return (
       <Background heroImgURL={heroImgURL}>
@@ -73,5 +72,6 @@ const HeroProj = React.memo(({ title, heroImgURL, img}) => {
      </Background>
     )
 })
+
 
 export default HeroProj

@@ -76,7 +76,7 @@ const ImgIcon = styled.img`
 const ItemTitle = styled.div`
     object-fit: contain;
 
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;

@@ -22,7 +22,7 @@ const Container = styled.div`
 
 const Title = styled.div`    
     height: 40px;    
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -33,7 +33,6 @@ const Title = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
-        font-size: 32px;
     }
 `
 
@@ -80,7 +79,7 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -150,18 +149,7 @@ const otherWork = props => {
         <Container>            
             <Title>Others Projects</Title>
             <Content>
-                <Row>
-                    <Item 
-                        icon={eCommerce}
-                        title="eCommerce Site"
-                        url="blank"
-                    />
-                    <Item 
-                        icon={animations}
-                        title="Animations"
-                        url="blank"
-                    />
-                </Row>
+                
                 <Row>
                     <Item 
                         icon={icons}
@@ -169,23 +157,11 @@ const otherWork = props => {
                         url="/project_icons"
                     />
                     <Item 
-                        icon={illustrations}
-                        title="Illustrations"
-                        url="/project_illustrations"
-                    />
-                </Row>
-                <Row>
-                    <Item 
                         icon={emojis}
                         title="Emoji"
                         url="/project_emoji"
-                    />
-                    <Item 
-                        icon={pack}
-                        title="Package Design"
-                        url="blank"
-                    />
-                </Row>
+                    />  
+                </Row> 
             </Content>
         </Container>
     )

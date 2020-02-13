@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import tcheckImage1 from '../images/Exp_1.png'
-import tcheckImage2 from '../images/Exp_2.svg'
-import tcheckImage3 from '../images/Exp_1.png'
+import tcheckImage2 from '../images/Exp_2.png'
+import tcheckImage3 from '../images/Exp_3.png'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
 import zipkick from '../images/ic_timeline_zp.svg'
@@ -15,7 +15,7 @@ const Container = styled.div`
     flex-direction: column;
     margin: 80px 90px;
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 10px 24px;
     }
 `
 

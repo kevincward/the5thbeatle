@@ -7,24 +7,26 @@ const Container = styled.div`
     display: flex;
     margin: 80px 90px 0px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 20px 24px 0px;
     }
 `
 
 const Title = styled.div`
     width: 565px;    
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 24px;
+        margin-bottom: 30px;
     }
 `
 
@@ -37,6 +39,10 @@ const Description = styled.div`
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
+
+    @media (max-width: 720px) {
+        margin-bottom: 0px;
+    }
 `
 
 const MoreDescription = styled.div`    
@@ -47,7 +53,8 @@ const MoreDescription = styled.div`
     line-height: 1.5;
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    
 `
 
 
@@ -58,6 +65,7 @@ const Image = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+
   
   .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);
@@ -71,6 +79,10 @@ const Image2 = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 720px) {
+        padding-top: 0px;
+    }
   
   .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);

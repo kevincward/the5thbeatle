@@ -9,13 +9,13 @@ const Container = styled.div`
     margin: 80px 90px;
     flex-direction: column;
     @media (max-width: 768px) {
-        margin: 120px 24px 60px;
+        margin: 20px 24px 0px;
     }
 `
 
 const Title = styled.div`
     width: 565px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -25,7 +25,6 @@ const Title = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
@@ -74,14 +73,15 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 1.2;
     letter-spacing: normal;
     color: #000000;
+    padding-bottom: 10px;
+
 `
 
 const ItemDescription = styled.div`
@@ -115,7 +115,7 @@ const ResearchPlan = () => {
     return (
         <Container>
             <Title>
-            Validation & Iteration
+                What users have to say
             </Title>
             <Description>
             I turned the low-fi flow into an Invision prototype and tested it with 5 participants who had previous experience with the PayPal app. 
@@ -139,7 +139,7 @@ const ResearchPlan = () => {
                     <Item 
                         icon={check}
                         title='Opt in to share personal info at the end of the flow'
-                        description='3 of the participants expected to find the personal information share opt in on the donation amount screen, the flow up until this point didnt feel like apart of the transaction.'
+                        description='3 of the participants expected to find the personal information share opt in on the donation amount screen, the flow up until this point didn’t feel like apart of the transaction.'
                     /> 
                 </Items>
             </Content>

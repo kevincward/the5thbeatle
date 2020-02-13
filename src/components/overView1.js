@@ -25,7 +25,7 @@ const Content = styled.div`
     flex-direction: column;
     align-items: center;
     @media (max-width: 768px) {
-        padding: 10px 20px;
+        padding: 20px 20px;
         width: auto;
         height: 600px;        
     }
@@ -144,7 +144,7 @@ const Experience = styled.div`
     align-items: center;
     @media (max-width: 768px) {
         width: 80%;
-        margin: -30px auto 0;
+        margin: -50px auto 0;
         padding: 24px 16px;
     }
 ` 
