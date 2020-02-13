@@ -21,6 +21,7 @@ const Content = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     @media (max-width: 720px) {
         padding: 16px 0px;
     }

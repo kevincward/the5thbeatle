@@ -30,7 +30,6 @@ const Title = styled.div`
 `
 
 const Description = styled.div`
-
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;

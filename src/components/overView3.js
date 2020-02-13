@@ -151,7 +151,7 @@ const Experience = styled.div`
 
 
 const ExpTitle = styled.div`
-    width: 600px;    
+    width: 800px;    
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
