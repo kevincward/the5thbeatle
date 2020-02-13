@@ -177,6 +177,7 @@ const ExpDescription = styled.div`
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
 `
+
 const SkipLink = styled.a`    
     font-size: 16px;
     font-weight: 600;

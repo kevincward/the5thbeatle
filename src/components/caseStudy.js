@@ -9,10 +9,10 @@ import "./arrowBtn.scss"
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
-    top: -200px;
+    top: -100px;
     position: relative;
     z-index: 0;
-    margin-top: -150px;
+    margin-top: -250px;
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
@@ -104,19 +104,19 @@ const cards = [
     {
         title: "Improving the mobile donation experience",
         text: "PayPal",
-        link: "Learn More",
+        link: "View Project",
         url: "/project1"
     },
     {
         title: "Measurement tools built for all skill levels",
         text: "Engineered Medical Technologies",
-        link: "Learn More",
+        link: "View Project",
         url: "/project2"
     },
     {
         title: "How to remind (not nag) people to donate",
         text: "PayPal",
-        link: "Learn More",
+        link: "View Project",
         url: "/project3"
     },
   

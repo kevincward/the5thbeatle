@@ -31,14 +31,6 @@
     box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
 }
 
-.Card img {
-    position: absolute;
-    top: 0;
-    height: 110%;
-    z-index: -1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
 .Card h3 {
     color: #000000;
     font-size: 28px;
@@ -62,4 +54,8 @@
     margin: 0 0 20px 20px;
 }
 
-
+.horizontal-line {
+    width: 80px;
+    border: solid 1px #f7991e;
+    margin-left: 20px;
+}
