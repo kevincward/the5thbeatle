@@ -31,43 +31,53 @@ import TileTest2 from '../images/p3_tiletest2.jpg'
 
 
 const Container = styled.div`
-    display: flex;
-    padding: 80px 30px;
-    flex-direction: column;
-    @media (max-width: 768px) {
-      flex-direction: column;
-      padding: 60px 24px;
-    }
+display: flex;
+padding: 80px 30px;
+flex-direction: column;
+
+@media (max-width: 768px) {
+  flex-direction: column;
+  padding: 60px 24px;
+}
 `
 
 const ContainerGray = styled.div`
-    margin: 0px 3px;
-    padding: 10px 30px;
-    background-color: #f8f8f8;
-    @media (max-width: 768px) {
-          padding: 32px 23px;
-          width: auto;
-          margin-bottom: 300px;
-      }
+margin: 44px 30px;
+padding: 1px 0px;
+border-radius: 10px;
+background-color: #f8f8f8;
+
+@media (max-width: 768px) {
+      padding: 32px 23px;
+      width: auto;
+      margin-bottom: 10px;
+  }
 ` 
 
-const Content = styled.div`
-`
 const Title = styled.div`
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: #000000;
-    margin: 80px 90px -68px;
-    @media (max-width: 768px) {
-        margin: 40px 25px -68px;
-        width: 100%;
-        font-size: 28px;
-    }
+font-size: 28px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.2;
+letter-spacing: normal;
+color: #000000;
+margin: 80px 90px -68px;
+
+@media (max-width: 768px) {
+    margin: 30px 24px -20px;
+}
 `
+
+const Divider = styled.div`
+border: solid 1px rgba(0,0,0,.05);
+margin: 80px 90px;
+
+@media (max-width: 768px) {
+    margin: 40px 10px;
+}
+`
+
 const Description = styled.div`    
     font-size: 18px;
     font-weight: 500;
@@ -77,16 +87,10 @@ const Description = styled.div`
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
     margin: 80px 90px;
-`
 
-
-const Divider = styled.div`
-  border: solid 1px rgba(0,0,0,.05);
-  margin: 80px 90px;
-  @media (max-width: 768px) {
-        margin: 40px 10px;
-    }
-
+    @media (max-width: 768px) {
+    margin: 40px 10px;
+}
 `
 
 const Project3 = () => {    
@@ -102,8 +106,7 @@ const Project3 = () => {
       <Container>
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
-        : null} */}
-        <Content>  
+        : null} */} 
           <OverView />
           <Title>Research</Title>
           <TwoColumnBlurb
@@ -124,10 +127,8 @@ const Project3 = () => {
             }
             image={AfinMap}
           />
-        </Content>
       </Container>
       <ContainerGray>
-        <Content>
         <Title>Insights</Title>
         <ContentBlurb
           description={
@@ -142,10 +143,8 @@ const Project3 = () => {
             <p>1. How might we design a donation trigger for a user who donates impulsively?</p>
             <p>2. How might we design a donation trigger for a user who makes consistent, deliberate donations?</p>
           </Description>
-        </Content>
       </ContainerGray>
-      <Container>
-        <Content>    
+      <Container>  
         <TwoColumnBlurb
             title={
               "When designing triggers, we were inspired by the Fogg Behavior Model"
@@ -175,10 +174,8 @@ const Project3 = () => {
             image={TriggerImp2}
             image2={TriggerImp}
           />
-        </Content>
       </Container>
       <ContainerGray>
-        <Content>
           <ContentBlurb
             title={
               "Suggested task tiles- consistent placement for habitual donors"
@@ -207,10 +204,8 @@ const Project3 = () => {
             image={TriggerHab2}
           />
           
-        </Content>
       </ContainerGray>
       <Container>
-        <Content>
           <Title>Evaluating Concepts</Title>
           <br />
           <Quotes />
@@ -224,8 +219,7 @@ const Project3 = () => {
             image={TileTest1}
             image2={TileTest2}
           />
-          <Validate />
-          </Content>        
+          <Validate />       
       </Container>
       <Solution
           id="Solution3"
@@ -234,10 +228,8 @@ const Project3 = () => {
           description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previous supported' tile."}
           />
       <Container>
-        <Content>
             <Features />
             <ProjectLearnings />
-        </Content>
       </Container>
   
         

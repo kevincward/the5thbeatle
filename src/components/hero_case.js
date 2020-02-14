@@ -16,8 +16,8 @@ const Background = styled.div`
 
 const Container = styled.div`
     display: flex;
-    align-items: center;
-    padding-left: 20%; 
+    align-items: left;
+    padding-left: 10%; 
 ` 
 
 const Content = styled.div`
@@ -53,7 +53,7 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #333333;  
     @media (max-width: 768px) {
-        width: 250px;
+        width: 300px;
     }
 
 ` 

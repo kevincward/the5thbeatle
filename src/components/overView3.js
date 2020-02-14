@@ -9,6 +9,7 @@ const Container = styled.div`
     flex-direction: column;
     margin: 5px auto 120px;
     padding: 10px;
+    
     @media (max-width: 768px) {
         margin: 2px auto 0px;
         padding: 10px 0px;
@@ -24,10 +25,11 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     @media (max-width: 768px) {
-        padding: 10px 20px;
+        padding: 20px 20px;
         width: auto;
-        height: 600px;        
+        height: 750px;        
     }
 ` 
 
@@ -35,6 +37,7 @@ const OverViewContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -45,6 +48,7 @@ const OverViewContent = styled.div`
     flex-direction: column;
     width: 50%;
     margin-right: 60px;
+    
     @media (max-width: 768px) {
         width: 100%;
         margin-right: 0px;
@@ -61,6 +65,7 @@ const Title = styled.div`
     letter-spacing: -0.47px;
     color: #000000;
     margin-bottom: 12px;
+    
     @media (max-width: 768px) {
         text-align: center;
     }
@@ -80,6 +85,7 @@ const RoleContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 45%;
+    
     @media (max-width: 768px) {
         flex-direction: row;
         width: 100%;
@@ -144,7 +150,7 @@ const Experience = styled.div`
     align-items: center;
     @media (max-width: 768px) {
         width: 80%;
-        margin: -30px auto 0;
+        margin: -70px auto 0;
         padding: 24px 16px;
     }
 ` 
@@ -216,7 +222,7 @@ const OverView3 = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                    With the PayPal donate feature live, the native donate team (a product manager, two developers, and myself) looked to improve on the experience.
+                    With the PayPal donate feature live, the native donate team looked to improve on the experience.
                      We wanted more users to discover the ability to donate with PayPal in the app, and encourage PayPal users to donate more often.
                         <p>
                             I designed the product enhancements after conducting research with my PM and working with our native developers on technical limitations. My 
@@ -250,7 +256,7 @@ const OverView3 = props => (
         </Content>
         <Experience>
             <ExpTitle>
-                How can we promote feature discovery and design triggers to increase the number of donations?
+                How can we promote feature discovery and design triggers to increase donations?
             </ExpTitle>
             <ExpDescription>
             How do we help new users discover the PayPal app donate feature? How do we remind current donors 

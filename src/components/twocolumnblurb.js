@@ -34,7 +34,6 @@ const Description = styled.div`
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    width: 80%;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
 `
@@ -45,7 +44,6 @@ const Description2 = styled.div`
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    width: 80%;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
 `
@@ -54,9 +52,9 @@ const Content = styled.div`
     display: flex;
     font-size: 32px;
     flex-direction: row;
-    padding: 0px 0px;
     justify-content: center;
     align-items: center; 
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -69,6 +67,10 @@ const Image = styled.div`
   min-width: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 768px) {
+    min-width: 200px;  
+    }
   
   .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);

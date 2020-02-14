@@ -26,6 +26,7 @@ const Container = styled.div`
     display: flex;
     padding: 80px 30px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 60px 24px;
@@ -33,21 +34,19 @@ const Container = styled.div`
 `
 
 const ContainerGray = styled.div`
-    margin: 44px 3px;
+    margin: 44px 30px;
     padding: 1px 0px;
     border-radius: 10px;
     background-color: #f8f8f8;
+    
     @media (max-width: 768px) {
           padding: 32px 23px;
           width: auto;
-          margin-bottom: 300px;
+          margin-bottom: 10px;
       }
 ` 
 
-const Content = styled.div`
-`
 const Title = styled.div`
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -56,10 +55,9 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin: 80px 90px -68px;
+    
     @media (max-width: 768px) {
-        margin: 40px 25px -68px;
-        width: 100%;
-        font-size: 28px;
+        margin: 30px 24px -20px;
     }
 `
 
@@ -86,8 +84,7 @@ const Project2 = () => {
       <Container>
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
-        : null} */}        
-        <Content>          
+        : null} */}                  
           <OverView />
           <ContentBlurb
             title={
@@ -101,10 +98,8 @@ const Project2 = () => {
           <UserWants />
           <Divider />
           <FirstPass />
-        </Content>
       </Container>
       <ContainerGray>
-        <Content>
           <Title>Fleshing out the stakeholder requirements</Title>
           <ContentBlurb
             description={
@@ -112,10 +107,8 @@ const Project2 = () => {
             }
             image={Reqs}
           />
-        </Content>
       </ContainerGray>
       <Container>
-        <Content>
           <Workshop1 /> 
           <TestingSuccess />
           <ProtoType />
@@ -133,8 +126,7 @@ const Project2 = () => {
                 }
 
                 image={DefaultOption}
-              />
-        </Content>        
+              />       
       </Container> 
         <Solution
           id="Solution2"
@@ -143,10 +135,8 @@ const Project2 = () => {
           description={"For MVP, we decided to only release the default setting for cannbis plant infusion potenct testing. This would allow us to introduce users to the feature slowly for increased adoption and do more user testing on the strain mapping flow. The roadmap plans for the strain map flow to be avaialble this spring."}
         />  
       <Container>
-        <Content>
         <Features />
-        <ProjectLearnings />
-        </Content>        
+        <ProjectLearnings />      
       </Container>
     </Layout>
   )

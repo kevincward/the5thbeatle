@@ -26,6 +26,7 @@ const Container = styled.div`
     display: flex;
     padding: 80px 30px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 60px 24px;
@@ -33,10 +34,11 @@ const Container = styled.div`
 `
 
 const ContainerGray = styled.div`
-    margin: 44px 3px;
+    margin: 44px 30px;
     padding: 1px 0px;
     border-radius: 10px;
     background-color: #f8f8f8;
+    
     @media (max-width: 768px) {
           padding: 32px 23px;
           width: auto;
@@ -45,7 +47,6 @@ const ContainerGray = styled.div`
 ` 
 
 const Title = styled.div`
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -54,6 +55,7 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin: 80px 90px -68px;
+    
     @media (max-width: 768px) {
         margin: 30px 24px -20px;
     }
@@ -62,10 +64,10 @@ const Title = styled.div`
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
   margin: 80px 90px;
+  
   @media (max-width: 768px) {
         margin: 40px 10px;
     }
-
 `
 
 const Project1 = () => {    

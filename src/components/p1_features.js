@@ -57,7 +57,7 @@ const Title = styled.div`
 ` 
 
 const Description = styled.div`    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -121,7 +121,7 @@ const Experience = styled.div`
     align-items: center;
     margin: -300px auto;
     @media (max-width: 768px) {
-        margin-top: -350px;
+        margin-top: -400px;
         padding: 24px 16px;
     }
 ` 
@@ -144,7 +144,7 @@ const ExpTitle = styled.div`
 ` 
 
 const ExpDescription = styled.div`    
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -172,7 +172,7 @@ const features = [
         title: "Search, for all kinds of donors",
         description: "A sticky search bar at the top for users who know what they are looking for \
             Nearby charities list for new donors looking for local giving options \n \
-            Dynamic featured list for donors looking for a familiar charity",
+            Dynamic featured list for donors looking for a familiar charity.",
         img: p1_img1
     },
     {
@@ -196,7 +196,7 @@ const features = [
             a native share option so the user could share their cause \
             to the platform of their choice. The share message \
             autopopulates with the charity’s name and a link to their \
-            charity profile.  ",
+            charity profile.",
         img: p1_img4
     },
     
@@ -225,9 +225,10 @@ const P1Features = props => (
                 The Results
             </ExpTitle>
             <ExpDescription>
-                We launched the feature and saw slow adoption. We reviewed the analytics on weekly basis to monitor for where 
-                dropoff occurred and began speculating how to make improvements. As Giving Tuesday drew near, we partnered with
-                the marketing team to bring awareness to donating with the PayPal app. The marketing effort brought 
+            We launched the feature and saw slow adoption. We reviewed the analytics on weekly basis to monitor where drop off was 
+            occurring and began speculating how to make improvements. As Giving Tuesday drew near, we partnered with the marketing 
+            team to bring awareness to donating with the PayPal app. This paid off greatly, we saw a spike in new donors from Black 
+            Friday through the holidays.  
             </ExpDescription>
             <br />
             <br />

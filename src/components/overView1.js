@@ -9,6 +9,7 @@ const Container = styled.div`
     flex-direction: column;
     margin: 5px auto 120px;
     padding: 10px;
+    
     @media (max-width: 768px) {
         margin: 2px auto 0px;
         padding: 10px 0px;
@@ -24,6 +25,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     @media (max-width: 768px) {
         padding: 20px 20px;
         width: auto;

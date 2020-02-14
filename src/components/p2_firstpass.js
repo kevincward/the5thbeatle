@@ -5,12 +5,13 @@ import time from '../images/ic_canna_time.svg'
 import acc from '../images/ic_canna_acc.svg'
 import twopart from '../images/ic_canna_twopart.svg'
 import wall from '../images/ic_wall.svg'
-import topImg from '../images/compete_donate.png'
+import topImg from '../images/p2_firstpass.jpg'
 
 const Container = styled.div`
     display: flex;
     margin: 80px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
         margin: 120px 24px 60px;
     }
@@ -25,6 +26,7 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
         font-size: 24px;
@@ -40,6 +42,7 @@ const Description = styled.div`
     line-height: 1.5;
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
+    
     @media (max-width: 768px) {
         margin-bottom: 32px;
     }    
@@ -48,6 +51,7 @@ const Description = styled.div`
 const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
+    
     @media (max-width: 768px) {
         margin-bottom: 16px;
     }
@@ -63,6 +67,7 @@ const SecondTitle = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
         font-size: 32px;
@@ -79,6 +84,7 @@ const Content = styled.div`
     font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -88,6 +94,7 @@ const Items = styled.div`
     margin: 22px 0px;
     width: 75%;
     margin-right: 10%;
+    
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -114,7 +121,6 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
@@ -142,6 +148,7 @@ const ItemContent = styled.div`
 const TopContainer = styled.div`
     display: flex;
     flex-direction: row;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -151,6 +158,7 @@ const TextContent = styled.div`
     display: flex;
     flex-direction: column;
     width: 359px;
+    
     @media (max-width: 768px) {
         width: 100%;        
     }
@@ -160,6 +168,7 @@ const TopImg = styled.img`
     width: 50%;
     height: auto;
     margin-left: 90px;
+   
     @media (max-width: 768px) {
         width: 100%;
         margin-left: 0px;

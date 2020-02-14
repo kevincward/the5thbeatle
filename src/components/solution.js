@@ -17,7 +17,7 @@ const Background = styled.div`
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px 0px;
+    margin: 80px 120px 0px;
     flex-direction: column;
 
     @media (max-width: 768px) {

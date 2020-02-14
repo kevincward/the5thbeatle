@@ -5,30 +5,32 @@ import './Card.css'
 import arrow from '../images/ic_arrow_b.svg'
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto 120px;
-    padding: 10px;
-    @media (max-width: 768px) {
-        margin: 2px auto 0px;
-        padding: 10px 0px;
-    }
+display: flex;
+flex-direction: column;
+margin: 5px auto 120px;
+padding: 10px;
+
+@media (max-width: 768px) {
+    margin: 2px auto 0px;
+    padding: 10px 0px;
+}
 ` 
 
 const Content = styled.div`
-    height: 474px;
+height: 474px;
+width: auto;
+border-radius: 20px;
+background-color: #f8f8f8;
+padding: 64px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+@media (max-width: 768px) {
+    padding: 20px 20px;
     width: auto;
-    border-radius: 20px;
-    background-color: #f8f8f8;
-    padding: 64px ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: 768px) {
-        padding: 10px 20px;
-        width: auto;
-        height: 600px;        
-    }
+    height: 600px;        
+}
 ` 
 
 const OverViewContainer = styled.div`
