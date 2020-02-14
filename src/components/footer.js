@@ -28,7 +28,7 @@ const Title = styled.p`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: normal;
     color: #FFFFFF;
     text-align: center;
@@ -74,7 +74,7 @@ const Link = styled.a`
     color: #FFFFFF;    
     font-size: 21px;
     font-weight: 700;
-    line-height:1.5;
+    line-height: 26px;
 `
 const SocialsContainer = styled.div`
 	display: flex;

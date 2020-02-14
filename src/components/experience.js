@@ -25,12 +25,12 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
@@ -93,7 +93,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
 `

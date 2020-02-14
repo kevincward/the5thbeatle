@@ -20,7 +20,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     display: flex;
@@ -33,7 +33,6 @@ const Title = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
-        font-size: 32px;
     }
 `
 
@@ -70,12 +69,17 @@ const ItemContainer = styled.div`
 const ImgIcon = styled.img`
     width: 48px;
     height: 48px;
-    margin-bottom: 16px;
+    margin-right: 18px;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     &:hover {
         transform: scale(1.3, 1.3);
         transition-timing-function: ease-in;
         transition: 1s;
+    }
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+        margin-right: 14px;
     }
 `
 
@@ -85,7 +89,7 @@ const ItemTitle = styled.div`
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 8px;
@@ -174,7 +178,7 @@ const Skills = props => {
                         <Item 
                             icon={biz}
                             title='Business Growth'                            
-                            description='I work to build sustainable experiences that net more long-term engaged users rahter than short term metric movers.'
+                            description='I work to build sustainable experiences that net more long-term engaged users rather than short term metric movers.'
                         />
                     </Row>
                 </Items>

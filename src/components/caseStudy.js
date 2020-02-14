@@ -13,10 +13,12 @@ const SectionGroup = styled.div `
     position: relative;
     z-index: 0;
     margin-top: -250px;
+    
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    margin-top: -80px;
   }
 `
 

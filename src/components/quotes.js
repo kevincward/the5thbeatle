@@ -4,10 +4,11 @@ import shape from '../images/shape.png'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 10px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 20px 24px;
     }
 `
 
@@ -26,7 +27,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.08;
+    line-height: 34px;
     letter-spacing: -0.55px;
     color: #000000;
 `
@@ -74,7 +75,7 @@ const CommentContent = styled.div`
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: -0.09px;
     color: #000000;
     width: 435px;

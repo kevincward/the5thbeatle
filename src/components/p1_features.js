@@ -9,10 +9,10 @@ import './Card.css'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 60px auto 350px;
+    margin: 40px auto 350px;
     padding: 32px;
     @media (max-width: 768px) {
-        margin: 60px auto 0px;
+        margin: 30px auto 0px;
         padding: 32px 0px;
     }
 ` 
@@ -47,7 +47,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 26px;
     letter-spacing: -0.47px;
     color: #000000;
     margin-bottom: 12px;
@@ -131,14 +131,14 @@ const ExpTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.18;
+    line-height: 34px;
     letter-spacing: -0.5px;
     text-align: left;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: auto;
-        font-size: 24px;
         margin-bottom: 16px;
     }
 ` 

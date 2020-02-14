@@ -9,7 +9,7 @@ const Container = styled.div`
     margin: 80px 90px;
     flex-direction: column;
     @media (max-width: 768px) {
-        margin: 300px 24px 60px;
+        margin: 360px 24px 60px;
     }
 `
 
@@ -20,13 +20,13 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
@@ -67,6 +67,11 @@ const ImgIcon = styled.img`
         transition-timing-function: ease-in;
         transition: 1s;
     }
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+        margin-right: 14px;
+    }
 `
 
 const ItemTitle = styled.div`
@@ -76,7 +81,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
 `

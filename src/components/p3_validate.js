@@ -8,6 +8,7 @@ const Container = styled.div`
     display: flex;
     margin: 80px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
         margin: 120px 24px 60px;
     }
@@ -23,6 +24,7 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
         font-size: 32px;
@@ -46,6 +48,7 @@ const Content = styled.div`
     font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -55,6 +58,7 @@ const Items = styled.div`
     margin: 22px 0px;
     width: 75%;
     margin-right: 10%;
+    
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -68,7 +72,6 @@ const ItemContainer = styled.div`
 `
 
 const ImgIcon = styled.img`
-    
     margin-right: 18px;
    
 `
@@ -80,7 +83,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
 `

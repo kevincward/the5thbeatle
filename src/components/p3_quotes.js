@@ -70,7 +70,7 @@ const CommentContent = styled.div`
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: -0.09px;
     color: #000000;
     width: 435px;

@@ -7,7 +7,7 @@ import arrow from '../images/ic_arrow_b.svg'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 5px auto 120px;
+    margin: 5px auto 70px;
     padding: 10px;
     
     @media (max-width: 768px) {
@@ -37,6 +37,7 @@ const OverViewContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -59,10 +60,11 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 34px;
     letter-spacing: -0.47px;
     color: #000000;
     margin-bottom: 12px;
+    
     @media (max-width: 768px) {
         text-align: center;
     }
@@ -165,7 +167,7 @@ const ExpTitle = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: auto;
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 ` 

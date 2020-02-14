@@ -71,7 +71,7 @@ const HeadLine = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
@@ -83,7 +83,6 @@ const HeadLine = styled.div`
     opacity: 0;
   @media (max-width: 768px) {
         width: 100%;
-        font-size: 24px;
     }
 `
 

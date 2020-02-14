@@ -21,7 +21,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
@@ -68,6 +68,11 @@ const ImgIcon = styled.img`
         transition-timing-function: ease-in;
         transition: 1s;
     }
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+        margin-right: 14px;
+    }
 `
 
 const ItemTitle = styled.div`
@@ -77,7 +82,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
 `

@@ -61,7 +61,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 34px;
     letter-spacing: -0.47px;
     color: #000000;
     margin-bottom: 12px;

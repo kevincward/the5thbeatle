@@ -51,7 +51,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin: 80px 90px -68px;
@@ -63,12 +63,6 @@ const Title = styled.div`
 
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
-  margin: 80px 90px;
-  @media (max-width: 768px) {
-        margin: 40px 10px;
-    }
-
-
 `
 
 const Project2 = () => {    

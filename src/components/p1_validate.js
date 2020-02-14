@@ -6,7 +6,7 @@ import x from '../images/ic_learningx.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 80px 90px 0px;
     flex-direction: column;
     @media (max-width: 768px) {
         margin: 20px 24px 0px;
@@ -19,7 +19,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
@@ -77,7 +77,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
     padding-bottom: 10px;

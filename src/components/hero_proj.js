@@ -51,7 +51,7 @@ const Title = styled.div`
     font-style: normal;
     line-height: 1.41;
     letter-spacing: normal;
-    color: #333333;  
+    color: #000000;  
     @media (max-width: 768px) {
         width: 200px;
         font-size: 24px;

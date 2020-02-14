@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const Content = styled.div`
     height: 500px;
-    width: 400px;
+    width: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -35,6 +35,7 @@ const Content = styled.div`
     @media (max-width: 768px) {
         justify-content: left;
         padding-top: 60px;
+        width: 400px;
     }    
    
 ` 

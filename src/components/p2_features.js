@@ -38,14 +38,13 @@ const ExpTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.18;
+    line-height: 34px;
     letter-spacing: -0.5px;
     text-align: left;
     color: #000000;
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: auto;
-        font-size: 24px;
         margin-bottom: 16px;
     }
 ` 

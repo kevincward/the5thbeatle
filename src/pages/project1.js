@@ -20,11 +20,11 @@ import FeatPrior from '../images/featurepri_donate.png'
 import Concept from '../images/concept_donate.png'
 import DonateBkgd from '../images/hero_backgd_cs1.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
-
+import Sol1 from '../images/p1_sol_bkgd.jpg'
 
 const Container = styled.div`
     display: flex;
-    padding: 80px 30px;
+    padding: 80px 30px 0px;
     flex-direction: column;
     
     @media (max-width: 768px) {
@@ -51,7 +51,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin: 80px 90px -68px;
@@ -63,11 +63,6 @@ const Title = styled.div`
 
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
-  margin: 80px 90px;
-  
-  @media (max-width: 768px) {
-        margin: 40px 10px;
-    }
 `
 
 const Project1 = () => {    
@@ -135,7 +130,6 @@ const Project1 = () => {
           }
           image={FeatPrior}
         />
-        <Divider />
         
         <ContentBlurb
           title={
@@ -153,7 +147,7 @@ const Project1 = () => {
       </Container> 
         <Solution
           id="Solution1"
-          heroImgURL={DonateBkgd}
+          heroImgURL={Sol1}
           title={"The Solution"}
           description={"We released the MVP of the native Donate feature three months after the launch of the PayPal app redesign. The focus of the MVP experience was discovery of charities and the ability to donate quickly."}
         />  

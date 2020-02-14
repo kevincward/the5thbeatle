@@ -36,7 +36,7 @@ const Title = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
+        font-size: 28px;
     }
 `
 

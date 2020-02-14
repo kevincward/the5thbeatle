@@ -69,7 +69,7 @@ const ItemTitle = styled.div`
     font-style: normal;
     line-height: 2;
     letter-spacing: normal;
-    color: #333333;
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8px;
 `
 

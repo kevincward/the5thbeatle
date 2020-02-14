@@ -59,10 +59,11 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 34px;
     letter-spacing: -0.47px;
     color: #000000;
     margin-bottom: 12px;
+    
     @media (max-width: 768px) {
         text-align: center;
     }
@@ -165,7 +166,7 @@ const ExpTitle = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: auto;
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 ` 

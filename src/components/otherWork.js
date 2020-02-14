@@ -26,10 +26,11 @@ const Title = styled.div`
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 34px;
     letter-spacing: normal;
     text-align: center;
-    color: #333333;
+    color: #000000;
+    
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
