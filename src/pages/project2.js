@@ -15,7 +15,7 @@ import ProtoType from '../components/p2_prototype'
 import TestingSuccess from '../components/p2_testingsuccess'
 import Workshop1 from '../components/p2_workshop'
 
-import tCheck from '../images/p2_tCheck.jpg'
+import tCheck from '../images/p2_tcheck.jpg'
 import Bkgd from '../images/hero_backgd_cs2.svg'
 import HeroIcon from '../images/ic_timeline_tch.svg'
 import DefaultOption from '../images/p2_adddefault.png'
