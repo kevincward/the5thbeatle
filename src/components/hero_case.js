@@ -44,8 +44,8 @@ const Img = styled.img`
 ` 
 
 const Title = styled.div`
-    width: 364px;    
-    font-size: 34px;
+    width: 500px;    
+    font-size: 40px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -53,7 +53,7 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;  
     @media (max-width: 768px) {
-        width: 300px;
+        width: 325px;
     }
 
 ` 

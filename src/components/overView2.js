@@ -12,31 +12,33 @@ padding: 10px;
 
 @media (max-width: 768px) {
     margin: 2px auto 0px;
-    padding: 10px 0px;
+    padding: 10px 0px 60px;
 }
 ` 
 
 const Content = styled.div`
-height: 474px;
-width: auto;
-border-radius: 20px;
-background-color: #f8f8f8;
-padding: 64px ;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-@media (max-width: 768px) {
-    padding: 20px 20px;
+    height: 474px;
     width: auto;
-    height: 600px;        
-}
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    padding: 64px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 20px 20px;
+        width: auto;
+        height: 750px; 
+        margin-bottom: 20px;      
+    }
 ` 
 
 const OverViewContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -145,9 +147,10 @@ const Experience = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     @media (max-width: 768px) {
         width: 80%;
-        margin: -30px auto 0;
+        margin: -110px auto 0;
         padding: 24px 16px;
     }
 ` 
@@ -164,6 +167,7 @@ const ExpTitle = styled.div`
     text-align: center;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: auto;
         font-size: 28px;
@@ -219,11 +223,9 @@ const OverView = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                        An overhaul of the PayPal native app created an opportunity for a native 
-                        donate experience for the first time. 
-                        I designed the donation experience and worked with the social impact product 
-                        and engineering teams to define business goals and technical limitations. I collaborated with 
-                        the app team to ensure my designs were consistent with the rest of the app.
+                        tCheck, the world’s first handheld live cannabis potency tester was about to get even better. To date, the device tested cannabis concentrate based infusions. The engineering team had just discovered how to introduce a much requested feature, cannabis plant based infusions, into the tCheck device. However, to use this new feature, 
+                        users would need to complete a complicated flow. Could this multi-step flow really work alongside tCheck other simple measurement flows? 
+ 
                     </Description>
                 </OverViewContent>
                 <RoleContainer>
@@ -251,12 +253,12 @@ const OverView = props => (
         </Content>
         <Experience>
             <ExpTitle>
-                How do we make a complex scientific process seem easy?
+                How do we make a complex scientific process easy to perform?
             </ExpTitle>
             <ExpDescription>
-                The primary app tasks include checking your balance and account activity, 
-                sending money, and paying off a credit bill. How might a donate feature fit 
-                in with these tasks? Why would someone use an app to donate instead of a charity’s website?
+                If the user skips any steps in the flow, their reuslts will not be 
+                accurate. How do we explain the additional test prep needed? How can 
+                we help the user feel confident that they can complete a test?
             </ExpDescription>
             <SkipLink onClick={() => {
                 scroll.scrollTo(

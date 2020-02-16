@@ -31,20 +31,18 @@ const TextContent = styled.div`
 `
 
 const Header = styled.div`    
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.18;
     letter-spacing: -0.5px;
-    color: #1a1a1a;
+    color: #000000;
     margin-bottom: 32px;
     @media (max-width: 720px) {
         margin-bottom: 16px;
-        font-size: 24px;
         line-height: 1.33;
         letter-spacing: normal;
-        color: #000000;
     }
 `
 
@@ -72,15 +70,15 @@ const P2_prototype = () => (
             <Text>
                 I created a Marvel protoype for two testing opportunites: 
                 <p>
-                1. Testing in office: 5 home ediblemakers (tCheck users) who would use the prototype flow and walk through the plant based infusion potency testing process 
-                with all the supplies they would need to run a test (tCheck, testing accessories, app) 
+                1. Testing in office: 5 home ediblemakers (tCheck users) who would use the prototype and walk through potency testing process 
+                with all the supplies needed to run a test.
                 </p>
                 <p>
                 From this testing, I was able to document steps that created the most 
                 friction for evaluation and content suggests that would improve flow comprehension.
                 </p>
                 <p>
-                2. Testing at the LA cannabis conference:  4 professional ediblemakers (tCheck users) who would walk through the prototype without all the testing supplies.
+                2. Testing at cannabis conference:  4 professional ediblemakers (tCheck users) who would walk through the prototype without all the testing supplies.
                 </p>
             </Text>
         </TextContent>

@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import ModalImage from "react-modal-image";
 
 import time from '../images/ic_canna_time.svg'
 import acc from '../images/ic_canna_acc.svg'
 import twopart from '../images/ic_canna_twopart.svg'
 import wall from '../images/ic_wall.svg'
-import topImg from '../images/p2_firstpass.jpg'
+import image from '../images/p2_firstpass.jpg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 100px 90px 10px;
     flex-direction: column;
     
     @media (max-width: 768px) {
-        margin: 120px 24px 60px;
+        margin: 60px 24px 0px;
     }
 `
 
@@ -58,7 +59,7 @@ const TitleContainer = styled.div`
 
 const SecondTitle = styled.div`
     width: 565px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -69,9 +70,9 @@ const SecondTitle = styled.div`
     
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
+
 const Img = styled.img`
     width: 30px;
     height: 30px;
@@ -129,9 +130,10 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
+    margin-bottom: 10px;
 `
 
 const ItemDescription = styled.div`
@@ -168,7 +170,7 @@ const TextContent = styled.div`
     }
 `
 
-const TopImg = styled.img`
+const Image = styled.div`
     width: 50%;
     height: auto;
     margin-left: 90px;
@@ -177,6 +179,10 @@ const TopImg = styled.img`
         width: 100%;
         margin-left: 0px;
     }
+
+    .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `
 
 const Item = ({icon, title, description}) => {
@@ -198,13 +204,19 @@ const Firstpass = () => {
             <TopContainer>
                 <TextContent>
                     <Title>
-                        First pass at the flow with engineering team
+                        First pass at the flow with the Engineering team
                     </Title>
                     <Description>
-                        Since every strain of cannabis is a little different, users would need to create a unique profile (also called a strain map) for the plant they are using. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
+                        Since every strain of cannabis is a little different, users would need to account for the delta of their plant's genetic makeup (also called a strain map). This would require multiple measurements taken on a consecutive timeline. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
                     </Description>
                 </TextContent>
-                <TopImg src={topImg}/>
+                <Image src={Image}>
+                    <ModalImage
+                    small={image}
+                    medium={image}
+                    imageBackgroundColor="#ffff"
+                    />
+                </Image>
             </TopContainer>            
             <br />
             <br />

@@ -7,16 +7,16 @@ import stakes from '../images/ic_cannalearn_stake.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 20px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
-        margin: 300px 24px 60px;
+        margin: 100px 24px 60px;
     }
 `
 
 const Title = styled.div`
     width: 565px;
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -27,14 +27,11 @@ const Title = styled.div`
     margin-bottom: 32px;
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
-
 const Content = styled.div`
     display: flex;
-    font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
     @media (max-width: 768px) {
@@ -77,14 +74,14 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
+    margin-bottom: 10px;
 `
 
 const ItemDescription = styled.div`
@@ -126,7 +123,7 @@ const ProjectLearnings = () => {
                     <Item 
                         icon={users}
                         title='Meet users where they are'
-                        description='Some users are willing to for go the most accurate testing if they can save time and effort.'
+                        description='Some users are willing to forgo the most accurate testing if they can save time and effort.'
                     />
                     <br />
                     <Item 
@@ -138,7 +135,7 @@ const ProjectLearnings = () => {
                     <Item 
                         icon={stakes}
                         title='All stakeholders feedback is valuable'
-                        description='Having a workshop with people from all different fields providing different kinds of feedback really helped to shape the final product.'
+                        description='Inclusion of stakeholders from different orgs across tCheck was critical to the workshop’s success. Their diverse perspectives helped us to obtain robust feedback which shaped the final product.'
                     /> 
                 </Items>
             </Content>

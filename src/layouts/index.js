@@ -34,10 +34,9 @@ const Layout = ({children}) => {
             <Header />
             {children}
               <Footer data={data}>
-                I don't really think I was the fifth Beatle, I hope this was a nice breath of air for recruiters. 
+                I don't really think I was the fifth Beatle, I hope this was a nice breath of air for recruiters. My website is a continous work in progress, as I learn more and more React ⚛️. 
                 <br />
-                <br />
-                Assembled with Philz ☕️ and React ⚛️ in 2020
+                Last build push in February 2020.
               </Footer> 
           </div>
         )}    

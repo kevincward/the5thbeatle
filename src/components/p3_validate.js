@@ -6,17 +6,17 @@ import x from '../images/ic_learningx.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 80px 90px 20px;
     flex-direction: column;
     
     @media (max-width: 768px) {
-        margin: 120px 24px 60px;
+        margin: 120px 24px 20px;
     }
 `
 
 const Title = styled.div`
     width: 565px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -27,7 +27,6 @@ const Title = styled.div`
     
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
@@ -78,12 +77,11 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
 `
@@ -119,7 +117,7 @@ const ResearchPlan = () => {
     return (
         <Container>
             <Title>
-            Findings from sessions
+                Findings from the notification and tile testing
             </Title>
             <Content>
                 <Items>

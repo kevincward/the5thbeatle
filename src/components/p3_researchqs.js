@@ -67,7 +67,7 @@ const ItemTitle = styled.div`
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2;
+    line-height: 28px;
     letter-spacing: normal;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8px;

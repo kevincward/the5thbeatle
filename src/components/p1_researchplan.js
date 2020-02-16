@@ -94,7 +94,7 @@ const ItemTitle = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
 `
@@ -133,9 +133,8 @@ const ResearchPlan = () => {
             Getting into research
             </Title>
             <Description>
-                I needed to uncover the needs and pain points of mobile donors so that I could identify opportunities for the 
-                native donate feature. I started out by reviewing competitors’ mobile donation tools to better understand how 
-                to appeal to donors. I also sought to understand the trends that set the standard in the non-profit sector.  
+                Creating PayPal’s first native donation experience meant that we had the opportunity to improve upon the current mobile web flow. 
+                To do this, I had to uncover the needs and pain points of mobile donors.  
             </Description>
             <Content>
                 <Items>

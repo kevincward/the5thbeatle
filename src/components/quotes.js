@@ -16,6 +16,7 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
+
     @media (max-width: 768px) {
         margin-bottom: 16px;
     }
@@ -112,7 +113,7 @@ const Quotes = props => (
             <Title>What participants said</Title>
         </TitleContainer>
         <Description>
-            Individuals who had made a digital donation in the last six months were recruited for in-depth interviews. 
+            I recruited Individuals who had made a digital donation in the last six months for the in-depth interviews. 
             In each session, I asked the participant to walk me through their last donation experience and tell me about what 
             their ideal donation app could do. 
         </Description>

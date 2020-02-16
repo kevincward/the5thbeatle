@@ -5,15 +5,15 @@ import './Card.css'
 import arrow from '../images/ic_arrow_b.svg'
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto 120px;
-    padding: 10px;
-    
-    @media (max-width: 768px) {
-        margin: 2px auto 0px;
-        padding: 10px 0px;
-    }
+display: flex;
+flex-direction: column;
+margin: 5px auto 60px;
+padding: 10px;
+
+@media (max-width: 768px) {
+    margin: 2px auto 0px;
+    padding: 10px 0px 60px;
+}
 ` 
 
 const Content = styled.div`
@@ -29,7 +29,7 @@ const Content = styled.div`
     @media (max-width: 768px) {
         padding: 20px 20px;
         width: auto;
-        height: 750px;        
+        height: 630px;        
     }
 ` 
 
@@ -222,13 +222,9 @@ const OverView3 = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                    With the PayPal donate feature live, the native donate team looked to improve on the experience.
-                     We wanted more users to discover the ability to donate with PayPal in the app, and encourage PayPal users to donate more often.
-                        <p>
-                            I designed the product enhancements after conducting research with my PM and working with our native developers on technical limitations. My 
-                            designs followed the patterns created by PayPal’s app team.
-                        </p>
-                      
+                        Now that the native PayPal donation feature was live, we wanted to improve the experience so that more users would discover and 
+                        be encouraged to donate within the app. After conducting user research and identifying technical limitations, I designed the 
+                        updates which would help to increase engagement with the product. 
                     </Description>
                 </OverViewContent>
                 <RoleContainer>

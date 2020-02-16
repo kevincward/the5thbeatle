@@ -77,13 +77,15 @@ const Description = styled.div`
     font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.11px;
-    color: rgba(0,0,0,0.7);   
+    color: rgba(0,0,0,0.7); 
+
 ` 
 
 const RoleContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 45%;
+    
     @media (max-width: 768px) {
         flex-direction: row;
         width: 100%;
@@ -146,6 +148,7 @@ const Experience = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     @media (max-width: 768px) {
         width: 80%;
         margin: -50px auto 0;
@@ -220,8 +223,7 @@ const OverView = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                        An overhaul of the PayPal native app created an opportunity for a native 
-                        donate experience for the first time. 
+                    An overhaul of the PayPal native app created an opportunity for the company’s first native donation experience.
                         I designed the donation experience and worked with the social impact product 
                         and engineering teams to define business goals and technical limitations. I collaborated with 
                         the app team to ensure my designs were consistent with the rest of the app.
@@ -257,7 +259,7 @@ const OverView = props => (
             <ExpDescription>
                 The primary app tasks include checking your balance and account activity, 
                 sending money, and paying off a credit bill. How might a donate feature fit 
-                in with these tasks? Why would someone use an app to donate instead of a charity’s website?
+                in with these tasks? And why would someone use an app to donate instead of a charity’s website?
             </ExpDescription>
             <SkipLink onClick={() => {
                 scroll.scrollTo(

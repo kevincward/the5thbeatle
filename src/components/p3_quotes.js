@@ -4,8 +4,9 @@ import shape from '../images/shape.png'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 80px 90px 10px;
     flex-direction: column;
+
     @media (max-width: 768px) {
         margin: 60px 24px;
     }
@@ -15,14 +16,14 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         margin-bottom: 16px;
     }
 `
 
 const Title = styled.div`
-
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -53,7 +54,8 @@ const Comments = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media (max-width: 768px) {
+
+    @media (max-width: 1200px) {
         flex-direction: column;
     }
 `
@@ -62,6 +64,8 @@ const CommentContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    padding: 10px;
+    
 `
 
 const CommentContent = styled.div`
@@ -75,13 +79,13 @@ const CommentContent = styled.div`
     color: #000000;
     width: 435px;
     margin-bottom: 16px;
+    
     @media (max-width: 768px) {
         width: 100%;
     }
 `
 
 const CommentName = styled.div`
-
     font-size: 14px;
     font-weight: 400;
     font-stretch: normal;
@@ -104,13 +108,12 @@ const Quotes = props => (
     <Container id="quotes">
         <TitleContainer>
             <Img src={shape}/>
-            <Title>Participant comments on disaster relief notification</Title>
+            <Title>Disaster relief notification feedback</Title>
         </TitleContainer>
         <Description>
-            I asked the Consumer design team to include the disaster relief 
-            notification in with their notification testing series so that I could 
-            focus my research sessions on the donate action tile. Later I watched the sessions and collected findings. Here are some of 
-            the participant quotes: 
+            The disaster relief notification was included in the notification testing series allowing me to
+            focus my research sessions on the donate action tile. Later I watched 
+            the sessions and collected findings. Here are some of the participant quotes: 
         </Description>
         <Comments>
             <Comment 
@@ -123,6 +126,9 @@ const Quotes = props => (
                 name="Sadie R."
                 role="Participant"
             />
+            
+        </Comments>
+        <Comments>
             <Comment 
                 text="''I didn't know PayPal does fundraising for natural disasters, go PayPal!...This is a notification I want to see.''"
                 name="Pete B."

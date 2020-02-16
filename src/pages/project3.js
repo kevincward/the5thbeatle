@@ -6,6 +6,7 @@ import ContentBlurb from '../components/contentblurb'
 import DonateBkgd from '../images/hero_backgd_cs3.svg'
 import HeroIcon from '../images/ic_timeline_pp.svg'
 import TwoColumnBlurb from '../components/twocolumnblurb'
+import Tiles from '../components/p3_tiles'
 import OverView from '../components/overView3'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
@@ -27,6 +28,7 @@ import TriggerHab2 from '../images/trigger_hab2_remind.png'
 import Researcher from '../images/p3_researcher.jpg'
 import TileTest1 from '../images/p3_tiletest1.jpg'
 import TileTest2 from '../images/p3_tiletest2.jpg'
+import Sol3 from '../images/p3_sol_bkgd.jpg'
 
 
 
@@ -37,7 +39,7 @@ flex-direction: column;
 
 @media (max-width: 768px) {
   flex-direction: column;
-  padding: 60px 24px;
+  padding: 30px 24px;
 }
 `
 
@@ -48,7 +50,7 @@ border-radius: 10px;
 background-color: #f8f8f8;
 
 @media (max-width: 768px) {
-      padding: 32px 23px;
+      padding: 20px 23px 10px;
       width: auto;
       margin-bottom: 10px;
   }
@@ -65,12 +67,17 @@ color: #000000;
 margin: 80px 90px -68px;
 
 @media (max-width: 768px) {
-    margin: 30px 24px -20px;
+    margin: 50px 24px -20px;
 }
 `
 
 const Divider = styled.div`
-border: solid 1px rgba(0,0,0,.05);
+  border: solid 1px rgba(0,0,0,.05);
+  margin-top: 50px;
+
+  @media (max-width: 768px) {
+    margin: 50px 24px 25px;
+}
 `
 
 const Description = styled.div`    
@@ -84,7 +91,7 @@ const Description = styled.div`
     margin: 80px 90px;
 
     @media (max-width: 768px) {
-    margin: 40px 10px;
+    margin: 50px 20px;
 }
 `
 
@@ -95,7 +102,7 @@ const Project3 = () => {
     <Layout>
       <Hero 
           heroImgURL={DonateBkgd}
-          title={"PayPal Donor Triggers"}
+          title={"How to remind (not nag) people to donate"}
           img={HeroIcon}
           />
       <Container>
@@ -103,7 +110,6 @@ const Project3 = () => {
          <HeadLine>Headline</HeadLine>
         : null} */} 
           <OverView />
-          <Title>Research</Title>
           <TwoColumnBlurb
             title={
               "What motivates people to donate?"
@@ -115,7 +121,7 @@ const Project3 = () => {
           />
           <ContentBlurb
             title={
-              "Findings"
+              "Putting all the feedback into Miro"
             }
             description={
               "I created an affinity map to organize the types of donation prompts we heard about from participants."
@@ -124,10 +130,10 @@ const Project3 = () => {
           />
       </Container>
       <ContainerGray>
-        <Title>Insights</Title>
+        <Title>Looking for patterns</Title>
         <ContentBlurb
           description={
-            "The prompt groupings fall into two donor behaviors…"
+            "The prompt groupings fall into two behaviors, deliverate donors and impulsive donors."
           }
           image={AfinMap2}
           image2={Pattern}
@@ -145,7 +151,7 @@ const Project3 = () => {
               "When designing triggers, we were inspired by the Fogg Behavior Model"
             }
             description={
-              "We took into account donor’s motivation and ability in each behavior scenario to ensure successful triggers."
+              "We took into account the donor’s motivation and ability in each behavior scenario to ensure successful triggers."
             }
             image={Fogg}
           />
@@ -159,6 +165,7 @@ const Project3 = () => {
             image={IA}
             image2={IA2}
           />
+          <Divider />
           <ContentBlurb
             title={
               "Notifications- an opportunity to make a quick impact"
@@ -180,7 +187,7 @@ const Project3 = () => {
             }
             image={TriggerHab3}
           />
-          <TwoColumnBlurb
+          <Tiles
             title={
               "Donor intent tile concepts"
             }
@@ -189,19 +196,19 @@ const Project3 = () => {
             }
             image={TriggerHab1}
           />
-          <TwoColumnBlurb
+          <Tiles
             title={
-              "Potential Donor tile concepts"
+              "Potential donor tile concepts"
             }
             description={
-              "For the “potential donor” tile, the PayPal data science model was used to make smart recommendations based on the user’s browsing history, location, and charities supported by their contacts."
+              "For the “potential donor” tile, the PayPal data science model was used to make smart recommendations based on the user’s browsing history, location, and charities supported by their PayPal contacts."
             }
             image={TriggerHab2}
           />
           
       </ContainerGray>
       <Container>
-          <Title>Evaluating Concepts</Title>
+          <Title>What users had to say</Title>
           <br />
           <Quotes />
           <ContentBlurb
@@ -218,9 +225,9 @@ const Project3 = () => {
       </Container>
       <Solution
           id="Solution3"
-          heroImgURL={DonateBkgd}
+          heroImgURL={Sol3}
           title={"The Solution"}
-          description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previous supported' tile."}
+          description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previously supported' tile for the first version of the tile."}
           />
       <Container>
             <Features />

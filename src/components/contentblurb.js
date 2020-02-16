@@ -53,8 +53,7 @@ const MoreDescription = styled.div`
     line-height: 1.5;
     letter-spacing: -0.11px;
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px; 
-    
+    margin-bottom: 10px;     
 `
 
 
@@ -67,7 +66,6 @@ const Image = styled.div`
   margin-right: auto;
   margin-top: 10px;
 
-  
   .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);
   }
@@ -82,7 +80,7 @@ const Image2 = styled.div`
   margin-right: auto;
 
   @media (max-width: 720px) {
-        padding-top: 0px;
+        padding-top: 20px;
     }
   
   .__react_modal_image__modal_container {

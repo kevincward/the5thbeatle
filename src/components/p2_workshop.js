@@ -10,26 +10,27 @@ import NotWorking from '../images/p2_workshop4.jpg';
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 30px 90px;
     flex-direction: column;
     @media (max-width: 768px) {
-        margin: 120px 24px 60px;
+        margin: 30px 24px 60px;
     }
 `
 
 const Title = styled.div`
-    width: 565px;
-    font-size: 34px;
+    width: 565px;    
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 34px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
+        margin-bottom: 18px;
     }
 `
 
@@ -43,6 +44,7 @@ const Description = styled.div`
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 8px;
 `
+
 const Image = styled.div`
   display: block;
   width: 100%;
@@ -73,7 +75,7 @@ const Icon = styled.img`
 
 const Title2 = styled.div`
 
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -84,8 +86,11 @@ const Title2 = styled.div`
 const TopContainer = styled.div`
     display: flex;
     flex-direction: row;
+    margin: 30px 24px 30px;
+
     @media (max-width: 768px) {
         flex-direction: column;
+        margin: -10px 24px 0px;
     }
 `
 
@@ -109,15 +114,13 @@ const Workshop = React.memo(({image,}) => {
             </Title>
             <Description>
                 <p>
-                  Since this feature would have a big impact on how the tCheck device is used, I wanted to share wireframes of the testing flow I had 
-                  put together with engineering with sales, marketing, the customer service lead, CEO, COO, and engineering. The best way to do that 
-                  would be to facilitate workshop where all the stakeholders could see the wireframes and provide feedback on the flow to be discussed in a group setting.
+                Since this feature would have a significant impact on how the tCheck device was used, I wanted to get feedback on my wireframes from key stakeholders across
+                 the company. To do this, I facilitated a workshop which included representatives from engineering, sales, marketing, customer service, as well as the CEO and COO. 
                 </p>
                 <p>
-                  To prepare for the workshop, I wanted to make sure to document who we are building this feature for. Bearing in mind our customer base and discussions with 
-                  tCheck users, this feature will be designed for professional ediblemakers (creating multiple batches of edibles to sell) and home ediblemakers (baking small 
-                  batches of edibles for recreational or medicinal use). I compiled data for personas from past customer surveys we had ran, customer service tickets, and 
-                  interviews with ediblemakers I had done.     
+                To prepare for the workshop, I compiled all of our internal data on ediblemakers (including past research and customer service tickets) to create two personas. 
+                The first persona was a professional ediblemaker (creating multiple batches of edibles to sell) and the second was a home ediblemaker (baking small batches of 
+                edibles for recreational or medicinal use). These personas ensured that the team would have a clear and shared understanding of who we were building this feature for.      
                 </p>  
             </Description>
             <br />
@@ -165,10 +168,18 @@ const Workshop = React.memo(({image,}) => {
             <TopContainer>
                 <TextContent>
                     <Title>
-                        This isn’t working…
+                        This wasn’t working…
                     </Title>
                     <Description>
-                        Since every strain of cannabis is a little different, users would need to create a unique profile (also called a strain map) for the plant they are using. Once the strain map has been created, the user would need to select it when testing their infusion so tCheck accounts for its characteristics. 
+                        <p>
+                            I walked through the flow reading all the post it notes aloud to faciliatate to discussion. As we made our way through the comments, it became clear that the strain mapping 
+                            flow needed a lot of simplification.
+                        </p>
+                        <p>
+                            I started reinterpretting the flow with input from everyone in the room. Instead of asking users to create two plant infusions (one at 2 mins, the other at 5 mins) and testing 
+                            them upon collection, we determined we could have the user make one plant infusion, and then draw a sample with a syringe at 2 mins and then a sample with another syringe at 5 mins. 
+                            At that point, they can test the samples without worrying about a time limit. 
+                        </p>
                     </Description>
                     <br />
                 </TextContent>

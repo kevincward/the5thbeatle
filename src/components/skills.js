@@ -56,7 +56,7 @@ const Items = styled.div`
 `
 
 const ItemContainer = styled.div`
-    width: 250px;
+    width: 300px;
     margin-bottom: 32px;
     margin-right: 32px;
     @media (max-width: 768px) {
@@ -70,6 +70,7 @@ const ImgIcon = styled.img`
     width: 48px;
     height: 48px;
     margin-right: 18px;
+    margin-bottom: 24px;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
     &:hover {
         transform: scale(1.3, 1.3);
@@ -84,26 +85,24 @@ const ImgIcon = styled.img`
 `
 
 const ItemTitle = styled.div`
-
     font-size: 21px;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 8px;
 `
 
 const ItemDescription = styled.div`
-
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.2px;
-    color: rgba(0, 0, 0, 0.7);    
+    color: rgba(0, 0, 0, 0.7);  
 `
 
 const ItemContent = styled.div`

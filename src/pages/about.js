@@ -85,13 +85,13 @@ const About = () => {
           : null):null}
           <Text>
             <br />
-            I’m a self taught designer that strives to leave a positive impact on people through the products I work on. I live in Sacramento, 
-            CA and have a background in traditional art. While working for an art dealer many years ago, I was given the opportunity to design all of their marketing 
+            I’m a product designer that strives to leave a positive impact on people through the products I work on. I live in Sacramento, 
+            CA and have a background in traditional art. My design career started out when I got ajob with an art dealer, creating all of their marketing 
             materials, books, and posters. I built a foundation in print design which transitioned into user interface design to user experience design.
             <br />
             <br />
-            I’ve spent the last 7 years in product design working in diverse industries including finance, health, cannabis, travel, philanthropy, and 
-            agriculture with environments ranging from small startups to large corporations to state government. Each industry and team size has brought 
+            I’ve spent the last 7 years in product design, working in diverse industries including finance, health, cannabis, travel, philanthropy, and 
+            agriculture. My working environments have ranged from small startups to large corporations to state government. Each industry and team size has brought 
             its own unique set of challenges and experiences I carry with me to inform my design thinking.
             <br />
             <br />
@@ -101,7 +101,7 @@ const About = () => {
             <b>Hats worn:</b> Product Designer, UI Designer, UX Researcher, Marketing Manager, UI Developer
             <br />
             <br />
-            <b>Some of my favorite companies to work with:</b> PayPal, Venmo, Xoom, the Bill & Melinda Gates Foundation, California Franchise Tax Board, the San Francisco Marathon
+            <b>Some of the companies I have worked with:</b> PayPal, Venmo, Xoom, the Bill & Melinda Gates Foundation, California Franchise Tax Board, the San Francisco Marathon
             <br />
             <br />
           </Text>

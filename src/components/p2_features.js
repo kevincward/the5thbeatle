@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import './Card.css'
 
 const Container = styled.div`
@@ -8,13 +7,12 @@ const Container = styled.div`
     flex-direction: column;
     margin: 60px auto 100px;
     padding: 32px;
+    
     @media (max-width: 768px) {
         margin: 60px auto 0px;
         padding: 32px 0px;
     }
 ` 
-
-
 
 const Experience = styled.div`
     width: 80%;
@@ -26,9 +24,10 @@ const Experience = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: -100px auto;
+    margin: -160px auto;
+    
     @media (max-width: 768px) {
-        margin-top: -350px;
+        margin-top: -140px;
         padding: 24px 16px;
     }
 ` 
@@ -43,6 +42,7 @@ const ExpTitle = styled.div`
     text-align: left;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: auto;
         margin-bottom: 16px;

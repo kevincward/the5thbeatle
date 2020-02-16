@@ -16,7 +16,6 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -28,6 +27,7 @@ const Title = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
+        margin-top: 40px;
     }
 `
 
@@ -80,12 +80,11 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
 `
@@ -128,16 +127,21 @@ const ProjectLearnings = () => {
                 <Items>
                     <Item 
                         icon={diff}
-                        title='Differences between donating and paying'
-                        description='Interviewed 16 donors about previous donation experiences.'
+                        title='Suggest actions to users on their terms'
+                        description='Notifications and suggestions become a nuisance when not properly presented. This project enabled me to learn how to establish logic for trigger audience, placement, and frequency.'
                     />
                     <br />
                     <Item 
                         icon={native}
-                        title='Evaluating the value of a native experience'
-                        description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
+                        title='Stay within the product ecosystem as much as possible'
+                        description='By leveraging planned components, we were able to move quickly in getting the donor triggers launched. This also avoided adding yet another piece on users accounts.'
                     /> 
-                    
+                    <br />
+                    <Item 
+                        icon={native}
+                        title='Greater understanding of donor behavior'
+                        description='Having the opportunity to talk with so many donors gave me a better understanding into what circumstances inspire people to give.'
+                    /> 
                 </Items>
             </Content>
         </Container>

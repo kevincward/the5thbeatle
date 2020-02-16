@@ -8,6 +8,7 @@ const Container = styled.div`
     display: flex;
     margin: 80px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
         margin: 360px 24px 60px;
     }
@@ -15,7 +16,6 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -76,14 +76,14 @@ const ImgIcon = styled.img`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
+    padding-bottom: 10px;
 `
 
 const ItemDescription = styled.div`
@@ -124,14 +124,14 @@ const ProjectLearnings = () => {
                 <Items>
                     <Item 
                         icon={diff}
-                        title='Differences between donating and paying'
-                        description='Interviewed 16 donors about previous donation experiences.'
+                        title='Donating is very similar to any other kind of payment activity'
+                        description='Donors take comfort in well known brands and identify with logos.  They will shop around to find the right organization to send money to. They are concerned about making a secure transaction and confirming their money is well spent.'
                     />
                     <br />
                     <Item 
                         icon={native}
                         title='Evaluating the value of a native experience'
-                        description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
+                        description='With our personas and features established, I created an information architecture and screen wireframes, leveraging components from the current app design for consistency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups.'
                     /> 
                     
                 </Items>

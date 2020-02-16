@@ -7,10 +7,11 @@ import shop from '../images/ic_cannawant_shop.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 40px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 60px 24px -30px;
     }
 `
 
@@ -18,6 +19,7 @@ const ValuePropsContainer = styled.section`
   display: flex;
   justify-content: space-around;
   padding: 4.5rem 0;
+  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -26,7 +28,7 @@ const ValuePropsContainer = styled.section`
 
 const Title = styled.div`
     width: 565px;    
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -34,9 +36,9 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 32px;
     }
 `
 
@@ -56,6 +58,7 @@ const Description = styled.div`
 const ValueProp = styled.div`
   text-align: center;
   width: 15.6rem;
+  
   @media (max-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -73,9 +76,9 @@ const Userwants = React.memo(() => {
     <Container>
       <Title>Users want to test their plant based infusions</Title>
       <Description>
-        We knew early on that users wanted to test their cannabis plant based infusions. Speaking to customers at events, 
-        reviewing custoemr service tickets, and survey data, these are a couple of the main reasons ediblemakers primarily 
-        use plant based infusions:
+        We knew early on that users wanted to test their cannabis plant based infusions. By using multiple sources of customer feedback
+        (i.e. surveys, customer service tickets, discussions with customers at trade shows) we learned that ediblemakers primarily 
+        use plant based infusions because:
       </Description>
       <ValuePropsContainer>
         <ValueProp>
@@ -87,13 +90,13 @@ const Userwants = React.memo(() => {
         <ValueProp>
             <ValuePropImg src={cost} />
             <Description>
-                It’s much more cost effective than isolate
+                It’s much more cost effective than concentrate
             </Description>
         </ValueProp>
         <ValueProp>
             <ValuePropImg src={shop} />
             <Description>
-            May not have access to places that sell isolate (dispensary)
+            May not have access to places that sell concentrate (dispensary)
             </Description>
         </ValueProp>
       </ValuePropsContainer>

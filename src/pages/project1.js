@@ -14,7 +14,7 @@ import Features from '../components/p1_features'
 
 import Compete from '../images/compete_donate.png'
 import Personas from '../images/personas_donate.png'
-import Insights from '../images/insights_donate.svg'
+import Insights from '../images/p1_insights.png'
 import HowMightWe from '../images/howmightwe_donate.png'
 import FeatPrior from '../images/featurepri_donate.png'
 import Concept from '../images/concept_donate.png'
@@ -72,7 +72,7 @@ const Project1 = () => {
     <Layout>
       <Hero 
           heroImgURL={DonateBkgd}
-          title={"PayPal Native Donation Experience"}
+          title={"Improving the mobile donation experience"}
           img={HeroIcon}
           />
       <Container>
@@ -136,7 +136,7 @@ const Project1 = () => {
             "Building wireframes"
           }
           description={
-            "I took these features and created an information architecture and low-fi concepts, leveraging components from the current app design for consistency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups."
+            "With our personas and features established, I created an information architecture and screen wireframes, leveraging components from the current app design for consistency. Once approved by the Product and Engineering teams, we began to conduct usability tests with the low fidelity mockups."
           }
           image={Concept}
         />

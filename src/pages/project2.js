@@ -20,6 +20,7 @@ import Bkgd from '../images/hero_backgd_cs2.svg'
 import HeroIcon from '../images/ic_timeline_tch.svg'
 import DefaultOption from '../images/p2_adddefault.png'
 import Reqs from '../images/p2_reqs.png'
+import Sol2 from '../images/p2_sol_bkgd.jpg'
 
 
 const Container = styled.div`
@@ -29,7 +30,7 @@ const Container = styled.div`
     
     @media (max-width: 768px) {
       flex-direction: column;
-      padding: 60px 24px;
+      padding: 60px 24px 0px;
     }
 `
 
@@ -72,7 +73,7 @@ const Project2 = () => {
     <Layout>
       <Hero 
           heroImgURL={Bkgd}
-          title={"Testing cannabis infusions with tCheck"}
+          title={"Complex measuring made easy"}
           img={HeroIcon}
           />
       <Container>
@@ -85,7 +86,7 @@ const Project2 = () => {
               "A bit about tCheck"
             }
             description={
-              "Engineered Medical Technologies (EMT) created the tCheck device, the first handheld cannabis potency tester which can collect live readings to address a major pain point for cannabis users: not knowing the potency of their cannabis infusions. Edibles are often used by cannabis users due to their convenience, discretion, and long-lasting effects. However, when it comes to creating edibles, proper dosing is critical to achieving the desired effect (too little there is no effect, too much and the user can become drowsy)."
+              "The tCheck device can collect live readings to address a major pain point for cannabis users: not knowing the potency of their cannabis infusions. Edibles are often used by cannabis users due to their convenience, discretion, and long-lasting effects. However, when it comes to creating edibles, proper dosing is critical to achieving the desired effect (too little there is no effect, too much and the user can become drowsy)."
             }
             image={tCheck}
           />
@@ -113,10 +114,10 @@ const Project2 = () => {
                   "Ok, let’s offer a default option"
                 }
                 description={
-                  "After the conference, I met with leadership and our engineer lead to debrief on all the feedback. We agreed that we needed to account for users who wanted to run a flower based infusion potency test without mapping their flower strain."
+                  "After the conference, I met with leadership and our engineering lead to debrief on all the feedback. We agreed that we needed to account for users who wanted to run a plant based infusion potency test without mapping their strain."
                 }
                 description2={
-                  "Having ran countless tests on several strain varieties we were confident that we could offer a default strain setting for users that would use the average of 12 different cannabis strains."
+                  "Having run countless tests on several strain varieties we were confident that we could offer a default strain setting for users that would use the average of 12 different cannabis strains."
                 }
 
                 image={DefaultOption}
@@ -124,9 +125,9 @@ const Project2 = () => {
       </Container> 
         <Solution
           id="Solution2"
-          heroImgURL={Bkgd}
+          heroImgURL={Sol2}
           title={"The Solution"}
-          description={"For MVP, we decided to only release the default setting for cannbis plant infusion potenct testing. This would allow us to introduce users to the feature slowly for increased adoption and do more user testing on the strain mapping flow. The roadmap plans for the strain map flow to be avaialble this spring."}
+          description={"For MVP, we decided to release the default setting only for plant infusion potency testing. This would allow us to introduce the feature but do more user testing on the strain mapping flow. The strain mapping flow is scheduled for release this upcoming spring."}
         />  
       <Container>
         <Features />

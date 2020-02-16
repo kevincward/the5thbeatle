@@ -1,6 +1,8 @@
+
 import React from 'react'
 import styled from 'styled-components'
 import ModalImage from "react-modal-image";
+
 
 const Container = styled.div`
     display: flex;
@@ -29,23 +31,6 @@ const Title = styled.div`
     }
 `
 const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    color: rgba(0, 0, 0, 0.7);
-    width: 400px;
-    margin-bottom: 30px;
-
-    @media (max-width: 768px) {
-        width: 280px;
-        margin: 40px 24px;
-    }
-
-`
-const Description2 = styled.div`    
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -104,7 +89,7 @@ const TextContainer = styled.div`
 
 `
 
-const TwoColumnBlurb = React.memo(({ title, description, description2, image}) => {
+const Tiles = React.memo(({ title, description, description2, image}) => {
     return (
         <Container>            
             <Content>
@@ -125,9 +110,6 @@ const TwoColumnBlurb = React.memo(({ title, description, description2, image}) =
                     <Description>
                         {description}
                     </Description>
-                    <Description2>
-                        {description2}
-                    </Description2>
                 </TextContainer>
                 {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
                 <Image>
@@ -142,4 +124,4 @@ const TwoColumnBlurb = React.memo(({ title, description, description2, image}) =
     )
 })
 
-export default TwoColumnBlurb
+export default Tiles

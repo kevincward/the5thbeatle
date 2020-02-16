@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import ModalImage from "react-modal-image";
+
 import p2_testsuc_1 from '../images/p2_testsuc_1.png'
 import p2_testsuc_2 from '../images/p2_testsuc_2.png'
 import p2_testsuc_3 from '../images/p2_testsuc_3.png'
@@ -8,8 +10,11 @@ import p2_testsuc_4 from '../images/p2_testsuc_4.png'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 36px 46px;    
+    padding: 64px 46px; 
+       
+    
     @media (max-width: 720px) {
+        margin: 0px -20px;
         padding: 32px 23px;
         flex-direction: column;
         align-items: center;
@@ -22,36 +27,37 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    
     @media (max-width: 720px) {
         padding: 16px 0px;
     }
 `
 
 const Header = styled.div`
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.18;
     letter-spacing: -0.5px;
-    color: #1a1a1a;
+    color: #000000;
     margin-bottom: 34px;
+    
     @media (max-width: 720px) {
         margin-bottom: 16px;
-        font-size: 24px;
         line-height: 1.33;
         letter-spacing: normal;
-        color: #000000;
     }
 `
 
 const ItemContainer = styled.div`  
     display: flex;
     justify-content: center;
-    algin-items: center;
+    align-items: center;
     flex-direction: column;
     width: 270px;
     padding: 32px 0px;
+    
     @media (max-width: 720px) {
         padding: 16px 0px;
         width: 100%;
@@ -62,6 +68,7 @@ const Row = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
     @media (max-width: 720px) {
         flex-direction: column;
         justify-content: center;
@@ -69,29 +76,36 @@ const Row = styled.div`
     }
 `
 
-const Img = styled.img`  
+const Image = styled.div`  
     width: 100%;
     height: auto;
+    
     @media (max-width: 720px) {
         width: 131px;
         margin: auto;
     }
+
+    .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `
 
 const Text = styled.div`  
-    font-size: 17px;
+    font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.18;
+    line-height: 27px;
     letter-spacing: -0.5px;
     text-align: center;
-    color: #1a1a1a;
+    color: #000000;
     margin-top: 23px;
+    
     @media (max-width: 720px) {
         width: 271px;
         margin: auto;
         margin-top: 32px;
+        text-align: left;
     }
 `
 
@@ -121,7 +135,13 @@ const items = [
 const Item = ({img, text}) => {
     return (
         <ItemContainer>
-            <Img src={img} />
+            <Image>
+                 <ModalImage
+                    small={img}
+                    medium={img}
+                    imageBackgroundColor="#ffff"
+                 />
+                 </Image>
             <Text>{text}</Text>
         </ItemContainer>
     )
@@ -130,7 +150,7 @@ const Item = ({img, text}) => {
 const p2_testingsuccess = () => (
     <Container>
         <Header>
-            Ensuring testing success
+            Ensuring test success
         </Header>
         <Content>
             {

@@ -69,12 +69,11 @@ const ItemContainer = styled.div`
 
 const ItemTitle = styled.div`
     object-fit: contain;
-
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 28px;
     letter-spacing: normal;
     color: #000000;
 `

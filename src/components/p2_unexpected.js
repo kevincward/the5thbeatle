@@ -6,6 +6,7 @@ const Container = styled.div`
     display: flex;
     margin: 80px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
         margin: 60px 24px;
     }
@@ -15,6 +16,7 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         margin-bottom: 16px;
     }
@@ -22,7 +24,7 @@ const TitleContainer = styled.div`
 
 const Title = styled.div`
 
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -53,6 +55,7 @@ const Comments = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -75,6 +78,7 @@ const CommentContent = styled.div`
     color: #000000;
     width: 750px;
     margin-bottom: 16px;
+    
     @media (max-width: 768px) {
         width: 100%;
     }
@@ -108,7 +112,7 @@ const Quotes = props => (
         </TitleContainer>
         <Comments>
             <Comment 
-                text="''It’s [the flow] great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to be relatively confident it’ll pass.''"
+                text="''It’s great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to be relatively confident it’ll pass.''"
                 name="Anonymous CannaChef"
                 role="Participant"
             />

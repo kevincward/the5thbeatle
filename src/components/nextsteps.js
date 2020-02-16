@@ -9,6 +9,7 @@ const Container = styled.div`
     display: flex;
     margin: 80px 90px;
     flex-direction: column;
+    
     @media (max-width: 768px) {
         margin: 60px 24px;
     }
@@ -18,6 +19,7 @@ const ValuePropsContainer = styled.section`
   display: flex;
   justify-content: space-around;
   padding: 4.5rem 0;
+  
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -26,7 +28,7 @@ const ValuePropsContainer = styled.section`
 
 const Title = styled.div`
     width: 565px;    
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -34,9 +36,9 @@ const Title = styled.div`
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 32px;
+    
     @media (max-width: 768px) {
         width: 100%;
-        font-size: 28px;
     }
 `
 
@@ -56,6 +58,7 @@ const Description = styled.div`
 const ValueProp = styled.div`
   text-align: center;
   width: 15.6rem;
+  
   @media (max-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -82,13 +85,13 @@ const NextSteps = React.memo(() => {
         <ValueProp>
             <ValuePropImg src={entrypoint} />
             <Description>
-                Increase entry points to donate feature where relevant
+                Create additional donation entry points where relevant
             </Description>
         </ValueProp>
         <ValueProp>
             <ValuePropImg src={suggest} />
             <Description>
-            Suggest donation opportunity after other tasks completion
+                Suggest donation opportunity after other tasks completion
             </Description>
         </ValueProp>
       </ValuePropsContainer>
