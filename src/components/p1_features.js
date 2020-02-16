@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import './Card.css'
-import ModalImg from "react-modal-image"
+import ModalImage from "react-modal-image"
 
 import p1_img1 from '../images/p1_feature1.png';
 import p1_img2 from '../images/p1_feature2.png';
@@ -120,26 +120,19 @@ const FeatureContent = styled.div`
     }
 ` 
 
-const Img = styled.img`
-    width: auto;
-    height: 433px;
-    
-    @media (max-width: 768px) {
-        height: 260px;
-    }
-
-    .__react_modal_img__modal_container {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-`
-
 const ImgContainer = styled.div`
     width: 45%;
     display: flex;
     justify-content: center;
-    
+    height: 433px;
+
     @media (max-width: 768px) {
         width: 100%;
+        height: 260px;
+    }
+
+    .__react_modal_img__modal_container {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 `
 
@@ -192,8 +185,11 @@ const FeaturesContainer = ({title, description, img}) => {
     return (
         <FeatureContainer>
             <ImgContainer>
-                <Img src={img}
-                />
+                <ModalImage
+                    small={img}
+                    medium={img}
+                    imageBackgroundColor="#ffff"
+                />                
             </ImgContainer>
             <FeatureContent>
                 <Title>{title}</Title>                

@@ -53,7 +53,7 @@ const SectionTitle = styled.h3`
     @media (max-width: 720px) {
        font-size: 24px; 
        width: 50px;
-       margin-left: -50px;
+       margin-left: -50px;       
     }
 `
 
@@ -74,6 +74,7 @@ const CardCarousel = styled.div`
         .slick-list {
             overflow: visible;
         }
+        z-index: 1;
     }
 
     .slick-prev {
@@ -83,7 +84,7 @@ const CardCarousel = styled.div`
     top: 200px;
     margin-left: auto;
     width: 62%;
-    border-radius: 8px;
+    border-radius: 8px;    
 `
 
 const NextArrowButton = ({next}) => {
