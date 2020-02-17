@@ -47,7 +47,7 @@ const Content = styled.div`
 const Items = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     position: relative;
     @media (max-width: 768px) {
         width: 100%;
@@ -63,6 +63,7 @@ const ItemContainer = styled.div`
         margin-top: 32px;
         margin-bottom: 0px;
         margin-right: 0px;
+        
     }
 `
 
@@ -78,8 +79,6 @@ const ImgIcon = styled.img`
         transition: 1s;
     }
     @media (max-width: 768px) {
-        width: 24px;
-        height: 24px;
         margin-right: 14px;
     }
 `
@@ -89,7 +88,7 @@ const ItemTitle = styled.div`
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
-    line-height: 28px;
+    line-height: 26px;
     letter-spacing: normal;
     color: #000000;
     margin-bottom: 8px;
@@ -122,10 +121,10 @@ const Row = styled.div`
 
 const VerticalBar = styled.div`
     @media (max-width: 768px) {
-        height: 95%;
+        height: 97%;
         position: absolute;
         width: 1px;
-        left: 20px;
+        left: 1px;
         background-color: #f7991e;
         margin-top: 32px
     }

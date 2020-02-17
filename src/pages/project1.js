@@ -40,9 +40,10 @@ const ContainerGray = styled.div`
     background-color: #f8f8f8;
     
     @media (max-width: 768px) {
-          padding: 32px 23px;
-          width: auto;
-          margin-bottom: 10px;
+      margin: 10px 24px;  
+      padding: 32px 23px;
+      width: auto;
+      margin-bottom: 10px;
       }
 ` 
 

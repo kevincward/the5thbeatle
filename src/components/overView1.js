@@ -29,7 +29,7 @@ const Content = styled.div`
     @media (max-width: 768px) {
         padding: 20px 20px;
         width: auto;
-        height: 600px;        
+        height: 650px;        
     }
 ` 
 

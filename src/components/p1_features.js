@@ -175,6 +175,7 @@ const ExpTitle = styled.div`
     @media (max-width: 768px) {
         width: auto;
         margin-bottom: 16px;
+        text-align: center;
     }
 ` 
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import diff from '../images/ic_learndonate_diff.svg'
-import native from '../images/ic_learndonate_native.svg'
+import meetusers from '../images/ic_meetusers.svg'
+import eco from '../images/ic_ecosys.svg'
+import behave from '../images/ic_behave.svg'
 
 
 const Container = styled.div`
@@ -126,19 +127,19 @@ const ProjectLearnings = () => {
             <Content>
                 <Items>
                     <Item 
-                        icon={diff}
+                        icon={meetusers}
                         title='Suggest actions to users on their terms'
                         description='Notifications and suggestions become a nuisance when not properly presented. This project enabled me to learn how to establish logic for trigger audience, placement, and frequency.'
                     />
                     <br />
                     <Item 
-                        icon={native}
+                        icon={eco}
                         title='Stay within the product ecosystem as much as possible'
                         description='By leveraging planned components, we were able to move quickly in getting the donor triggers launched. This also avoided adding yet another piece on users accounts.'
                     /> 
                     <br />
                     <Item 
-                        icon={native}
+                        icon={behave}
                         title='Greater understanding of donor behavior'
                         description='Having the opportunity to talk with so many donors gave me a better understanding into what circumstances inspire people to give.'
                     /> 
