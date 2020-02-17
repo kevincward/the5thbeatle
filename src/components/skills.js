@@ -9,13 +9,13 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 80px 90px;
+    
     @media (max-width: 768px) {
         margin: 80px 24px;
     }
 `
 
 const Title = styled.div`
-
     font-size: 28px;
     font-weight: bold;
     font-stretch: normal;
@@ -30,6 +30,7 @@ const Title = styled.div`
     text-align: left;
     margin-left: 80px;
     width: 450px;
+    
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -62,8 +63,7 @@ const ItemContainer = styled.div`
     @media (max-width: 768px) {
         margin-top: 32px;
         margin-bottom: 0px;
-        margin-right: 0px;
-        
+        margin-right: 0px;    
     }
 `
 

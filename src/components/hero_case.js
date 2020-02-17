@@ -49,7 +49,7 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.41;
+    line-height: 1.3;
     letter-spacing: normal;
     color: #000000;  
     @media (max-width: 768px) {

@@ -33,7 +33,7 @@ const Content = styled.div`
         padding: 32px 23px;
         width: auto;
         margin-bottom: 300px;
-        height: 880px;        
+        height: 960px;        
     }
 ` 
 
@@ -126,7 +126,8 @@ const ImgContainer = styled.div`
 
     @media (max-width: 768px) {
         width: 100%;
-        height: 260px;
+        height: 160px;
+        margin-top: 20px;
     }
 
     .__react_modal_img__modal_container {
@@ -166,6 +167,7 @@ const ExpTitle = styled.div`
     @media (max-width: 768px) {
         width: auto;
         margin-bottom: 16px;
+        text-align: center;
     }
 ` 
 

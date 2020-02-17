@@ -58,7 +58,7 @@ const Description2 = styled.div`
 
     @media (max-width: 768px) {
         width: 280px;
-        margin: 40px 24px;
+        margin: 10px 24px;
     }
 `
 

@@ -66,8 +66,6 @@ const ImgIcon = styled.img`
         transition: 1s;
     }
     @media (max-width: 768px) {
-        width: 24px;
-        height: 24px;
         margin-right: 14px;
     }
 `

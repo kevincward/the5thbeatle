@@ -227,7 +227,7 @@ const Project3 = () => {
           id="Solution3"
           heroImgURL={Sol3}
           title={"The Solution"}
-          description={"With confidence from user testing sessions, we released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previously supported' tile for the first version of the tile."}
+          description={"We released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previously supported' tile for the first version of the tile."}
           />
       <Container>
             <Features />
