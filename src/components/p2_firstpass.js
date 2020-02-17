@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ModalImage from "react-modal-image";
+import ModalImage from "react-modal-image"
 
 import time from '../images/ic_canna_time.svg'
 import acc from '../images/ic_canna_acc.svg'
@@ -212,9 +212,9 @@ const Firstpass = () => {
                 </TextContent>
                 <Image src={Image}>
                     <ModalImage
-                    small={image}
-                    medium={image}
-                    imageBackgroundColor="#ffff"
+                        small={image}
+                        medium={image}
+                        imageBackgroundColor="#ffff"
                     />
                 </Image>
             </TopContainer>            
