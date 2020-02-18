@@ -5,11 +5,12 @@ import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
 import Skills from '../components/skills'
 import OtherWork from '../components/otherWork'
-
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const IndexPage = () => (
   <Layout>
-    <div>
+    <div>    
       <div className="Hero">
         <div className="HeroGroup">
           <h1>I am the fifth Beatle. <br /><br />
@@ -17,17 +18,38 @@ const IndexPage = () => (
           <br />
           <p>UX Director at <a href="https://tcheck.me" target="_blank">Engineered Medical Technologies</a></p>
         </div>
-      </div>
-      
-      
-      <Casestudy 
-        title="Case Studies">
-      </Casestudy>  
-      
-      <Experience />
-      <Skills />
-      <OtherWork />      
+      </div>    
+      <ScrollAnimation 
+        animateIn='fadeIn'      
+        duration={2}
+        delay={3}
+      >
+        <Casestudy 
+          title="Case Studies">
+        </Casestudy>  
+      </ScrollAnimation>
 
+      <ScrollAnimation 
+        animateIn='fadeIn'      
+        duration={2}
+        delay={3}
+      >
+        <Experience />
+      </ScrollAnimation>
+      <ScrollAnimation 
+        animateIn='fadeIn'      
+        duration={2}
+        delay={3}
+      >
+        <Skills />
+      </ScrollAnimation>
+      <ScrollAnimation 
+        animateIn='fadeIn'      
+        duration={2}
+        delay={3}
+      >
+        <OtherWork />      
+      </ScrollAnimation>
     
 
     </div>
