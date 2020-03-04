@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components"
-import Header from '../components/header'
 import Me from "../images/me.jpg"
 import Layout from '../layouts'
 
@@ -32,7 +31,7 @@ const Text = styled.div`
 `
 
 const Img = styled.img`
-  width: 35%;
+  width: 45%;
   
   @media (max-width: 768px) {
     width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import tcheckImage1 from '../images/Exp_1.png'
-import tcheckImage2 from '../images/Exp_2.png'
+import tcheckImage1 from '../images/experience1.gif'
+import tcheckImage2 from '../images/experience2.gif'
 import tcheckImage3 from '../images/Exp_3.png'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Title = styled.div`
     width: 565px;    
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -138,11 +138,13 @@ const Item = ({icon, title, role, description}) => {
 
 const Sliders = () => {
     const settings = {
-        dots: true,
         infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        fade: true,
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       };
 
     return (

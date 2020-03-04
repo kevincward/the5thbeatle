@@ -34,9 +34,7 @@ const Layout = ({children}) => {
             <Header />
             {children}
               <Footer data={data}>
-                This website is a playground for me to learn React ⚛️. 
-                <br />
-                Built in 2020.
+                This site is a playground for me to learn React ⚛️ Built in 2020.
               </Footer> 
           </div>
         )}    

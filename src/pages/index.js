@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import Layout from '../layouts'
 import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
@@ -22,7 +21,7 @@ const IndexPage = () => (
       <ScrollAnimation 
         animateIn='fadeIn'      
         duration={2}
-        delay={3}
+        delay={2}
       >
         <Casestudy 
           title="Case Studies">
@@ -32,21 +31,21 @@ const IndexPage = () => (
       <ScrollAnimation 
         animateIn='fadeIn'      
         duration={2}
-        delay={3}
+        delay={2}
       >
         <Experience />
       </ScrollAnimation>
       <ScrollAnimation 
         animateIn='fadeIn'      
         duration={2}
-        delay={3}
+        delay={2}
       >
         <Skills />
       </ScrollAnimation>
       <ScrollAnimation 
         animateIn='fadeIn'      
         duration={2}
-        delay={3}
+        delay={2}
       >
         <OtherWork />      
       </ScrollAnimation>

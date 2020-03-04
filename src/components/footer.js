@@ -75,7 +75,16 @@ const Link = styled.a`
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-`
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    
+    &:hover {
+        transform: scale(1.3, 1.3);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
+
+`;
+
 const SocialsContainer = styled.div`
 	display: flex;
     margin: 0 auto;
@@ -95,7 +104,7 @@ const SocialImage = styled.img`
     }
 `
 
-const Footer = ({data, children}) => (
+const Footer = ({children}) => (
     <Container>
       <FooterGroup>
         <Title>There's nowhere you can be that isn't where you're meant to be...</Title>

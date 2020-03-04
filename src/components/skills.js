@@ -16,11 +16,11 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 34px;
+    line-height: 38px;
     letter-spacing: normal;
     color: #000000;
     display: flex;
