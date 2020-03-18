@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import tcheckImage1 from '../images/experience1.gif'
-import tcheckImage2 from '../images/experience2.gif'
+import tcheckImage1 from '../images/Exp_1.png'
+import tcheckImage2 from '../images/Exp_2.png'
 import tcheckImage3 from '../images/Exp_3.png'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
@@ -71,7 +71,7 @@ const SliderContainer = styled.div`
 const ItemContainer = styled.div`
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 `
 
 const ImgIcon = styled.img`
@@ -138,13 +138,11 @@ const Item = ({icon, title, role, description}) => {
 
 const Sliders = () => {
     const settings = {
+        dots: true,
         infinite: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        fade: true,
-        autoplay: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
       };
 
     return (

@@ -17,7 +17,12 @@ const IndexPage = () => (
           <br />
           <p>UX Director at <a href="https://tcheck.me" target="_blank">Engineered Medical Technologies</a></p>
         </div>
-      </div>    
+      </div>  
+
+      <div>
+       
+        
+      </div>  
       <ScrollAnimation 
         animateIn='fadeIn'      
         duration={2}

@@ -28,7 +28,7 @@
     }
 }
 .Card:hover {    
-    box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
 }
 
 .Card h3 {

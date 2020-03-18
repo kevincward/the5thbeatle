@@ -6,33 +6,40 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./arrowBtn.scss"
 
+import bkgd from '../images/testbk.svg'
+
 const SectionGroup = styled.div `
     background: #FFFFFF;    
     background-size: cover;
     top: -100px; 
     position: relative;
     z-index: 0;
-    margin-top: -250px;
+    margin-top: -200px;
     
     @media (max-width: 720px) {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    margin-top: -80px;
+    margin-top: -250px;
   }
 `
 
-const Colorblock = styled.div`
-    background: #540D6E;
-    height: 150px;
-    padding-top: 200px;
-    padding: 3.5rem 5rem 3rem;
+const Background = styled.div`
+    background: url(${({ heroImgURL }) => heroImgURL});
+    height: 400px;
+    padding: 0rem 5rem 3rem;
     align-items: center;
     display: flex;
+    background-size: cover;
+
+    @media (max-width: 720px) {
+        height: 300px;
+    }
 `
 
 const SectionTitleGroup = styled.div`
     margin: 0 40px;
+    
     @media (max-width: 720px) {
         margin: 0 10px;
     }
@@ -81,7 +88,7 @@ const CardCarousel = styled.div`
         display: none !important;
     }
     position: relative;
-    top: 200px;
+    top: 400px;
     margin-left: auto;
     width: 62%;
     border-radius: 8px;    
@@ -162,11 +169,11 @@ const caseStudy = props => {
             <NextArrowButton 
                 next={() => next()}
             />
-            <Colorblock>
+            <Background heroImgURL={bkgd}>
                 <SectionTitleGroup>
                     <SectionTitle>{props.title}</SectionTitle>
                 </SectionTitleGroup>  
-            </Colorblock>            
+            </Background>          
         </SectionGroup>
     )
 }
