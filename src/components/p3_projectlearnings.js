@@ -65,12 +65,7 @@ const ImgIcon = styled.img`
     width: 48px;
     height: 48px;
     margin-right: 18px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
+    
 
     @media (max-width: 768px) {
         width: 24px;

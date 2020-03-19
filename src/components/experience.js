@@ -13,7 +13,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 80px 90px;
+    margin: 40px 90px;
     @media (max-width: 768px) {
         margin: 10px 24px;
     }
