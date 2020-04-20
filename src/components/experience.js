@@ -1,31 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import 'slick-carousel/slick/slick-theme.css';
+
 import tcheckImage1 from '../images/Exp_1.png'
 import tcheckImage2 from '../images/Exp_2.png'
 import tcheckImage3 from '../images/Exp_3.png'
 import tcheck from '../images/ic_timeline_tch.svg'
 import paypal from '../images/ic_timeline_pp.svg'
 import zipkick from '../images/ic_timeline_zp.svg'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import 'slick-carousel/slick/slick-theme.css';
+
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 40px 90px;
     @media (max-width: 768px) {
-        margin: 10px 24px;
+        margin: 30px 24px;
     }
 `
 
 const Title = styled.div`
-    width: 565px;    
+    width: 450px;    
     font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 34px;
+    line-height: 40px;
     letter-spacing: normal;
     color: #000000;
     
@@ -36,7 +38,6 @@ const Title = styled.div`
 
 const Content = styled.div`
     display: flex;
-    font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
     @media (max-width: 768px) {
@@ -162,8 +163,7 @@ const Experience = () => {
     return (
         <Container>
             <Title>
-                I have 7 years  of experience 
-                working on corporate and 
+                I've worked on corporate and 
                 startup products
             </Title>
             <Content>
@@ -175,13 +175,13 @@ const Experience = () => {
                         icon={tcheck}
                         title='Engineered Medical Technologies'
                         role='Director of UX'
-                        description='Lead the design of tCheck’s flagship product, software experience, and e-commerce platform.'
+                        description='Lead the design of tCheck’s brand, flagship product, native application, and e-commerce platform.'
                     />
                     <Item 
                         icon={paypal}
                         title='PayPal'
                         role='Senior UX Designer'
-                        description='I redesigned the native onboarding process and then designed tools for donors and charities.'
+                        description='I redesigned the native onboarding process and then designed tools for donors, charities, and partners.'
                     /> 
                     <Item 
                         icon={zipkick}

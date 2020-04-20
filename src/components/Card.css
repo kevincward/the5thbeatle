@@ -45,12 +45,13 @@
     color: rgba(0, 0, 0, 0.7);
     font-weight: 500;
     font-size: 18px;
+    line-height: 27px;
     padding-top: 30px;
     margin: 0 0 20px 20px;
 }
 
 .Card a {
-    color: #000000;
+    color: #540d6e;
     font-weight: 600;
     font-size: 18px;
     align-self: end;

@@ -7,6 +7,7 @@ const Container = styled.div`
     display: flex;
     padding: 160px 30px 80px;
     flex-direction: row;
+    
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 60px 15px 44px;
@@ -14,7 +15,6 @@ const Container = styled.div`
 `
 
 const Text = styled.div`
- 
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
@@ -51,7 +51,6 @@ const Content = styled.div`
 
 const HeadLine = styled.div`
   color: #000000;
- 
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   font-size: 34px;
@@ -84,17 +83,19 @@ const About = () => {
           : null):null}
           <Text>
             <br />
-            I’m a product designer that strives to leave a positive impact on people through the products I work on. I live in Sacramento, 
-            CA and have a background in traditional art. My design career started out when I got ajob with an art dealer, creating all of their marketing 
-            materials, books, and posters. I built a foundation in print design which transitioned into user interface design to user experience design.
+            I’m a product designer that strives to leave a positive impact on people through the products I work on. My design career started out when I got a job with 
+            an art dealer while pursuing an art degree. I created all of their marketing materials, books, and posters. I built a foundation in print design which 
+            transitioned into digital work where I learned about designing for responsive interfaces and leveraging design systems. I began studying the design thinking 
+            process and focused on honing my research and strategizing skills to match my visual skills. 7 years later, I continue to sharpen my skill set by taking on 
+            complex problems and exploring new styles.
             <br />
             <br />
-            I’ve spent the last 7 years in product design, working in diverse industries including finance, health, cannabis, travel, philanthropy, and 
+            I've worked on solving problems in multiple industries including finance, health, cannabis, travel, philanthropy, and 
             agriculture. My working environments have ranged from small startups to large corporations to state government. Each industry and team size has brought 
             its own unique set of challenges and experiences I carry with me to inform my design thinking.
             <br />
             <br />
-            When I’m not at work, I can be found painting, exploring California, and working on my 100 year old home (something is generally broken).
+            When I’m not working, I can be found painting, exploring the US, and working on my 100 year old home (something is generally broken).
             <br />
             <br />
             <b>Hats worn:</b> Product Designer, UI Designer, UX Researcher, Marketing Manager, UI Developer

@@ -42,6 +42,7 @@ const Content = styled.div`
     flex-direction: column;
     padding: 60px 0px;
     justify-content: center;
+    
     @media (max-width: 768px) {
         flex-direction: column;
         padding: 32px 0px 16px;

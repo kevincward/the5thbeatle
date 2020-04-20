@@ -49,8 +49,8 @@ const SectionTitle = styled.h3`
     margin: 0;
     color: #FFFFFF;    
     -webkit-font-smoothing: antialiased;
-    font-size: 34px;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 48px;
     animation: HeroAnimation;
     animation-duration: 3s;
     animation-delay: 0.1s;

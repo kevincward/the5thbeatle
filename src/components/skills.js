@@ -11,7 +11,7 @@ const Container = styled.div`
     margin: 80px 90px;
     
     @media (max-width: 768px) {
-        margin: 80px 24px;
+        margin: 40px 24px;
     }
 `
 
@@ -20,16 +20,15 @@ const Title = styled.div`
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 38px;
+    line-height: 40px;
     letter-spacing: normal;
     color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;    
-    width: 50%;
     text-align: left;
     margin-left: 80px;
-    width: 450px;
+    width: 400px;
     
     @media (max-width: 768px) {
         width: 100%;
@@ -149,8 +148,7 @@ const Skills = props => {
             <Content>                
                 {typeof window !== 'undefined'?(window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
-                        My experiences have made me {"\n"} good at
-                        these
+                        And have a diversified {"\n"} skill set
                     </Title>
                 : null):null}
                 <Items>
@@ -182,7 +180,7 @@ const Skills = props => {
                 </Items>
                 {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ?
                     <Title>
-                        My experiences have made me good at these
+                        And have a diversified {"\n"} skill set
                     </Title>
                 : null): null}
             </Content>

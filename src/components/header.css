@@ -24,10 +24,17 @@
 }
 
 .Header a {
-    color: #000000;    
+    color: rgb(0,0,0);    
     font-weight: 700;
     font-size: 18px;
+    line-height: 27px;
 }
+
+.Header a:hover {
+    color: #3BCEAC; 
+    transition: 1s;
+}
+
 
 .HeaderScrolled a {
     color: #FFFFFF;
@@ -61,7 +68,7 @@
 
 .Header button:hover {
     box-shadow: 0 10px 20px rgba (255, 255, 255, 0.25);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 800px) {

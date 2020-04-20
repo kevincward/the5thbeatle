@@ -30,7 +30,6 @@ const Title = styled.div`
     }
 `
 
-
 const Content = styled.div`    
     display: flex;
     font-size: 32px;

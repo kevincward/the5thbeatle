@@ -13,7 +13,7 @@ const IndexPage = () => (
       <div className="Hero">
         <div className="HeroGroup">
           <h1>I am the fifth Beatle. <br /><br />
-          While my band is on hiatus, I look for problems and design solutions.</h1>
+          While my band is on hiatus, I design products that make life better.</h1>
           <br />
           <p>UX Director at <a href="https://tcheck.me" target="_blank">Engineered Medical Technologies</a></p>
         </div>
