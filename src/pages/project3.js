@@ -157,9 +157,7 @@ const Project3 = () => {
             <p>1. How might we design a donation trigger for a user who donates impulsively?</p>
             <p>2. How might we design a donation trigger for a user who makes consistent, deliberate donations?</p>
           </Description>
-      </ContainerGray>
-      <Container>  
-        <TwoColumnBlurb
+          <TwoColumnBlurb
             title={
               "When designing triggers, we were inspired by the Fogg Behavior Model"
             }
@@ -168,6 +166,8 @@ const Project3 = () => {
             }
             image={Fogg}
           />
+      </ContainerGray>
+      <Container>  
           <ContentBlurb2img
             title={
               "Aligning with the ecosystem"
