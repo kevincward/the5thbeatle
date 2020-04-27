@@ -11,7 +11,7 @@ const Container = styled.div`
     align-items: center;
     
     @media (max-width: 768px) {
-        margin: 40px 24px 0px;
+        margin: 60px 24px 20px;
     }
 
     @media (max-width: 500px) {
@@ -61,13 +61,37 @@ const Image = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 30px;
 
   @media (max-width: 768px) {
     align-content: center; 
     width: 110%;
     margin: 20px 0px 0px;
     }
+
+  .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+`
+const Image2 = styled.div`
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+  @media (max-width: 768px) {
+    align-content: center; 
+    width: 110%;
+    margin: 40px 0px 0px;
+    }
+
+  @media (max-width: 500px) {
+    margin: 30px 0px 0px;
+    }
+
 
   .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);
@@ -94,6 +118,14 @@ const ContentBlurb = React.memo(({ title, description, moredescription, image, i
                 imageBackgroundColor="#ffff"
             />
         </Image>
+        <Image2>
+            <ModalImage
+                small={image2}
+                medium={image2}
+                imageBackgroundColor="#ffff"
+            />
+        </Image2>
+       
       </Container>
     )
   })

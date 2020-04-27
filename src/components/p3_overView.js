@@ -2,68 +2,70 @@ import React from 'react'
 import styled from 'styled-components'
 import { animateScroll as scroll } from "react-scroll"
 import './Card.css'
+import { Header5, Header6, Body, Caption } from '../layouts/typography'
+
 import arrow from '../images/ic_arrow_b.svg'
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-margin: 5px auto 60px;
-padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto 70px;
+    padding: 10px;
+    
+    @media (max-width: 768px) {
+        margin: 2px auto 0px;
+        padding: 10px 0px;
+    }
 
-@media (max-width: 768px) {
-    margin: 2px auto 0px;
-    padding: 10px 0px 60px;
-}
-` 
+`   
 
 const Content = styled.div`
-    height: 474px;
     width: auto;
-    border-radius: 20px;
-    background-color: #f8f8f8;
-    padding: 64px ;
+    padding: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     
     @media (max-width: 768px) {
-        padding: 20px 20px;
-        width: auto;
-        height: 630px;        
+        padding: 40px 20px 0px;
+ 
+    }
+
+    @media (max-width: 500px) {
+        padding: 20px 20px;    
     }
 ` 
 
 const OverViewContainer = styled.div`
-    width: 100%;
+    width: 1000px;
     display: flex;
     flex-direction: row;
+    max-width: 1000px;
     
     @media (max-width: 768px) {
         flex-direction: column;
+        width: 100%;
     }
 ` 
 
 const OverViewContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     margin-right: 60px;
-    
+
     @media (max-width: 768px) {
         width: 100%;
         margin-right: 0px;
         margin-bottom: 32px;
+        margin-top: 0px;
     }
+
 ` 
 
-const Title = styled.div`    
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 34px;
-    letter-spacing: -0.47px;
+const Title = styled(Header6)`    
     color: #000000;
+    margin-top: 0px;
     margin-bottom: 12px;
     
     @media (max-width: 768px) {
@@ -71,20 +73,15 @@ const Title = styled.div`
     }
 ` 
 
-const Description = styled.div`
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    color: rgba(0,0,0,0.7);   
+const Description = styled(Body)`
+    color: rgba(0,0,0,0.7); 
+
 ` 
 
 const RoleContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    width: 45%;
+    flex-direction: row;
+    width: 35%;
     
     @media (max-width: 768px) {
         flex-direction: row;
@@ -95,16 +92,14 @@ const RoleContainer = styled.div`
 
 const RoleContent = styled.div`
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    padding-left: 20px;
+    padding-right: 40px;   
 ` 
 
-const RoleTitle = styled.div`    
-    font-size: 17px;
+const RoleTitle = styled(Body)`    
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.18;
-    letter-spacing: -0.5px;
+    line-height: 0;
     color: #000000;
 ` 
 const ItemArrow = styled.img`
@@ -126,79 +121,70 @@ const Br = styled.div`
     height: 20px;
 ` 
 
-
-const RoleDescription = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.09px;
+const RoleDescription = styled(Caption)`    
     color: rgba(0, 0, 0, 0.7);
+    line-height: 1rem;
 ` 
 
 const Experience = styled.div`
-    width: 90%;
+    width: 70%;
+    max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    margin: -200px auto 0;
+    margin: -10px auto 0;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     @media (max-width: 768px) {
-        width: 80%;
-        margin: -70px auto 0;
+        width: 90%;
+        margin: 0px auto -10px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 110px auto -10px;
         padding: 24px 16px;
     }
 ` 
 
 
-const ExpTitle = styled.div`
-    width: 800px;    
-    font-size: 34px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.18;
-    letter-spacing: -0.5px;
+const ExpTitle = styled(Header5)`
+    max-width: 600px;   
     text-align: center;
     color: #000000;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    
     @media (max-width: 768px) {
         width: auto;
-        font-size: 24px;
-        margin-bottom: 16px;
+        font-size: 1.75rem;
+        line-height: 2.125rem;
     }
 ` 
 
-const ExpDescription = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const ExpDescription = styled(Body)`    
     color: rgba(0, 0, 0, 0.7);
+
+    @media (max-width: 768px) {
+        max-width: 540px;
+    }
 `
+
 const SkipLink = styled.a`    
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.54;
-    letter-spacing: -0.1px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
     text-align: center;
     color: #540D6E;
     cursor: pointer;
-    margin-top: 24px;
+    margin-top: 16px;
     transition: all 300ms ease 0s;    
-    
     &:hover {
-    transform: translateY(3px);
-  }
+        transform: translateY(3px);        
+    }
 
     @media (max-width: 768px) {
         margin-top: 16px;

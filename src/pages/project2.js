@@ -1,65 +1,75 @@
 import React from 'react'
 import styled from "styled-components"
 import Hero from '../components/hero_case'
-import OverView from '../components/overView2'
+import OverView from '../components/p2_overView'
 import Layout from '../layouts'
 import ContentBlurb from '../components/contentblurb'
 import ProjectLearnings from '../components/p2_projectlearnings'
-import Solution from '../components/solution'
-import Features from '../components/p2_features'
-import TwoColumnBlurb from '../components/twocolumnblurb'
 import Unexpected from '../components/p2_unexpected'
 import UserWants from '../components/p2_userwants'
 import FirstPass from '../components/p2_firstpass'
 import ProtoType from '../components/p2_prototype'
-import TestingSuccess from '../components/p2_testingsuccess'
-import Workshop1 from '../components/p2_workshop'
+import Features from '../components/p2_features'
+import Workshop from '../components/p2_workshop'
+import Solution from '../components/p2_solution'
+import { Header5 } from '../layouts/typography'
+import Stakeholder from '../components/p2_stakeholderreqs'
+import DefaultOption1 from '../components/p2_default_option'
 
 import tCheck from '../images/p2_tcheck.jpg'
-import Bkgd from '../images/hero_backgd_cs2.svg'
+import Bkgd from '../images/prj2_bkgd.png'
 import HeroIcon from '../images/ic_timeline_tch.svg'
-import DefaultOption from '../images/p2_adddefault.png'
-import Reqs from '../images/p2_reqs.png'
-import Sol2 from '../images/p2_sol_bkgd.jpg'
+import Notworking from '../components/p2_notworking'
 
 
 const Container = styled.div`
     display: flex;
-    padding: 80px 30px;
+    padding: 40px 0px 0px;
     flex-direction: column;
+    align-items: center;
     
     @media (max-width: 768px) {
       flex-direction: column;
-      padding: 60px 24px 0px;
+      padding: 0px 24px 70px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 15px 24px 70px;
     }
 `
 
 const ContainerGray = styled.div`
-    margin: 44px 30px;
-    padding: 1px 0px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    background-size: cover;
+    background-color: #E4F5FB;
+    padding: 40px 0px 75px;
     
-    @media (max-width: 768px) {
-          padding: 32px 23px;
-          width: auto;
-          margin-bottom: 10px;
+    @media (max-width: 768px) { 
+      padding: 32px 24px 60px;
+      width: auto;
+      margin-bottom: 10px;
       }
+
+      @media (max-width: 500px) {
+        padding: 32px 24px 70px;
+    }
 ` 
 
-const Title = styled.div`
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 34px;
-    letter-spacing: normal;
-    color: #000000;
-    margin: 80px 90px -68px;
+const Title = styled(Header5)`  
+    width: 1000px;
+    margin: 40px 90px;
+    margin-bottom: -50px;
+    align-items: center;
     
     @media (max-width: 768px) {
-        margin: 30px 24px -20px;
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: -70px;
     }
+
+    @media (max-width: 500px) {
+        margin-left: 42%;
+    }
+
 `
 
 const Divider = styled.div`
@@ -80,57 +90,37 @@ const Project2 = () => {
         {/* {window.matchMedia('(max-width: 768px)').matches ? 
          <HeadLine>Headline</HeadLine>
         : null} */}                  
-          <OverView />
-          <ContentBlurb
-            title={
-              "A bit about tCheck"
+        <OverView />
+        <ContentBlurb
+           title={
+             "A bit about tCheck"
             }
-            description={
+           description={
               "The tCheck device can collect live readings to address a major pain point for cannabis users: not knowing the potency of their cannabis infusions. Edibles are often used by cannabis users due to their convenience, discretion, and long-lasting effects. However, when it comes to creating edibles, proper dosing is critical to achieving the desired effect (too little there is no effect, too much and the user can become drowsy)."
             }
             image={tCheck}
           />
-          <UserWants />
-          <Divider />
-          <FirstPass />
+        <UserWants />
       </Container>
-      <ContainerGray>
-          <Title>Fleshing out the stakeholder requirements</Title>
-          <ContentBlurb
-            description={
-              "Having met with the engineering team to discuss the technical workflow and contstraints, I then sat with leadership to discuss the business goals and user needs for this feature."
-            }
-            image={Reqs}
-          />
+      <ContainerGray>   
+        <FirstPass />
+        <Stakeholder />
       </ContainerGray>
       <Container>
-          <Workshop1 /> 
-          <TestingSuccess />
-          <ProtoType />
-          <Unexpected />
-          <Divider />
-            <TwoColumnBlurb
-                title={
-                  "Ok, let’s offer a default option"
-                }
-                description={
-                  "After the conference, I met with leadership and our engineering lead to debrief on all the feedback. We agreed that we needed to account for users who wanted to run a plant based infusion potency test without mapping their strain."
-                }
-                description2={
-                  "Having run countless tests on several strain varieties we were confident that we could offer a default strain setting for users that would use the average of 12 different cannabis strains."
-                }
-
-                image={DefaultOption}
-              />       
-      </Container> 
+        <Workshop /> 
+        <Notworking />
+        <ProtoType />
+      </Container>
+      <ContainerGray>
         <Solution
           id="Solution2"
-          heroImgURL={Sol2}
-          title={"The Solution"}
-          description={"For MVP, we decided to release the default setting only for plant infusion potency testing. This would allow us to introduce the feature but do more user testing on the strain mapping flow. The strain mapping flow is scheduled for release this upcoming spring."}
-        />  
+          /> 
+        <Divider />  
+        <Features /> 
+        <Unexpected />
+        <DefaultOption1 />   
+      </ContainerGray>  
       <Container>
-        <Features />
         <ProjectLearnings />      
       </Container>
     </Layout>

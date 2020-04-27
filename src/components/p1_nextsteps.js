@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Header6, Body } from '../layouts/typography'
 
 import personalize from '../images/ic_donatestep_pers.svg'
 import entrypoint from '../images/ic_donatestep_entr.svg'
@@ -7,60 +8,69 @@ import suggest from '../images/ic_donatestep_sugg.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 40px 90px;
     flex-direction: column;
-    
+
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 20px 24px 40px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 5px 24px 40px;
     }
 `
 
 const ValuePropsContainer = styled.section`
   display: flex;
   justify-content: space-around;
-  padding: 4.5rem 0;
+  padding: 50px 0;
+  width: 1000px;
   
   @media (max-width: 768px) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
     flex-direction: column;
-    align-items: center;
+    padding: 40px 0;
   }
 `
 
-const Title = styled.div`
-    width: 565px;    
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: #000000;
-    margin-bottom: 32px;
+const Title = styled(Header6)`  
+    width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     
     @media (max-width: 768px) {
         width: 100%;
+        margin-bottom: 0px;
     }
+
+    @media (max-width: 500px) {
+        margin-bottom: 10px;
+    }
+
 `
 
-const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Description = styled(Body)`    
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
-    margin-top: 12px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 `
 
 
 const ValueProp = styled.div`
   text-align: center;
-  width: 15.6rem;
+  width: 200px;
   
   @media (max-width: 768px) {
-    margin-bottom: 2rem;
+    width: 222px;
+    }
+  
+  @media (max-width: 500px) {
+    margin-bottom: 30px;
+    width: 280px;
   }
 `
 
@@ -74,7 +84,7 @@ const NextSteps = React.memo(() => {
   return (
     
     <Container>
-      <Title>Next Steps</Title>
+      <Title>Next steps</Title>
       <ValuePropsContainer>
         <ValueProp>
             <ValuePropImg src={personalize} />

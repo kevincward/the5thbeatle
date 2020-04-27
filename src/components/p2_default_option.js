@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import ModalImage from "react-modal-image";
 import { Header6, Body } from '../layouts/typography'
 
+import DefaultOption from '../images/p2_adddefault.png'
 
 const Container = styled.div`
     display: flex;
@@ -11,7 +13,7 @@ const Container = styled.div`
     flex-direction: column;
     
     @media (max-width: 768px) {
-        margin: 10px 24px -20px;
+        margin: 0px 24px 0px;
     }
 ` 
 
@@ -39,7 +41,8 @@ const OverViewContainer = styled.div`
     }
 
     @media (max-width: 400px) {
-        flex-direction: column;  
+        flex-direction: column;
+        margin-bottom: -20px;  
     }
 ` 
 
@@ -70,42 +73,57 @@ const Description = styled(Body)`
     color: rgba(0,0,0,0.7);
 `
 
-const Frame = styled.iframe`  
-    border: none;
-    margin-left: 40px;
+const Image = styled.div`
+    width: 400px;
+    display: flex;  
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: center;
     
-    @media (max-width: 720px) {
-        margin-top: 32px;
-        margin-left: 0px;
+    @media (max-width: 768px) {
+        margin: 10px 0px 20px;
+        padding-left: 0px;
+        width: 50%;
+        order:2;
+    }
+    @media (max-width: 500px) {
+        margin: 10px 0px 20px;
+        padding-left: 0px;
         width: 100%;
+        order:2;
+    }
+
+    .__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.2);
     }
 `
 
-const P2_prototype = () => (
+const DefaultOption1 = () => (
     <Container>
             <Content>
                 <OverViewContainer>
                     <OverViewContent>
-                        <Title>Let’s get it in front of users</Title>
+                        <Title>Ok, let's offer a default option</Title>
                         <Description>
+                        I met with leadership and our engineering lead to debrief on this feedback. We agreed that we needed to account 
+                        for users who wanted to run a plant based infusion potency test without mapping their strain.
                         <p>
-                        I created a Marvel protoype for two testing two user segments: home ediblemakers and professional ediblemakers.
-                        </p>
-                        <p>
-                        From this testing, I documented which steps created the most friction for evaluation and content suggestions that would improve the testing flow comprehension.
+                        Having run countless tests on several strain varieties we were confident 
+                        that we could offer a default strain setting for users that would use the 
+                        average of 12 different cannabis strains rather than their particular strain.
                         </p>
                         </Description>
                     </OverViewContent>
-                    <Frame 
-                        src="https://marvelapp.com/219d8ie6?emb=1&iosapp=false&frameless=false" 
-                        width="347" 
-                        height="691" 
-                        allowTransparency="true" 
-                        frameborder="0"             
-                    /> 
+                    <Image src={DefaultOption}>
+                    <ModalImage
+                        small={DefaultOption}
+                        medium={DefaultOption}
+                        imageBackgroundColor="#ffff"
+                    />
+                    </Image> 
                 </OverViewContainer>            
             </Content>
         </Container>
 )
 
-export default P2_prototype
+export default DefaultOption1

@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from "styled-components"
+import { Header5 } from '../layouts/typography'
+
 import Hero from '../components/hero_case'
-import OverView from '../components/overView1'
-import Quotes from '../components/quotes'
+import OverView from '../components/p1_overView'
+import Quotes from '../components/p1_quotes'
 import Layout from '../layouts'
 import ResearchPlan from '../components/p1_researchplan'
 import ContentBlurb from '../components/contentblurb'
+import ContentBlurb2img from '../components/contentblurb2img'
 import Validate from '../components/p1_validate'
-import NextSteps from '../components/nextsteps'
+import NextSteps from '../components/p1_nextsteps'
 import ProjectLearnings from '../components/p1_projectlearnings'
-import Solution from '../components/solution'
+import Solution from '../components/p1_solution'
 import Features from '../components/p1_features'
+import Impact from '../components/p1_impact'
 
 import Compete from '../images/compete_donate.png'
 import Personas from '../images/personas_donate.png'
@@ -18,48 +22,58 @@ import Insights from '../images/p1_insights.png'
 import HowMightWe from '../images/howmightwe_donate.png'
 import FeatPrior from '../images/featurepri_donate.png'
 import Concept from '../images/concept_donate.png'
-import DonateBkgd from '../images/hero_backgd_cs1.svg'
+import DonateBkgd from '../images/prj1_bkgd.png'
 import HeroIcon from '../images/ic_timeline_pp.svg'
-import Sol1 from '../images/p1_sol_bkgd.jpg'
 
 const Container = styled.div`
     display: flex;
-    padding: 80px 30px 0px;
+    padding: 40px 0px 0px;
     flex-direction: column;
+    align-items: center;
     
     @media (max-width: 768px) {
       flex-direction: column;
-      padding: 60px 24px;
+      padding: 0px 24px 70px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 15px 24px 70px;
     }
 `
 
 const ContainerGray = styled.div`
-    margin: 44px 30px;
-    padding: 1px 0px;
-    border-radius: 10px;
-    background-color: #f8f8f8;
+    background-size: cover;
+    background-color: #FFF7F7;
+    padding: 40px 0px 75px;
     
-    @media (max-width: 768px) {
-      margin: 10px 24px;  
-      padding: 32px 23px;
+    @media (max-width: 768px) { 
+      padding: 32px 24px 60px;
       width: auto;
       margin-bottom: 10px;
       }
+
+      @media (max-width: 500px) {
+        padding: 32px 24px 70px;
+    }
 ` 
 
-const Title = styled.div`
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 34px;
-    letter-spacing: normal;
-    color: #000000;
-    margin: 80px 90px -68px;
-    
+const Title = styled(Header5)`  
+    width: 1000px;
+    margin: 40px 90px;
+    margin-bottom: -50px;
+    align-items: center;
+   
     @media (max-width: 768px) {
-        margin: 30px 24px -20px;
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: -60px;
+        margin-top: 50px;
     }
+
+    @media (max-width: 500px) {
+        margin-left: 42%;
+    }
+
 `
 
 const Divider = styled.div`
@@ -81,57 +95,45 @@ const Project1 = () => {
          <HeadLine>Headline</HeadLine>
         : null} */}
         
-          <OverView />
+        <OverView />
+      </Container>
+      <ContainerGray>
           <ResearchPlan />
           <Quotes />
-          
           <ContentBlurb
             title={
-              "What’s out there"
+              "Benchmarking"
+            }
+            description={
+              "Next, I used the qualitative data I gathered from the interviews to create two user personas."
             }
             image={Compete}
           />
-          <Divider />
+          <ContentBlurb
+            title={
+              "Organizing the insights"
+            }
+            description={
+              "After conducting the interviews, comparing competitive products, and reviewing industry insights, I compiled the findings into three themes:"
+            }
+            image={Insights}
+          />
           <ContentBlurb
             description={
-              "Next, I used all of the qualitative data I gathered during the interviews to create two user personas."
+              "Next, I used the qualitative data I gathered from the interviews to create two user personas."
             }
             image={Personas}
-          />
-      
-      </Container>
-      <ContainerGray>
-        
-        <Title>Organizing the insights</Title>
-        <ContentBlurb
-          description={
-            "After conducting the interviews, comparing competitive products, and reviewing industry insights, I compiled the findings into three groups:"
-          }
-          image={Insights}
-        />
-        
+          />  
       </ContainerGray>
-      <Container>  
-        <ContentBlurb
-          title={
-            "How might we…"
-          }
+      <Container>
+        <Title>Ideation</Title>  
+        <ContentBlurb2img
           description={
-            "With research finished, we needed to identify and prioritize what features would make it into the MVP of native PayPal Donate. My product manager and I took a deeper dive into the insights derived from the research."
+            "Confident with the research findings, we needed to identify and prioritize what features would make it into the MVP of native PayPal Donate. My product manager and I took a deeper dive into the insights derived from the research."
           }
           image={HowMightWe}
+          image2={FeatPrior}
         />
-       
-        <ContentBlurb
-          title={
-            "What features shall we prioritize?"
-          }
-          description={
-            "With the help of other social impact product managers, we generated a list of donate features to further define and guide the vision for the product. Prioritizing the features with supporting research created a clear order of execution."
-          }
-          image={FeatPrior}
-        />
-        
         <ContentBlurb
           title={
             "Building wireframes"
@@ -141,22 +143,18 @@ const Project1 = () => {
           }
           image={Concept}
         />
-        
-        <Divider />
         <Validate />
-              
-      </Container> 
+      </Container>
+      <ContainerGray>  
         <Solution
           id="Solution1"
-          heroImgURL={Sol1}
-          title={"The Solution"}
-          description={"We released the MVP of the native Donate feature three months after the launch of the PayPal app redesign. The focus of the MVP experience was discovery of charities and the ability to donate quickly."}
         />  
-       
-      <Container>
-        
-        
+        <Divider />
         <Features />
+
+      </ContainerGray>
+      <Container>
+        <Impact />
         <ProjectLearnings />
         <Divider />
         <NextSteps />

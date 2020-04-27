@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Header6, Body } from '../layouts/typography'
 
 import plant from '../images/ic_cannawant_plant.svg'
 import cost from '../images/ic_cannawant_cost.svg'
@@ -7,60 +8,80 @@ import shop from '../images/ic_cannawant_shop.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 40px 90px;
+    margin: 60px 90px;
     flex-direction: column;
-    
+
     @media (max-width: 768px) {
-        margin: 60px 24px -30px;
+        margin: 60px 24px 0px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 60px 24px -25px;
     }
 `
 
 const ValuePropsContainer = styled.section`
   display: flex;
   justify-content: space-around;
-  padding: 4.5rem 0;
+  padding: 50px 0;
+  width: 1000px;
   
   @media (max-width: 768px) {
+    flex-direction: row;
+    padding: 50px 0 0px;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
     flex-direction: column;
-    align-items: center;
+    padding: 40px 0 0px;
   }
 `
 
-const Title = styled.div`
-    width: 565px;    
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: #000000;
-    margin-bottom: 32px;
+const Title = styled(Header6)`  
+    width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 10px;
+    }
+
+`
+
+const Description = styled(Body)`    
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 1000px;
+
     @media (max-width: 768px) {
         width: 100%;
     }
 `
 
-const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Blurb = styled(Body)`    
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
-    margin-top: 12px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 `
-
 
 const ValueProp = styled.div`
   text-align: center;
-  width: 15.6rem;
+  width: 300px;
   
   @media (max-width: 768px) {
-    margin-bottom: 2rem;
+    width: 200px;
+    }
+  
+  @media (max-width: 500px) {
+    margin-bottom: 30px;
+    width: 280px;
   }
 `
 
@@ -83,21 +104,21 @@ const Userwants = React.memo(() => {
       <ValuePropsContainer>
         <ValueProp>
             <ValuePropImg src={plant} />
-            <Description>
+            <Blurb>
                 They can grow the cannabis plant themselves
-            </Description>
+            </Blurb>
         </ValueProp>
         <ValueProp>
             <ValuePropImg src={cost} />
-            <Description>
+            <Blurb>
                 It’s much more cost effective than concentrate
-            </Description>
+            </Blurb>
         </ValueProp>
         <ValueProp>
             <ValuePropImg src={shop} />
-            <Description>
+            <Blurb>
             May not have access to places that sell concentrate (dispensary)
-            </Description>
+            </Blurb>
         </ValueProp>
       </ValuePropsContainer>
     </Container>

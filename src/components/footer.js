@@ -5,9 +5,12 @@ import dribbble from '../images/dribbble.svg';
 import instagram from '../images/instagram.svg';
 import linkedIn from '../images/linkedin.svg';
 import spotify from '../images/spotify.svg';
+import github from '../images/github.svg';
+import bkgd from '../images/footerbkgd.svg'
 
 const Container = styled.div`
-    background-color: #540D6E;
+    background: url(${({ heroImgURL }) => heroImgURL});
+    background-size: cover;
     height: 20rem;
     display: flex;
     padding: 50px 90px;
@@ -113,7 +116,6 @@ const Link = styled.a`
 const SocialsContainer = styled.div`
 	display: flex;
     margin: 0 auto;
-    padding: 20px;
     width: 300px;
     justify-content: space-around;
 
@@ -136,7 +138,7 @@ const SocialImage = styled.img`
 const Footer = () => {
 
     return (
-      <Container>
+      <Container heroImgURL={bkgd}>
         <Content>
             <Item>
                 <Title>
@@ -154,12 +156,12 @@ const Footer = () => {
                 </Text>  
             </Item>
             <SocialsContainer>
-                 <a
-                    alt="Dribbble"
-                    href="https://dribbble.com/kevincward"
+                    <a
+                    alt="Linkedin"
+                    href="https://www.linkedin.com/in/kcwdesigner"
                     target="_blank"
                     rel="noopener">
-                    <SocialImage src={dribbble} />
+                    <SocialImage src={linkedIn} />
                     </a>
                     <a
                     alt="Instagram"
@@ -169,11 +171,18 @@ const Footer = () => {
                     <SocialImage src={instagram} />
                     </a>
                     <a
-                    alt="Linkedin"
-                    href="https://www.linkedin.com/in/kcwdesigner"
+                    alt="Dribbble"
+                    href="https://dribbble.com/kevincward"
                     target="_blank"
                     rel="noopener">
-                    <SocialImage src={linkedIn} />
+                    <SocialImage src={dribbble} />
+                    </a>
+                    <a
+                    alt="Github"
+                    href="https://github.com/kevincward"
+                    target="_blank"
+                    rel="noopener">
+                    <SocialImage src={github} />
                     </a>
                     <a
                     alt="Spotify"

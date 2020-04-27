@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Header5, Body } from '../layouts/typography'
+
+
 
 const Background = styled.div`
     background: url(${({ heroImgURL }) => heroImgURL});
-    height: 29rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +19,7 @@ const Background = styled.div`
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 120px 0px;
+    margin: 00px 120px 0px;
     flex-direction: column;
 
     @media (max-width: 768px) {
@@ -40,45 +42,40 @@ const Content = styled.div`
    
 ` 
 
-const Title = styled.div`
-    width: 565px;    
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 34px;
-    letter-spacing: normal;
-    color: #000000;
+const Title = styled(Header5)`  
+    width: 1000px;
+    margin-top: 0px;
     margin-bottom: 32px;
+
     
     @media (max-width: 768px) {
+        font-size: 1.75rem;
+        line-height: 2.125rem;
         width: 100%;
         margin-bottom: 30px;
     }
 `
 
-const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    width: 80%;
+const Description = styled(Body)`    
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 30px;
+    width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90%;
 
-    @media (max-width: 720px) {
-        margin-bottom: 0px;
+    @media (max-width: 768px) {
+        width: 100%
     }
 `
-
-
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`
+const Divider = styled.div`
+  border: solid 1px rgba(0,0,0,.05);
+
 `
 
 const solution = React.memo(({ title, description, heroImgURL, id}) => {

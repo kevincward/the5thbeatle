@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import shape from '../images/shape.png'
+import { Header6, Lead, Body, Caption } from '../layouts/typography'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 40px 90px;
     flex-direction: column;
-    
+    align-items: center;
+
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 40px 24px 0px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 40px 24px 0px;
     }
 `
 
@@ -16,82 +21,104 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
-    
+    width: 1000px;
+
     @media (max-width: 768px) {
-        margin-bottom: 16px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
 `
 
-const Title = styled.div`
-
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.08;
-    letter-spacing: -0.55px;
+const Title = styled(Header6)`  
+    width: 1000px;
     color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 `
 
-const Img = styled.img`
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-`
-
-const Description = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Description = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
+    max-width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
 `
 
 const Comments = styled.div`
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    width: 1000px;
+    margin-top: 10px;
     
     @media (max-width: 768px) {
         flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+        max-width: 300px;
     }
 `
 
 const CommentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
+    margin: 24px 20px 45px;
+    width: 1000px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 0px 0px 50px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 12px 0px 50px;
+    }
+
 `
 
-const CommentContent = styled.div`
-
-    font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 26px;
-    letter-spacing: -0.09px;
-    color: #000000;
-    width: 750px;
-    margin-bottom: 16px;
+const CommentContent = styled(Lead)`
+    margin-top: 0px;
+    margin-bottom: 10px;
     
     @media (max-width: 768px) {
         width: 100%;
+        margin-top: 20px;
     }
 `
 
-const CommentName = styled.div`
+const CommentName = styled(Caption)`    
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: -15px;
 
-    font-size: 14px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.7); 
+    @media (max-width: 768px) {
+        margin-bottom: -15px;
+    }
 `
 
 
@@ -107,22 +134,22 @@ const Comment =({text, name, role}) => {
 const Quotes = props => (
     <Container id="quotes">
         <TitleContainer>
-            <Img src={shape}/>
             <Title>Unexpected feedback</Title>
         </TitleContainer>
+        <Description>
+            We noticed a number of users adopted the feature right away, but after performing a few successful flower based infusion tests, that stopped using the feature. We invited a small sample of these users into the office to better understand what was causing the dropoff. 
+        </Description>
         <Comments>
             <Comment 
-                text="''It’s great, I can do this, but to be honest…I probably wouldn’t go through the whole test too often. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to be relatively confident it’ll pass.''"
-                name="Anonymous CannaChef"
-                role="Participant"
+                text="''It’s great, I can do this, but to be honest… the test is kinda involved. I just want a ball park number so I can get back to baking. It’s all gotta go to the lab anyways, I want to be relatively confident it’ll pass.''"
+                name="Anonymous Cannachef"
+                role="tCheck user"
             />
         </Comments>
-        <br />
         <Description>
-        Two other participants at the show shared this perspective. This feedback pointed out a very interesting piece we 
-        had not previously considered- some users will want an idea of potency rather than an exact number because they 
-        either won’t have time or desire to go through the whole process.
+            Other users shared the same sentiment. We needed to find a way to enable users who were not concerned about an exact test result to be able to perform a flower based infusion test. 
         </Description>
+        
     </Container>
 )
 

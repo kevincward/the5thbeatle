@@ -50,11 +50,13 @@ const Content = styled.div`
 `
 
 const HeadLine = styled.div`
-  color: #000000;
+  font-size: 32px;
   font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  font-size: 34px;
-  line-height: 1.5;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  color: #000000;
   animation: HeroAnimation;
   animation-duration: 3s;
   animation-delay: 0.1s;
@@ -69,7 +71,6 @@ const HeadLine = styled.div`
 
 const About = () => {    
 
-  
   return (
     <Layout>
       <Container>

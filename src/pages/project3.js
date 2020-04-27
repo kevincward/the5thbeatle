@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from "styled-components"
 import Layout from '../layouts'
+import { Header5 } from '../layouts/typography'
+
 import Hero from '../components/hero_case'
 import ContentBlurb from '../components/contentblurb'
-import DonateBkgd from '../images/hero_backgd_cs3.svg'
-import HeroIcon from '../images/ic_timeline_pp.svg'
 import TwoColumnBlurb from '../components/twocolumnblurb'
 import Tiles from '../components/p3_tiles'
-import OverView from '../components/overView3'
+import OverView from '../components/p3_overView'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
 import Solution from '../components/solution'
@@ -29,46 +29,60 @@ import Researcher from '../images/p3_researcher.jpg'
 import TileTest1 from '../images/p3_tiletest1.jpg'
 import TileTest2 from '../images/p3_tiletest2.jpg'
 import Sol3 from '../images/p3_sol_bkgd.jpg'
+import ContentBlurb2img from '../components/contentblurb2img'
+import DonateBkgd from '../images/prj3_bkgd.png'
+import HeroIcon from '../images/ic_timeline_pp.svg'
 
 
 
 const Container = styled.div`
-display: flex;
-padding: 80px 30px;
-flex-direction: column;
+    display: flex;
+    padding: 40px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0px 24px 70px;
+    }
 
-@media (max-width: 768px) {
-  flex-direction: column;
-  padding: 30px 24px;
-}
+    @media (max-width: 500px) {
+        padding: 15px 24px 70px;
+    }
 `
 
 const ContainerGray = styled.div`
-margin: 44px 30px;
-padding: 1px 0px;
-border-radius: 10px;
-background-color: #f8f8f8;
-
-@media (max-width: 768px) {
-      padding: 20px 23px 10px;
+    background-size: cover;
+    background-color: #F8F3FF;
+    padding: 40px 0px 75px;
+    
+    @media (max-width: 768px) { 
+      padding: 32px 24px 60px;
       width: auto;
       margin-bottom: 10px;
-  }
+      }
+
+      @media (max-width: 500px) {
+        padding: 32px 24px 70px;
+    }
 ` 
 
-const Title = styled.div`
-font-size: 28px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-line-height: 34px;
-letter-spacing: normal;
-color: #000000;
-margin: 80px 90px -68px;
+const Title = styled(Header5)`  
+    width: 1000px;
+    margin: 40px 90px;
+    margin-bottom: -50px;
+    align-items: center;
+   
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: -70px;
+    }
 
-@media (max-width: 768px) {
-    margin: 50px 24px -20px;
-}
+    @media (max-width: 500px) {
+        margin-left: 42%;
+    }
+
 `
 
 const Divider = styled.div`
@@ -110,6 +124,8 @@ const Project3 = () => {
          <HeadLine>Headline</HeadLine>
         : null} */} 
           <OverView />
+      </Container>
+      <ContainerGray>   
           <TwoColumnBlurb
             title={
               "What motivates people to donate?"
@@ -128,10 +144,7 @@ const Project3 = () => {
             }
             image={AfinMap}
           />
-      </Container>
-      <ContainerGray>
-        <Title>Looking for patterns</Title>
-        <ContentBlurb
+        <ContentBlurb2img
           description={
             "The prompt groupings fall into two behaviors, deliverate donors and impulsive donors."
           }
@@ -155,7 +168,7 @@ const Project3 = () => {
             }
             image={Fogg}
           />
-          <ContentBlurb
+          <ContentBlurb2img
             title={
               "Aligning with the ecosystem"
             }
@@ -166,7 +179,7 @@ const Project3 = () => {
             image2={IA2}
           />
           <Divider />
-          <ContentBlurb
+          <ContentBlurb2img
             title={
               "Notifications- an opportunity to make a quick impact"
             }
@@ -211,7 +224,7 @@ const Project3 = () => {
           <Title>What users had to say</Title>
           <br />
           <Quotes />
-          <ContentBlurb
+          <ContentBlurb2img
             title={
               "Build your own PayPal dashboard"
             }

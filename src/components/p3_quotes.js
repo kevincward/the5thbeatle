@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import shape from '../images/shape.png'
+import shape from '../images/ic_quotes.svg'
 
 const Container = styled.div`
     display: flex;

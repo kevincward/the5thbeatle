@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Header5, Lead, Body } from '../layouts/typography'
+
 import compet from '../images/ic_donate_compet.svg'
 import inter from '../images/ic_donate_inter.svg'
 import indus from '../images/ic_donate_indus.svg'
@@ -7,23 +9,18 @@ import indus from '../images/ic_donate_indus.svg'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    margin: 40px 90px;
     flex-direction: column;
-    
+    align-items: center;
+
     @media (max-width: 768px) {
-        margin: 80px 24px 40px;
+        margin: 30px 24px 40px;
     }
 `
 
-const Title = styled.div`
-    width: 565px;
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 34px;
-    letter-spacing: normal;
-    color: #000000;
+const Title = styled(Header5)`  
+    width: 1000px;
+    margin-top: 0px;
     margin-bottom: 32px;
     
     @media (max-width: 768px) {
@@ -31,32 +28,27 @@ const Title = styled.div`
     }
 `
 
-const Description = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Description = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
+    max-width: 1000px;
+    margin-top: 0px;
 `
 
 const Content = styled.div`
     display: flex;
-    font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
+    width: 1000px;
     
     @media (max-width: 768px) {
+        width: 100%;
         flex-direction: column;
     }
 `
 
 const Items = styled.div`
     margin: 22px 0px;
-    width: 75%;
+    width: 85%;
     margin-right: 10%;
     
     @media (max-width: 768px) {
@@ -86,31 +78,22 @@ const ImgIcon = styled.img`
     }
 `
 
-const ItemTitle = styled.div`
+const ItemTitle = styled(Lead)`
+    margin-top: 0px;
+    margin-bottom: 10px;
     object-fit: contain;
-    font-size: 21px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 28px;
-    letter-spacing: normal;
-    color: #000000;
 `
 
-const ItemDescription = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.2px;
-    color: rgba(0, 0, 0, 0.7);
+const ItemDescription = styled(Body)`
+color: rgba(0, 0, 0, 0.7);
+margin-top: 0px;
+margin-bottom: 0px;
 `
 
 const ItemContent = styled.div`
-    
+    width: 100%;   
 `
+
 const Item = ({icon, title, description}) => {
     return (
         <ItemContainer>
@@ -138,20 +121,20 @@ const ResearchPlan = () => {
                 <Items>
                     <Item 
                         icon={inter}
-                        title='In-Depth Interviews'
-                        description='Interviewed 16 donors about previous donation experiences.'
+                        title='What are users’ donation experiences?'
+                        description='In-depth interviews with 16 donors about previous donation experiences.'
                     />
                     <br />
                     <Item 
                         icon={compet}
-                        title='Competitive Analysis'
-                        description='Analyzed the strengths, weaknesses, similarities, and differences between competitors.'
+                        title='What’s out there?'
+                        description='Analyzed the strengths, weaknesses, similarities, and differences between other donate flows.'
                     /> 
                     <br />
                     <Item 
                         icon={indus}
-                        title='Industry Standards'
-                        description='Evaluated latest donor behavior reports from GuideStar, Charity Navigator, etc.'
+                        title='What are typical donor behaviors?'
+                        description='Evaluated the latest reports from GuideStar, Charity Navigator, etc.'
                     /> 
                 </Items>
             </Content>

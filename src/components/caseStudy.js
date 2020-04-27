@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from '../components/card'
+import { Header5 } from '../layouts/typography'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -45,12 +46,10 @@ const SectionTitleGroup = styled.div`
     }
 `
 
-const SectionTitle = styled.h3`
+const SectionTitle = styled(Header5)`
     margin: 0;
     color: #FFFFFF;    
     -webkit-font-smoothing: antialiased;
-    font-size: 32px;
-    line-height: 48px;
     animation: HeroAnimation;
     animation-duration: 3s;
     animation-delay: 0.1s;

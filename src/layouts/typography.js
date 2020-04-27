@@ -34,68 +34,67 @@ const Header3 = styled.h3`
   
 `
 
-// 40px
+// 38px Heading 1
 const Header4 = styled.h4`
-  font-size: 2.5rem;
+  font-size: 	2.375rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.2;
+  line-height: 	2.75rem;
   letter-spacing: normal;
 
 `
 
-// 32px
+// 32px Heading 2
 const Header5 = styled.h5`
   font-size: 2rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.25;
+  line-height: 2.5rem;
   letter-spacing: normal;
  
 
 `
 
-// 24px
+// 28px Heading 3
 const Header6 = styled.h6`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 2.125rem;
   letter-spacing: normal;
   
 `
 
-// 24px
+// 21px Headline
 const Lead = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.3125rem;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 1.625rem;
   letter-spacing: normal;
   
 `
 
-// 16px
+// 18px Paragraph 1
 const Body = styled.p`
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
+  font-weight: 500;
+  line-height: 1.6875rem;
   
 `
 
-// 12px
+// 14px Paragraph 2
 const Caption = styled.p`
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-style: normal;
+  font-weight: 500;
   font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
+  line-height: 1.3125rem;
   
 `
 
