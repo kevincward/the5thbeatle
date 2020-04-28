@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import shape from '../images/ic_quotes.svg'
+import { Header6, Lead, Body, Caption } from '../layouts/typography'
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px 10px;
+    margin: 10px 90px;
     flex-direction: column;
+    align-items: center;
 
     @media (max-width: 768px) {
-        margin: 60px 24px;
+        margin: 20px 24px 70px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 20px 24px 10px;
     }
 `
 
@@ -16,82 +21,86 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 32px;
-    
+    width: 1000px;
+
+
     @media (max-width: 768px) {
+        width: 100%;
         margin-bottom: 16px;
     }
 `
 
-const Title = styled.div`
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.08;
-    letter-spacing: -0.55px;
+const Title = styled(Header6)`  
+    width: 1000px;
     color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 768px;
+        margin-bottom: 15px;
+    }
 `
 
-const Img = styled.img`
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-`
-
-const Description = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Description = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
+    max-width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 `
 
 const Comments = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 10px;
+    
+    @media (max-width: 768px) {
         flex-direction: column;
+        width: 100%;
+    }
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+        max-width: 300px;
     }
 `
 
 const CommentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
-    padding: 10px;
-    
+    margin: 24px 20px;
+
+    @media (max-width: 768px) {
+        margin: 0px 0px;
+    }
+
+    @media (max-width: 500px) {
+        margin: 12px 0px;
+    }
+
 `
 
-const CommentContent = styled.div`
-
-    font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 26px;
-    letter-spacing: -0.09px;
-    color: #000000;
+const CommentContent = styled(Lead)`
     width: 435px;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     
     @media (max-width: 768px) {
         width: 100%;
+        margin-top: 30px;
     }
 `
 
-const CommentName = styled.div`
-    font-size: 14px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.7); 
+const CommentName = styled(Caption)`    
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: -15px;
+
+    @media (max-width: 768px) {
+        margin-bottom: -15px;
+    }
 `
 
 
@@ -107,7 +116,6 @@ const Comment =({text, name, role}) => {
 const Quotes = props => (
     <Container id="quotes">
         <TitleContainer>
-            <Img src={shape}/>
             <Title>Disaster relief notification feedback</Title>
         </TitleContainer>
         <Description>

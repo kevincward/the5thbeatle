@@ -1,28 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Header6, Lead, Body } from '../layouts/typography'
+
 import check from '../images/ic_learningcheck.svg'
 import x from '../images/ic_learningx.svg'
 
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px 20px;
+    margin: 40px 90px;
     flex-direction: column;
-    
+    align-items: center;
+
     @media (max-width: 768px) {
-        margin: 120px 24px 20px;
+        margin: 50px 24px -30px;
     }
 `
 
-const Title = styled.div`
-    width: 565px;
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
+const Title = styled(Header6)`  
     color: #000000;
+    width: 1000px;
+    margin-top: 0px;
     margin-bottom: 32px;
     
     @media (max-width: 768px) {
@@ -30,32 +28,35 @@ const Title = styled.div`
     }
 `
 
-const Description = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
+const Description = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 8px;
+    max-width: 1000px;
+    margin-top: 0px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 15px;
+    }
 `
 
 const Content = styled.div`
     display: flex;
-    font-size: 32px;
     flex-direction: row;
     padding: 20px 0px;
+    width: 1000px;
     
     @media (max-width: 768px) {
+        width: 100%;
         flex-direction: column;
     }
 `
 
 const Items = styled.div`
     margin: 22px 0px;
-    width: 75%;
+    width: 85%;
     margin-right: 10%;
     
     @media (max-width: 768px) {
@@ -71,35 +72,40 @@ const ItemContainer = styled.div`
 `
 
 const ImgIcon = styled.img`
+    width: 48px;
+    height: 48px;
+    margin-top: 10px;
     margin-right: 18px;
-   
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    &:hover {
+        transform: scale(1.3, 1.3);
+        transition-timing-function: ease-in;
+        transition: 1s;
+    }
+    
+    @media (max-width: 768px) {
+        margin-right: 14px;
+    }
 `
 
-const ItemTitle = styled.div`
+const ItemTitle = styled(Lead)`
+    margin-top: 0px;
+    margin-bottom: 10px;
     object-fit: contain;
-    font-size: 21px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 28px;
-    letter-spacing: normal;
-    color: #000000;
 `
 
-const ItemDescription = styled.div`
-
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.2px;
-    color: rgba(0, 0, 0, 0.7);
+const ItemDescription = styled(Body)`
+color: rgba(0, 0, 0, 0.7);
+margin-top: 0px;
+margin-bottom: 0px;
 `
 
 const ItemContent = styled.div`
-    
+    width: 100%;   
 `
+
+
+
 const Item = ({icon, title, description}) => {
     return (
         <ItemContainer>

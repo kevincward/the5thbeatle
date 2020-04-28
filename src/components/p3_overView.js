@@ -141,11 +141,11 @@ const Experience = styled.div`
     
     @media (max-width: 768px) {
         width: 90%;
-        margin: 0px auto -10px;
+        margin: 0px auto 0px;
     }
 
     @media (max-width: 500px) {
-        margin: 110px auto -10px;
+        margin: 10px auto -10px;
         padding: 24px 16px;
     }
 ` 

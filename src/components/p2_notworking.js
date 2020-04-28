@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ModalImage from "react-modal-image";
-import { Header6, Body, Lead } from '../layouts/typography'
+import { Header6, Body } from '../layouts/typography'
  
 import NotWorking from '../images/p2_workshop4.jpg';
 

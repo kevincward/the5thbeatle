@@ -6,7 +6,7 @@ import { Header6, Body } from '../layouts/typography'
 
 const Container = styled.div`
     display: flex;
-    margin: 50px 90px 0px;
+    margin: 50px 90px 30px;
     flex-direction: column;
     align-items: center;
     
@@ -15,7 +15,7 @@ const Container = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin: 60px 24px 0px;
+        margin: 60px 24px 40px;
     }
 `
 
@@ -59,9 +59,7 @@ const Image = styled.div`
   width: 100%;
   height: auto;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto;
 
   @media (max-width: 768px) {
     align-content: center; 
@@ -78,9 +76,7 @@ const Image2 = styled.div`
   width: 100%;
   height: auto;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  margin: 30px auto 40px;
 
   @media (max-width: 768px) {
     align-content: center; 
@@ -89,7 +85,7 @@ const Image2 = styled.div`
     }
 
   @media (max-width: 500px) {
-    margin: 30px 0px 0px;
+    margin: 30px 0px -40px;
     }
 
 

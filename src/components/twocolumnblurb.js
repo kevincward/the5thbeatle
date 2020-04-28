@@ -2,142 +2,134 @@ import React from 'react'
 import styled from 'styled-components'
 import ModalImage from "react-modal-image";
 import { Header6, Body } from '../layouts/typography'
+ 
 
 const Container = styled.div`
     display: flex;
-    margin: 80px 90px;
+    flex-direction: row;
+    margin: 40px 90px 0px;
+    align-items: center;
     flex-direction: column;
+    width: 1000px;
     
     @media (max-width: 768px) {
-        margin: 80px 24px 0px;
-    }
-`
-
-const Title = styled.div`
-    width: 565px;    
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    width: 80%;
-    color: #000000;
-    margin-bottom: 32px;
-    
-    @media (max-width: 768px) {
-        margin: 40px 24px 0px;
-    }
-`
-const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    color: rgba(0, 0, 0, 0.7);
-    width: 400px;
-    margin-bottom: 30px;
-
-    @media (max-width: 768px) {
-        width: 280px;
-        margin: 40px 24px;
+        margin: 0px auto 40px;
+        width: 100%;
     }
 
-`
-const Description2 = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    color: rgba(0, 0, 0, 0.7);
-    width: 400px;
-    margin-bottom: 30px;
-
-    @media (max-width: 768px) {
-        width: 280px;
-        margin: 10px 24px;
-    }
-`
+` 
 
 const Content = styled.div`
     display: flex;
-    font-size: 32px;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+
+    @media (max-width: 768px) { 
+        width: 94%;
+        padding: 0px 40px;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+` 
+
+const OverViewContainer = styled.div`
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center; 
+    width: 1000px;
+    margin-bottom: -10px;
     
     @media (max-width: 768px) {
+        width: 100%;
         flex-direction: column;
+        margin-top: 0px;  
+    }
+
+` 
+
+const OverViewContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @media (max-width: 768px) {
+        margin: 20px 0px 0px;
+        order:1;
+        width: 100%
+    }
+
+    @media (max-width: 500px) {
+        margin: 0px;
+    }
+` 
+
+const Title = styled(Header6)`    
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 60%;
+    
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        width: 100%;
+    }
+
+` 
+
+const Description = styled(Body)`
+    color: rgba(0,0,0,0.7);
+
+    @media (max-width: 768px) {
+        margin-top: 32px;
     }
 `
-
 
 const Image = styled.div`
-  display: block;
-  height: 100%;
-  max-width: 500px;
-  min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (max-width: 768px) {
-    min-width: 200px;
-    margin-top: -50px;  
+    width: 500px;
+    display: flex;  
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+        margin: 10px 0px 20px;
+        padding-left: 0px;
+        width: 80%;
+        order:2;       
     }
-  
-  .__react_modal_image__modal_container {
+
+
+    .__react_modal_image__modal_container {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-`
-
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  @media (max-width: 768px) {
-    margin: 10px 24px 0px;  
     }
-
 `
 
 const TwoColumnBlurb = React.memo(({ title, description, description2, image}) => {
     return (
         <Container>            
             <Content>
-                {typeof window !== 'undefined'? (window.matchMedia('(max-width: 768px)').matches ? 
-                 
-                 <Image>
-                 <ModalImage
+                <OverViewContainer>
+                    <OverViewContent>
+                        <Title>
+                            {title}
+                        </Title>
+                        <Description>
+                            {description}
+                        </Description>
+                    </OverViewContent>
+                <Image>
+                    <ModalImage
                     small={image}
                     medium={image}
                     imageBackgroundColor="#ffff"
-                 />
-                 </Image>
-                 : null):null}
-                <TextContainer>
-                    <Title>
-                        {title}
-                    </Title>
-                    <Description>
-                        {description}
-                    </Description>
-                    <Description2>
-                        {description2}
-                    </Description2>
-                </TextContainer>
-                {typeof window !== 'undefined'?(!window.matchMedia('(max-width: 768px)').matches ? 
-                <Image>
-                    <ModalImage
-                small={image}
-                medium={image}
-                imageBackgroundColor="#ffff"
                     />
-                </Image> : null):null}
+                 </Image>
+                 </OverViewContainer>            
             </Content>
         </Container>
     )

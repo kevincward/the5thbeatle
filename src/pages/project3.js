@@ -10,13 +10,13 @@ import Tiles from '../components/p3_tiles'
 import OverView from '../components/p3_overView'
 import Quotes from '../components/p3_quotes'
 import Validate from '../components/p3_validate'
-import Solution from '../components/solution'
+import Solution from '../components/p3_solution'
 import Features from '../components/p3_features';
 import ProjectLearnings from '../components/p3_projectlearnings'
+import Reframing from '../components/p3_reframing'
 
 import AfinMap from '../images/affinitymap_remind.png'
 import AfinMap2 from '../images/affinitymap_remind2.png'
-import Pattern from '../images/p3_pattern_remind.png'
 import Fogg from '../images/foggmodel_remind.png'
 import IA from '../images/paypal_ia_remind.png'
 import IA2 from '../images/paypal_ia2_remind.png'
@@ -28,7 +28,6 @@ import TriggerHab2 from '../images/trigger_hab2_remind.png'
 import Researcher from '../images/p3_researcher.jpg'
 import TileTest1 from '../images/p3_tiletest1.jpg'
 import TileTest2 from '../images/p3_tiletest2.jpg'
-import Sol3 from '../images/p3_sol_bkgd.jpg'
 import ContentBlurb2img from '../components/contentblurb2img'
 import DonateBkgd from '../images/prj3_bkgd.png'
 import HeroIcon from '../images/ic_timeline_pp.svg'
@@ -69,18 +68,15 @@ const ContainerGray = styled.div`
 
 const Title = styled(Header5)`  
     width: 1000px;
-    margin: 40px 90px;
-    margin-bottom: -50px;
-    align-items: center;
+    margin: 30px 0px 0px;
    
     @media (max-width: 768px) {
-        width: 100%;
-        margin-left: 20%;
-        margin-bottom: -70px;
+        width: 93%;
     }
 
     @media (max-width: 500px) {
-        margin-left: 42%;
+      width: 87%;
+
     }
 
 `
@@ -88,25 +84,6 @@ const Title = styled(Header5)`
 const Divider = styled.div`
   border: solid 1px rgba(0,0,0,.05);
   margin-top: 50px;
-
-  @media (max-width: 768px) {
-    margin: 50px 24px 25px;
-}
-`
-
-const Description = styled.div`    
-    font-size: 18px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: -0.11px;
-    color: rgba(0, 0, 0, 0.7);
-    margin: 80px 90px;
-
-    @media (max-width: 768px) {
-    margin: 50px 20px;
-}
 `
 
 const Project3 = () => {    
@@ -125,17 +102,17 @@ const Project3 = () => {
         : null} */} 
           <OverView />
       </Container>
-      <ContainerGray>   
-          <TwoColumnBlurb
-            title={
-              "What motivates people to donate?"
+      <ContainerGray>      
+        <ContentBlurb
+           title={
+             "What motivates people to donate?"
             }
-            description={
-              "As a way to keep in touch with users of our product, I ran monthly research sessions to identify opportunities to enhance the donate feature and learn about donor behavior. Over the course of several sessions, I began to better understand behavior around donation triggers."
+           description={
+              "To keep in touch with users of our product, I ran monthly research sessions to identify opportunities to enhance the donate feature and learn about donor behavior. Over the course of several sessions, I began to better understand behavior around donation triggers."
             }
             image={Researcher}
           />
-          <ContentBlurb
+        <ContentBlurb
             title={
               "Putting all the feedback into Miro"
             }
@@ -144,20 +121,14 @@ const Project3 = () => {
             }
             image={AfinMap}
           />
-        <ContentBlurb2img
+        <ContentBlurb
           description={
             "The prompt groupings fall into two behaviors, deliverate donors and impulsive donors."
           }
           image={AfinMap2}
-          image2={Pattern}
         />
-        <Title>Reframing the challenge with insights</Title>
-          <Description>
-            My PM and I chose to focus on designing a trigger for each of these two donor behaviors. I framed the questions:
-            <p>1. How might we design a donation trigger for a user who donates impulsively?</p>
-            <p>2. How might we design a donation trigger for a user who makes consistent, deliberate donations?</p>
-          </Description>
-          <TwoColumnBlurb
+        <Reframing />
+        <TwoColumnBlurb
             title={
               "When designing triggers, we were inspired by the Fogg Behavior Model"
             }
@@ -236,15 +207,14 @@ const Project3 = () => {
           />
           <Validate />       
       </Container>
-      <Solution
+      <ContainerGray>
+          <Solution
           id="Solution3"
-          heroImgURL={Sol3}
-          title={"The Solution"}
-          description={"We released the disaster relief notification into the notification framework. My product manager and I decided to focus on a simple 'donate again to a charity you previously supported' tile for the first version of the tile."}
           />
+          <Features />
+      </ContainerGray>
       <Container>
-            <Features />
-            <ProjectLearnings />
+          <ProjectLearnings />
       </Container>
   
         

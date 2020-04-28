@@ -6,7 +6,7 @@ import { Header6, Body } from '../layouts/typography'
 
 const Container = styled.div`
     display: flex;
-    margin: 50px 90px 0px;
+    margin: 40px 90px 0px;
     flex-direction: column;
     align-items: center;
     
@@ -15,7 +15,7 @@ const Container = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin: 60px 24px 0px;
+        margin: 40px 24px 0px;
     }
 `
 
@@ -35,10 +35,11 @@ const Description = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
     width: 1000px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 
     @media (max-width: 768px) {
-        width: 100%
+        width: 100%;
+        margin-bottom: 10px;
     }
 `
 
