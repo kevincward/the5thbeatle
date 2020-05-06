@@ -1,11 +1,43 @@
 import React from 'react'
+import styled from 'styled-components'
 import Layout from '../layouts'
+
 import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
 import Skills from '../components/skills'
+import Skills2 from '../components/skills1'
 import OtherWork from '../components/otherWork'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+
+const Link = styled.a`
+    color: #FFFFFF;    
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-bottom: 4px;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+
+    
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .07em;
+    height: .1em;
+    width: 100%;
+    background: linear-gradient(110deg, #FFD23E, #F7991E, #EF4266, #0FAD69, #3BCEAC);
+    z-index: -1;
+    transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+    &:hover::after {
+    height: .5em;
+    
+}
+`
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +47,7 @@ const IndexPage = () => (
           <h1>I am the fifth Beatle. <br /><br />
           While my band is on hiatus, I design products that make life better.</h1>
           <br />
-          <p>UX Director at <a href="https://tcheck.me" target="_blank">Engineered Medical Technologies</a></p>
+          <p>UX Director at <Link href="https://tcheck.me" target="_blank">Engineered Medical Technologies</Link></p>
         </div>
       </div>  
 
@@ -52,6 +84,7 @@ const IndexPage = () => (
         duration={2}
         delay={2}
       >
+      
         <OtherWork />      
       </ScrollAnimation>
     

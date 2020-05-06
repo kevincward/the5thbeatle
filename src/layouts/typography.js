@@ -9,6 +9,8 @@ const Header1 = styled.h1`
   font-stretch: normal;
   line-height: 0.89;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -20,6 +22,8 @@ const Header2 = styled.h2`
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -31,6 +35,8 @@ const Header3 = styled.h3`
   font-stretch: normal;
   line-height: 1.17;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -42,6 +48,8 @@ const Header4 = styled.h4`
   font-stretch: normal;
   line-height: 	2.75rem;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 `
 
@@ -53,6 +61,8 @@ const Header5 = styled.h5`
   font-stretch: normal;
   line-height: 2.5rem;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
  
 
 `
@@ -65,6 +75,8 @@ const Header6 = styled.h6`
   font-stretch: normal;
   line-height: 2.125rem;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -76,6 +88,8 @@ const Lead = styled.div`
   font-stretch: normal;
   line-height: 1.625rem;
   letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -85,6 +99,8 @@ const Body = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 1.6875rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 
@@ -95,6 +111,8 @@ const Caption = styled.p`
   font-weight: 500;
   font-stretch: normal;
   line-height: 1.3125rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
 `
 

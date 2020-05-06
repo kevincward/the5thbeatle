@@ -62,6 +62,41 @@ const Title = styled.div`
         margin: 0px;
     }
 `
+
+const Tag = styled.div`
+    background: rgb(0,0,0,0.4);
+    width: 110px;
+    padding: 4px 6px;
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+    border: none;    
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 8px;
+    outline: none;
+    animation: HeroAnimation;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+`
+
+const Caption = styled.div`
+    margin: 10px 0px;
+    font-size: 14px;
+    border: none;    
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 8px;
+    outline: none;
+    animation: HeroAnimation;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+`
+
 const Text = styled.div`
   color: rgb(255,255,255,0.9);
   font-size: 18px;
@@ -78,38 +113,32 @@ const Text = styled.div`
   opacity: 0;
 `
 
-const Copyright = styled.div`
-  color: rgb(255,255,255,0.9);
-  font-size: 0.875rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.3125rem;
-  letter-spacing: normal;
-  animation: HeroAnimation;
-  animation-duration: 3s;
-  animation-delay: 0.2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
-
-  @media (max-width: 768px) {    
-    text-align: center;
-    }
-`
-
 const Link = styled.a`
     color: #FFFFFF;    
     font-size: 21px;
     font-weight: 600;
     line-height: 26px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    padding-bottom: 4px;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+
     
-    &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
-    }
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .07em;
+    height: .1em;
+    width: 100%;
+    background: linear-gradient(110deg, #FFD23E, #F7991E, #EF4266, #0FAD69, #3BCEAC);
+    z-index: -1;
+    transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+    &:hover::after {
+    height: .5em;
+}
 
 `
 
@@ -127,11 +156,9 @@ const SocialsContainer = styled.div`
 const SocialImage = styled.img`
 	width: 24px;
     height: 24px;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    
     &:hover {
-        transform: scale(1.3, 1.3);
-        transition-timing-function: ease-in;
-        transition: 1s;
+        opacity: 0.6;
     }
 `
 
@@ -144,13 +171,16 @@ const Footer = () => {
                 <Title>
                     All you need is love, <br />and good product design.
                 </Title>
+                <Caption>
+                18 products shipped and counting   
+                </Caption>
             </Item>
         </Content>
         <Content>
             <Item>
-                <Text>
-                Lets talk.
-                </Text>
+                <Tag>
+                Available for hire
+                </Tag>
                 <Text>
                     <Link href="mailto:kevinis@the5thbeatle.com">kevinis@the5thbeatle.com</Link>
                 </Text>  
@@ -195,9 +225,7 @@ const Footer = () => {
             
         </Content>
 
-                <Copyright>
-                    Made with ⚛️ in 2020.
-                </Copyright>
+                
           
         
       </Container>

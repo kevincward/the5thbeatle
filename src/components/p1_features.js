@@ -5,6 +5,8 @@ import ModalImage from "react-modal-image"
 
 import p1_img1 from '../images/p1_feature1.png';
 import p1_img2 from '../images/p1_feature2.png';
+import p1_img3 from '../images/p1_feature2.png';
+import p1_img4 from '../images/p1_feature2.png';
 
 
 const Container = styled.div`
@@ -175,13 +177,13 @@ const P1Features1 = () => {
                     <Item1 
                         title='Adjustable anonymity'
                         description='Leveraging the existing amount selection app pattern, I added a share personal information opt-out, giving the user more control of their privacy.'
-                        img={p1_img1}                   
+                        img={p1_img3}                   
                     />
                     <br />
                     <Item2 
                         title='Sharing the charity you support'
                         description='Building on the confirmation screen app pattern, I added a native share option so the user could share their cause to the platform of their choice. The share message autopopulates with the charity’s name and a link to their charity profile.'
-                        img={p1_img2} 
+                        img={p1_img4} 
                     /> 
                 </Items>
             </Content>

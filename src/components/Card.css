@@ -3,7 +3,7 @@
     height: 250px;
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0, 0.5);
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -30,7 +30,10 @@
     }
 }
 .Card:hover {    
-    box-shadow: 0 10px 20px rgba(0,0,0, 0.5);
+    box-shadow: 0 10px 20px rgba (255, 255, 255, 0.25);
+    transform: scale(1.04, 1.04);
+    transition-timing-function: ease-in;
+    transition: 1s;
 }
 
 .Card h3 {
