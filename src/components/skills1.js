@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import './skills.css'
+
 
 import research from '../images/ic_exper_research.svg'
 import design from '../images/ic_exper_design.svg'

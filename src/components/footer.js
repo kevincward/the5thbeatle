@@ -179,7 +179,7 @@ const Footer = () => {
         <Content>
             <Item>
                 <Tag>
-                Available for hire
+                Available for hire 👋
                 </Tag>
                 <Text>
                     <Link href="mailto:kevinis@the5thbeatle.com">kevinis@the5thbeatle.com</Link>
