@@ -5,7 +5,6 @@ import Layout from '../layouts'
 import Casestudy from '../components/caseStudy'
 import Experience from '../components/experience'
 import Skills from '../components/skills'
-import Skills2 from '../components/skills1'
 import OtherWork from '../components/otherWork'
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';

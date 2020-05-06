@@ -5,8 +5,8 @@ import ModalImage from "react-modal-image"
 
 import p1_img1 from '../images/p1_feature1.png';
 import p1_img2 from '../images/p1_feature2.png';
-import p1_img3 from '../images/p1_feature2.png';
-import p1_img4 from '../images/p1_feature2.png';
+import p1_img3 from '../images/p1_feature3.png';
+import p1_img4 from '../images/p1_feature4.png';
 
 
 const Container = styled.div`

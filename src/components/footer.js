@@ -8,6 +8,9 @@ import spotify from '../images/spotify.svg';
 import github from '../images/github.svg';
 import bkgd from '../images/footerbkgd.svg'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCircle } from "@fortawesome/free-solid-svg-icons"
+
 const Container = styled.div`
     background: url(${({ heroImgURL }) => heroImgURL});
     background-size: cover;
@@ -65,8 +68,8 @@ const Title = styled.div`
 
 const Tag = styled.div`
     background: rgb(0,0,0,0.4);
-    width: 110px;
-    padding: 4px 6px;
+    width: 150px;
+    padding: 4px 4px;
     margin: 10px 0px;
     font-size: 14px;
     text-align: center;
@@ -153,6 +156,14 @@ const SocialsContainer = styled.div`
     }
 `
 
+const Icon = styled(FontAwesomeIcon)`
+  position: relative;
+  margin-left: 0px;
+  padding-right: 10px;
+  color: #57D113;
+  font-size: 10px;
+`
+
 const SocialImage = styled.img`
 	width: 24px;
     height: 24px;
@@ -179,7 +190,7 @@ const Footer = () => {
         <Content>
             <Item>
                 <Tag>
-                Available for hire 👋
+                <Icon icon={faCircle} />Available for hire
                 </Tag>
                 <Text>
                     <Link href="mailto:kevinis@the5thbeatle.com">kevinis@the5thbeatle.com</Link>
