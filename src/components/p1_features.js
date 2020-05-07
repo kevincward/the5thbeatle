@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { Lead, Body } from '../layouts/typography'
 import ModalImage from "react-modal-image"
 
-import p1_img1 from '../images/p1_feature1.png';
-import p1_img2 from '../images/p1_feature2.png';
-import p1_img3 from '../images/p1_feature3.png';
-import p1_img4 from '../images/p1_feature4.png';
+import p1_img1 from '../images/donate_animate1.gif';
+import p1_img2 from '../images/donate_animate2.gif';
+import p1_img3 from '../images/donate_animate3.gif';
+import p1_img4 from '../images/donate_animate4.gif';
 
 
 const Container = styled.div`
@@ -14,11 +14,9 @@ const Container = styled.div`
     margin: 40px 90px -40px;
     flex-direction: column;
     align-items: center;
-
     @media (max-width: 768px) {
         margin: 50px 24px -15px;
     }
-
     @media (max-width: 500px) {
         margin: 50px 24px -30px;
     }
@@ -40,7 +38,6 @@ const Items = styled.div`
     margin: 22px 0px;
     width: 100%;
     margin-right: 10%;
-
     @media (max-width: 768px) {
         width: 100%;
         margin: 0px;
@@ -53,22 +50,18 @@ const ItemContainer = styled.div`
     justify-content: space-around;
     margin-bottom: 12px;
     width: 1000px;
-
     @media (max-width: 768px) {
         flex-direction: column;
         width: 100%; 
         }
-
 `
 
 const ItemTitle = styled(Lead)`
     margin-top: 0px;
     margin-bottom: 10px;
-
     @media (max-width: 768px) {
             padding-top: 20px;
         }
-
     @media (max-width: 500px) {
             padding-top: 30px;
         }
@@ -78,7 +71,6 @@ const ItemDescription = styled(Body)`
     color: rgba(0, 0, 0, 0.7);
     margin-top: 0px;
     margin-bottom: 0px;
-
     
 `
 
@@ -100,16 +92,13 @@ const ImgContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center; 
-
     @media (max-width: 768px) {
         width: 30%;
     }
-
     @media (max-width: 500px) {
         order:1;
         width: 100%;
     }
-
     .__react_modal_img__modal_container {
         background-color: rgba(0, 0, 0, 0.2);
     }

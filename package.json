@@ -24,20 +24,23 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.14",
     "history": "^4.10.1",
-    "react": "^16.12.0",
+    "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.0",
     "react-modal-image": "^2.5.0",
     "react-parallax": "^3.0.3",
+    "react-player": "^2.0.1",
     "react-router-dom": "^5.1.2",
     "react-scroll": "^1.7.16",
     "react-scroll-parallax": "^2.3.2",
     "react-simple-parallax": "^0.2.6",
     "react-slick": "^0.25.2",
     "react-spring": "^8.0.27",
+    "redux": "^4.0.5",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^3.3.3"
+    "styled-components": "^3.3.3",
+    "video-react": "^0.14.1"
   },
   "keywords": [
     "gatsby"
@@ -51,7 +54,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-scss-typescript": "^4.0.10",
-    "node-sass": "^4.13.1",
+    "html-loader": "^1.1.0",
+    "node-sass": "^4.14.1",
     "prettier": "^1.16.4"
   },
   "repository": {
