@@ -12,7 +12,7 @@
     "browser-monads": "^1.0.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.10",
-    "gatsby-cli": "^2.12.16",
+    "gatsby-cli": "^2.12.29",
     "gatsby-link": "^2.2.28",
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.40",

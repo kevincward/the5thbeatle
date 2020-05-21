@@ -14,6 +14,7 @@ import Solution from '../components/p3_solution'
 import Features from '../components/p3_features';
 import ProjectLearnings from '../components/p3_projectlearnings'
 import Reframing from '../components/p3_reframing'
+import Impact from '../components/p3_impact'
 
 import AfinMap from '../images/affinitymap_remind.png'
 import AfinMap2 from '../images/affinitymap_remind2.png'
@@ -123,7 +124,7 @@ const Project3 = () => {
           />
         <ContentBlurb
           description={
-            "The prompt groupings fall into two behaviors, deliverate donors and impulsive donors."
+            "The prompt groupings fall into two behaviors, deliberate donors and impulsive donors."
           }
           image={AfinMap2}
         />
@@ -214,6 +215,7 @@ const Project3 = () => {
           <Features />
       </ContainerGray>
       <Container>
+          <Impact />
           <ProjectLearnings />
       </Container>
   

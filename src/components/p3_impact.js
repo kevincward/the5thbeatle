@@ -64,6 +64,7 @@ const Title = styled(Header5)`
     margin-top: 0px;
     margin-bottom: 12px;
     
+   
 ` 
 
 const Description = styled(Body)`
@@ -119,6 +120,13 @@ const ExpDescription = styled(Body)`
     }
 `
 
+const Divider = styled.div`
+  border: solid 1px rgba(0,0,0,.05);
+  width: 60%;
+  margin: 20px;
+
+`
+
 
 const Impact = props => (
     <Container>
@@ -138,13 +146,23 @@ const Impact = props => (
         </Content>
         <Experience>
             <ExpTitle>
-                $1.5 million TPV
+                0.1% (1.7 million)
             </ExpTitle>
             <ExpDescription>
-                It may have taken a couple of months for the Donate feature to take off but when it did, we started to see strong 
-                numbers on a monthly basis. By June 2017 (one year after launch), PayPal saw 1.5 million in total payment volume 
-                through the app donate feature.
+                Increase in new donors (conversions)
             </ExpDescription>
+            <Divider />
+            <ExpTitle>
+                3% (5.3 million)
+            </ExpTitle>
+            <ExpDescription>
+                Increase donation volume
+            </ExpDescription>
+            <Divider />
+            <ExpTitle>
+            Increased awareness of PayPal's social impact (measured through surveying)
+            </ExpTitle>
+            
         
         </Experience>
     </Container>

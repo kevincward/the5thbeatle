@@ -208,9 +208,9 @@ const OverView3 = props => (
                 <OverViewContent>
                     <Title>Overview</Title>
                     <Description>
-                        Now that the native PayPal donation feature was live, we wanted to improve the experience so that more users would discover and 
-                        be encouraged to donate within the app. After conducting user research and identifying technical limitations, I designed the 
-                        updates which would help to increase engagement with the product. 
+                    Through surveys and analytics, we knew our donor products had significant customer satisfaction 
+                    and return user frequency, however our discovery KPI always lagged far behind. After running multiple 
+                    interviews, it became clear that PayPal users were just not aware that donor tools existed or how to find them. 
                     </Description>
                 </OverViewContent>
                 <RoleContainer>
@@ -241,7 +241,7 @@ const OverView3 = props => (
                 How can we promote feature discovery and design triggers to increase donations?
             </ExpTitle>
             <ExpDescription>
-            How do we help new users discover the PayPal app donate feature? How do we remind current donors 
+            How do we help new users discover PayPal's donor tools? How do we remind current donors 
             using PayPal to donate? How do we encourage donating without being annoying?
             </ExpDescription>
             <SkipLink onClick={() => {
