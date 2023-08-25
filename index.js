@@ -43,7 +43,7 @@ const IndexPage = () => (
     <div>    
       <div className="Hero">
         <div className="HeroGroup">
-          <h1>I am the fifth Beatle. <br /><br />
+          <h1>I am the 5th Beatle. <br /><br />
           While my band is on hiatus, I’m focused on designing meaningful products.</h1>
           <br />
           <p>Principal Product Designer at <Link href="https://www.trifectanutrition.com" target="_blank">Trifecta</Link></p>
