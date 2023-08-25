@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Kevin Ward - Product Designer',
-    description: 'Product Designer in Sacramento, CA',
-    keywords: 'product designer, ux director, ux designer, ui designer, Kevin Ward, design thinking, ux portfolio, ux case study, user research, user design, ux researcher, product manager, business designer, the Beatles, the fifth beatle, the 5th beatle',
+    title: 'Kevin Ward - Principal Product Designer',
+    description: 'Principal Product Designer in Sacramento, CA',
+    keywords: 'principal, lead, product designer, director, ux designer, ui designer, Kevin Ward, design thinking, ux portfolio, ux case study, user research, user design, ux researcher, product manager, business designer, the Beatles, the fifth beatle, the 5th beatle',
     siteUrl: 'http://www.the5thbeatle.com/'
   },
   plugins: [
